@@ -1,6 +1,6 @@
 import React from 'react'
-import SectionOne from '../Components/HomePage/SectionOne'
-// import SectionOne from '../components/HomePage/SectionOne'
+import SectionOne from '../components/HomePage/SectionOne'
+
 
 const Homepage = () => {
   return (

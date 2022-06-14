@@ -1,6 +1,6 @@
 import React from "react";
-import FirstImage from '../../Assets/business-people-discussing-business-idea.png'
-import DropBox from '../../Assets/dropbox.png'
+import FirstImage from '../../assets/business-people-discussing-business-idea.png'
+import DropBox from '../../assets/dropbox.png'
 
 const SectionOne = () => {
   return (
