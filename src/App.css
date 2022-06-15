@@ -29,6 +29,12 @@
 }
 .app-btn{
   border-radius: 8px;
+  min-width: 167px;
+  min-height: 48px;
+}
+.app-container{
+  max-width: 1440px;
+  margin: auto;
 }
 @keyframes App-logo-spin {
   from {
