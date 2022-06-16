@@ -1,11 +1,10 @@
 import React from "react";
 import Arrow from "../../assets/Arrow 1.png";
-import FirstImage from "../../assets/businessman-analyzing-data.png";
-import DropBox from "../../assets/dropbox.png";
+
 const SectionThree = ({ header, subHeader, image, id }) => {
   return (
     <div
-      className="container d-flex lg:my-20 my-10 flex-wrap  items-center lg:pt-20 lg:py-24 py-10 justify-between"
+      className="max-w-[1300px] container d-flex lg:my-20 my-10 flex-wrap  items-center lg:pt-20 lg:py-24 py-10 justify-between"
       id={id}
     >
       <div className="w-full md:w-1/2 lg:pr-20 md:text-left flex lg:justify-start">

@@ -1,6 +1,6 @@
 import React from "react";
 import "./style.css";
-import Logo from "../../assets/Revised Market Intel Logo - 2019.jpeg";
+import Logo from "../../assets/Revised_Market_Intel_Logo_-_2019-removebg-preview.png";
 
 const NavBar = () => {
   return (
@@ -23,13 +23,17 @@ const NavBar = () => {
         <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
           <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
             <li class="nav-item lg:mx-4">
-              <a class="nav-link active" aria-current="page" href="/">
+              <a
+                class="nav-link text-[#212529] font-medium text-lg active"
+                aria-current="page"
+                href="/"
+              >
                 Home
               </a>
             </li>
             <li class="nav-item lg:mx-4 dropdown">
               <a
-                class="nav-link dropdown-toggle"
+                class="nav-link text-[#212529] font-medium text-lg dropdown-toggle"
                 href="#"
                 id="navbarDropdown"
                 role="button"
@@ -71,21 +75,30 @@ const NavBar = () => {
               </ul>
             </li>
             <li class="nav-item lg:mx-4">
-              <a class="nav-link" href="#team">
+              <a
+                class="nav-link text-[#212529] font-medium text-lg"
+                href="#team"
+              >
                 About
               </a>
             </li>
             {/* <li class="nav-item lg:mx-4">
-              <a class="nav-link">Testimonials</a>
+              <a class="nav-link text-[#212529] font-medium text-lg">Testimonials</a>
             </li> */}
             <li class="nav-item lg:mx-4">
-              <a class="nav-link" href="mailto:dev@marketintelsolutions.com">
-                ✉️ dev@marketintelsolutions.com
+              <a
+                class="nav-link text-[#212529] font-medium text-lg"
+                href="mailto:info@marketintelsolutions.com"
+              >
+                ✉️ info@marketintelsolutions.com
               </a>
             </li>
             <li class="nav-item lg:mx-4">
-              <a class="nav-link" href="tel:+23436137042">
-                ☎ +2348036137042
+              <a
+                class="nav-link text-[#212529] font-medium text-lg"
+                href="tel:+23436137042"
+              >
+                ☎ +2348035019716
               </a>
             </li>
           </ul>

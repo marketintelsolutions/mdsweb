@@ -4,18 +4,16 @@ import CTASection from "../components/HomePage/CTASection";
 import SectionOne from "../components/HomePage/SectionOne";
 import SectionThree from "../components/HomePage/SectionThree";
 import SectionTwo from "../components/HomePage/SectionTwo";
-import TestimonialsSection from "../components/HomePage/TestimonialsSection";
 import SecondImage from "../assets/business-3d-tech-support.png";
 import FourthImage from "../assets/business-3d-woman-receiving-a-music-message.png";
 import ThirdImage from "../assets/business-3d-laptop-at-workplace-showing-growth-chart.png";
-import FirstImage from "../assets/designer-team-working-on-creative-design.png";
 import FifthImage from "../assets/business-3d-e-wallet-in-a-phone-with-bank-card-stack-of-coins-and-leather-wallet.png";
 import TeamSection from "../components/HomePage/TeamSection";
 
 const Homepage = () => {
   return (
     <div>
-      <div className="max-w-[1300px] mx-auto">
+      <div className="mx-auto">
         <SectionOne />
         <SectionTwo
           id="Technology Distribution"

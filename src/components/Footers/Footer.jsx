@@ -119,7 +119,7 @@ const Footer = () => {
                     class="inline-block text-white hover:text-gray-400 text-lg"
                     href="tel:+23436137042"
                   >
-                    ☎ &nbsp; +2348036137042
+                    ☎ &nbsp; +2348035019716
                   </a>
                 </li>
                 <li>
@@ -127,7 +127,7 @@ const Footer = () => {
                     class="inline-block text-white hover:text-gray-400 text-lg"
                     href="mailto:info@marketintelsolutions.com"
                   >
-                    ✉️ &nbsp; dev@marketintelsolutions.com
+                    ✉️ &nbsp; info@marketintelsolutions.com
                   </a>
                 </li>
               </ul>
