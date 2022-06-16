@@ -3,113 +3,74 @@ import React from "react";
 const Footer = () => {
   return (
     <div id="footer">
-      <section class="py-24 md:py-40 bg-gray-900 relative">
+      <section class="py-24 md:py-40 bg-gray-900 relative text-left">
         <div class="container px-4 mx-auto">
           <div class="flex flex-wrap -mx-4 -mb-8">
-            <div class="w-1/2 lg:w-1/3 xl:w-1/5 px-4 mb-8">
-              <h4 class="text-white mb-5">About</h4>
+            <div class="w-1/2 lg:w-1/3 xl:w-1/4 px-4 mb-8">
+              <h4 class="text-white mb-5 text-xl font-bold">About</h4>
               <ul>
                 <li class="mb-4">
                   <a
-                    class="inline-block text-gray-500 hover:text-gray-400 font-light"
-                    href="#"
-                  >
-                    Story
-                  </a>
-                </li>
-                <li class="mb-4">
-                  <a
-                    class="inline-block text-gray-500 hover:text-gray-400 font-light"
-                    href="#"
+                    class="inline-block text-white hover:text-gray-400 text-lg"
+                    href="#team"
                   >
                     Creative Team
                   </a>
                 </li>
+
                 <li class="mb-4">
                   <a
-                    class="inline-block text-gray-500 hover:text-gray-400 font-light"
-                    href="#"
-                  >
-                    Founders
-                  </a>
-                </li>
-                <li class="mb-4">
-                  <a
-                    class="inline-block text-gray-500 hover:text-gray-400 font-light"
-                    href="#"
-                  >
-                    Why Us
-                  </a>
-                </li>
-                <li class="mb-4">
-                  <a
-                    class="inline-block text-gray-500 hover:text-gray-400 font-light"
+                    class="inline-block text-white hover:text-gray-400 text-lg"
                     href="#"
                   >
                     Our Mission
                   </a>
                 </li>
-                <li>
+              </ul>
+            </div>
+            <div class="w-1/2 lg:w-1/3 xl:w-1/4 px-4 mb-8">
+              <h4 class="text-white mb-5 text-xl font-bold">Product</h4>
+              <ul>
+                <li class="mb-4">
                   <a
-                    class="inline-block text-gray-500 hover:text-gray-400 font-light"
-                    href="#"
+                    class="inline-block text-white hover:text-gray-400 text-lg"
+                    href="#Technology Distribution"
                   >
-                    Idea
+                    Technology Distribution
+                  </a>
+                </li>
+                <li class="mb-4">
+                  <a
+                    class="inline-block text-white hover:text-gray-400 text-lg"
+                    href="#Media & Entertainment"
+                  >
+                    Media & Entertainment
+                  </a>
+                </li>
+                <li class="mb-4">
+                  <a
+                    class="inline-block text-white hover:text-gray-400 text-lg"
+                    href="#FINTECH"
+                  >
+                    FINTECH
+                  </a>
+                </li>
+                <li class="mb-4">
+                  <a
+                    class="inline-block text-white hover:text-gray-400 text-lg"
+                    href="#Managed Technology Services"
+                  >
+                    Managed Technology Services
                   </a>
                 </li>
               </ul>
             </div>
-            <div class="w-1/2 lg:w-1/3 xl:w-1/5 px-4 mb-8">
-              <h4 class="text-white mb-5">Product</h4>
+            <div class="w-1/2 lg:w-1/3 xl:w-1/4 px-4 mb-8">
+              <h4 class="text-white mb-5 text-xl font-bold">Follow</h4>
               <ul>
                 <li class="mb-4">
                   <a
-                    class="inline-block text-gray-500 hover:text-gray-400 font-light"
-                    href="#"
-                  >
-                    Plans
-                  </a>
-                </li>
-                <li class="mb-4">
-                  <a
-                    class="inline-block text-gray-500 hover:text-gray-400 font-light"
-                    href="#"
-                  >
-                    Pricing
-                  </a>
-                </li>
-                <li class="mb-4">
-                  <a
-                    class="inline-block text-gray-500 hover:text-gray-400 font-light"
-                    href="#"
-                  >
-                    Integration
-                  </a>
-                </li>
-                <li class="mb-4">
-                  <a
-                    class="inline-block text-gray-500 hover:text-gray-400 font-light"
-                    href="#"
-                  >
-                    Sign Up
-                  </a>
-                </li>
-                <li>
-                  <a
-                    class="inline-block text-gray-500 hover:text-gray-400 font-light"
-                    href="#"
-                  >
-                    Careers
-                  </a>
-                </li>
-              </ul>
-            </div>
-            <div class="w-1/2 lg:w-1/3 xl:w-1/5 px-4 mb-8">
-              <h4 class="text-white mb-5">Follow</h4>
-              <ul>
-                <li class="mb-4">
-                  <a
-                    class="inline-block text-gray-500 hover:text-gray-400 font-light"
+                    class="inline-block text-white hover:text-gray-400 text-lg"
                     href="#"
                   >
                     LinkedIn
@@ -117,7 +78,7 @@ const Footer = () => {
                 </li>
                 <li class="mb-4">
                   <a
-                    class="inline-block text-gray-500 hover:text-gray-400 font-light"
+                    class="inline-block text-white hover:text-gray-400 text-lg"
                     href="#"
                   >
                     Twitter
@@ -125,7 +86,7 @@ const Footer = () => {
                 </li>
                 <li class="mb-4">
                   <a
-                    class="inline-block text-gray-500 hover:text-gray-400 font-light"
+                    class="inline-block text-white hover:text-gray-400 text-lg"
                     href="#"
                   >
                     Snapchat
@@ -133,7 +94,7 @@ const Footer = () => {
                 </li>
                 <li class="mb-4">
                   <a
-                    class="inline-block text-gray-500 hover:text-gray-400 font-light"
+                    class="inline-block text-white hover:text-gray-400 text-lg"
                     href="#"
                   >
                     Instagram
@@ -141,7 +102,7 @@ const Footer = () => {
                 </li>
                 <li>
                   <a
-                    class="inline-block text-gray-500 hover:text-gray-400 font-light"
+                    class="inline-block text-white hover:text-gray-400 text-lg"
                     href="#"
                   >
                     Facebook
@@ -149,139 +110,35 @@ const Footer = () => {
                 </li>
               </ul>
             </div>
-            <div class="w-1/2 lg:w-1/3 xl:w-1/5 px-4 mb-8">
-              <h4 class="text-white mb-5">Application</h4>
+
+            <div class="w-1/2 lg:w-1/3 xl:w-1/4 px-4 mb-8">
+              <h4 class="text-white mb-5 text-xl font-bold">Support</h4>
               <ul>
                 <li class="mb-4">
                   <a
-                    class="inline-block text-gray-500 hover:text-gray-400 font-light"
-                    href="#"
+                    class="inline-block text-white hover:text-gray-400 text-lg"
+                    href="tel:+23436137042"
                   >
-                    Download Desktop
-                  </a>
-                </li>
-                <li class="mb-4">
-                  <a
-                    class="inline-block text-gray-500 hover:text-gray-400 font-light"
-                    href="#"
-                  >
-                    Download Mobile
-                  </a>
-                </li>
-                <li class="mb-4">
-                  <a
-                    class="inline-block text-gray-500 hover:text-gray-400 font-light"
-                    href="#"
-                  >
-                    Sign Up
-                  </a>
-                </li>
-                <li class="mb-4">
-                  <a
-                    class="inline-block text-gray-500 hover:text-gray-400 font-light"
-                    href="#"
-                  >
-                    Sign In
-                  </a>
-                </li>
-                <li class="mb-4">
-                  <a
-                    class="inline-block text-gray-500 hover:text-gray-400 font-light"
-                    href="#"
-                  >
-                    Your history
-                  </a>
-                </li>
-                <li class="mb-4">
-                  <a
-                    class="inline-block text-gray-500 hover:text-gray-400 font-light"
-                    href="#"
-                  >
-                    FAQ&apos;s
+                    ☎ &nbsp; +2348036137042
                   </a>
                 </li>
                 <li>
                   <a
-                    class="inline-block text-gray-500 hover:text-gray-400 font-light"
-                    href="#"
+                    class="inline-block text-white hover:text-gray-400 text-lg"
+                    href="mailto:info@marketintelsolutions.com"
                   >
-                    Integrations
-                  </a>
-                </li>
-              </ul>
-            </div>
-            <div class="w-1/2 lg:w-1/3 xl:w-1/5 px-4 mb-8">
-              <h4 class="text-white mb-5">Support</h4>
-              <ul>
-                <li class="mb-4">
-                  <a
-                    class="inline-block text-gray-500 hover:text-gray-400 font-light"
-                    href="#"
-                  >
-                    FAQ&apos;s
-                  </a>
-                </li>
-                <li class="mb-4">
-                  <a
-                    class="inline-block text-gray-500 hover:text-gray-400 font-light"
-                    href="#"
-                  >
-                    Live Chat
-                  </a>
-                </li>
-                <li class="mb-4">
-                  <a
-                    class="inline-block text-gray-500 hover:text-gray-400 font-light"
-                    href="#"
-                  >
-                    Hotline +442234480171
-                  </a>
-                </li>
-                <li>
-                  <a
-                    class="inline-block text-gray-500 hover:text-gray-400 font-light"
-                    href="#"
-                  >
-                    Messages
+                    ✉️ &nbsp; dev@marketintelsolutions.com
                   </a>
                 </li>
               </ul>
             </div>
           </div>
-          <div class="mt-24 pb-16 -mb-4 border-b border-gray-700">
-            <a
-              class="inline-block text-gray-500 hover:text-gray-400 font-light mb-4 mr-4"
-              href="#"
-            >
-              Privacy Policy
-            </a>
-            <a
-              class="inline-block text-gray-500 hover:text-gray-400 font-light mb-4 mr-4"
-              href="#"
-            >
-              Responsible Disclosure
-            </a>
-            <a
-              class="inline-block text-gray-500 hover:text-gray-400 font-light mb-4 mr-4"
-              href="#"
-            >
-              Program Policy
-            </a>
-            <a
-              class="inline-block text-gray-500 hover:text-gray-400 font-light mb-4"
-              href="#"
-            >
-              Terms and Conditions
-            </a>
-          </div>
-          <div class="flex items-center justify-end mt-10">
-            <span class="text-white">&copy; 2022 MDS</span>
-            <a class="inline-block ml-8" href="#">
-              {/* <img class="w-16 h-16" src="wrexa-assets/logos/wrexa-logo-primary.svg" alt=""/> */}
-              <a class="navbar-brand text-2xl font-bold" href="#">
-                Digital Agency
-              </a>
-            </a>
+
+          <div class="flex items-center justify-center mt-10 pt-10 border-t border-gray-700 ">
+            <span class="text-white text-center">
+              &copy; 2022 Marketintel Technology, Media & Digital Solutions
+              Limited (MDS)
+            </span>
           </div>
         </div>
       </section>
