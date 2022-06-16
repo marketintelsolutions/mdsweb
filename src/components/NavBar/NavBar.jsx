@@ -3,8 +3,8 @@ import "./style.css";
 
 const NavBar = () => {
   return (
-    <nav class="navbar navbar-expand-lg container py-4 app-container">
-      <div class="container-fluid">
+    <nav class="navbar navbar-expand-lg container py-4 app-container ">
+      <div class="container-fluid max-w-[1300px]">
         <a class="navbar-brand text-2xl font-bold" href="#">
           Digital Agency
         </a>

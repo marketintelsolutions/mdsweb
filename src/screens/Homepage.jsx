@@ -15,7 +15,7 @@ import TeamSection from "../components/HomePage/TeamSection";
 const Homepage = () => {
   return (
     <div>
-      <div className="app-container">
+      <div className="max-w-[1300px] mx-auto">
         <SectionOne />
         <SectionTwo
           id="Technology Distribution"

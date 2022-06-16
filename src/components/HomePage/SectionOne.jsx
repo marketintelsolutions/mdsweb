@@ -20,7 +20,7 @@ const SectionOne = () => {
             Contact Us
           </button>
         </div>
-        <div className="w-full md:w-1/2 flex justify-center">
+        <div className="w-full md:w-1/2 flex justify-end">
           <img src={FirstImage} alt="" width="450px" height="450px" />
         </div>
       </div>
