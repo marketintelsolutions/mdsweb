@@ -4,7 +4,7 @@ import Arrow from "../../assets/Arrow 1.png";
 const SectionTwo = ({ header, subHeader, image, id }) => {
   return (
     <div
-      className="container d-flex lg:my-20 my-10 flex-wrap  items-center lg:pt-20 lg:py-24 py-10 max-w-[1300px]"
+      className="section-two shadow-lg drop-shadow-lg px-10 rounded-2xl container d-flex lg:my-20 my-10 flex-wrap  items-center lg:pt-20 lg:py-24 py-10 max-w-[1300px]"
       id={id}
     >
       <div className="w-full md:w-1/2 flex lg:justify-start">
