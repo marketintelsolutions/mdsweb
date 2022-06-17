@@ -14,10 +14,10 @@ const NavBar = () => {
       <div className=" w-full border-b py-2">
         <div class="container-fluid max-w-[1300px] w-full h-full flex flex-wrap items-center justify-center lg:justify-between">
           <div className="flex items-center m-2 ">
-            <span className="text-xs font-medium text-gray-500">
+            <span className="text-xs mr-3 font-medium text-gray-500">
               📞 + (234) 000 000 00
             </span>
-            <span className="text-xs font-medium text-gray-500">
+            <span className="text-xs mx-3 font-medium text-gray-500">
               🌎 8A Elsie Femi Pearse St, Victoria Island 106104, Lagos
             </span>
           </div>
@@ -28,7 +28,7 @@ const NavBar = () => {
             <span className="text-xs font-medium text-gray-500 mx-3">
               <FontAwesomeIcon icon={faTwitter} />
             </span>
-            <span className="text-xs font-medium text-gray-500 mx-3">
+            <span className="text-xs font-medium text-gray-500 ml-3">
               <FontAwesomeIcon icon={faLinkedinIn} />
             </span>
           </div>
