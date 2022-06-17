@@ -9,7 +9,7 @@ import "./style.css";
 const SectionOne = () => {
   return (
     <div className="min-h-[calc(80vh)]  max-w-[1300px] mx-auto ">
-      <div className="container d-flex my-10 flex-wrap  items-center lg:py-10 pt-48 -mt-40 sm:pt-0 sm:mt-10 first-section sm:shadow-lg sm:drop-shadow-lg px-10 sm:rounded-2xl">
+      <div className="container d-flex my-10 flex-wrap  items-center lg:py-10 pt-48 -mt-40 sm:pt-0 sm:mt-10 first-section sm:shadow-lg  px-10 sm:rounded-2xl">
         <div className="w-full md:w-1/2  lg:pr-20 md:text-left mb-10">
           <h1 className="text-6xl font-bold">
             Building digital products, brands & experience

@@ -4,7 +4,7 @@ import Logo from "../../assets/Revised_Market_Intel_Logo_-_2019-removebg-preview
 
 const NavBar = () => {
   return (
-    <nav class="navbar navbar-expand-lg container py-4 app-container ">
+    <nav class="navbar navbar-expand-lg container py-2 app-container fixed top-0 left-0 right-0 bg-white">
       <div class="container-fluid max-w-[1300px]">
         <a class="navbar-brand text-2xl font-bold" href="#">
           <img src={Logo} alt="" />
