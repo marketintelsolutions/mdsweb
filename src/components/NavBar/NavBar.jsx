@@ -7,6 +7,7 @@ import {
   faLinkedinIn,
   faTwitter,
 } from "@fortawesome/free-brands-svg-icons";
+import { Link } from "react-router-dom";
 
 const NavBar = () => {
   return (
@@ -53,13 +54,13 @@ const NavBar = () => {
           <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
             <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
               <li class="nav-item lg:mx-4">
-                <a
+                <Link
                   class="nav-link text-[#212529] font-medium text-lg active"
                   aria-current="page"
-                  href="/"
+                  to="/"
                 >
                   Home
-                </a>
+                </Link>
               </li>
               <li class="nav-item lg:mx-4 dropdown">
                 <a
@@ -108,12 +109,12 @@ const NavBar = () => {
                 </ul>
               </li>
               <li class="nav-item lg:mx-4">
-                <a
+                <Link
                   class="nav-link text-[#212529] font-medium text-lg"
-                  href="#team"
+                  to="/about"
                 >
                   About
-                </a>
+                </Link>
               </li>
               {/* <li class="nav-item lg:mx-4">
               <a class="nav-link text-[#212529] font-medium text-lg">Testimonials</a>

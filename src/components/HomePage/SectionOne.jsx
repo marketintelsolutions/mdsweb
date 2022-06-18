@@ -5,11 +5,21 @@ import Sophos from "../../assets/sophos.png";
 import ETranzact from "../../assets/eTranzact Logo.47578ea7.png";
 import Itex from "../../assets/itex.png";
 import "./style.css";
+import Lottie from "react-lottie";
+import * as LottieFile from "../../assets/39610-design.json";
 
 const SectionOne = () => {
+  const defaultOptions = {
+    loop: true,
+    autoplay: true,
+    animationData: LottieFile,
+    rendererSettings: {
+      preserveAspectRatio: "xMidYMid slice",
+    },
+  };
   return (
     <div className="min-h-[calc(80vh)]  max-w-[1300px] mx-auto ">
-      <div className="container d-flex my-10 flex-wrap  items-center lg:py-10 pt-48 -mt-40 sm:pt-0 sm:mt-10 first-section sm:shadow-lg  px-10 sm:rounded-2xl">
+      <div className="container d-flex my-10 flex-wrap  items-center lg:py-10 pt-48 -mt-40 sm:pt-0 sm:mt-10 first-section sm:shadow-lg  pl-10 sm:rounded-2xl relative">
         <div className="w-full md:w-1/2  lg:pr-20 md:text-left mb-10">
           <h1 className="text-6xl font-bold">
             Building digital products, brands & experience
@@ -21,8 +31,16 @@ const SectionOne = () => {
             Contact Us
           </button>
         </div>
-        <div className="w-full md:w-1/2 flex justify-end">
-          <img src={FirstImage} alt="" width="500px" height="500px" />
+        <div className="w-full md:w-1/2 flex justify-end ">
+          {/* <img src={FirstImage} alt="" width="500px" height="500px" /> */}
+          <div className="bg-opacity-70 absolute -bottom-16 -right-16  w-[600px] h-[600px] rounded-full bg-red-200 flex justify-center items-center">
+            <Lottie
+              options={defaultOptions}
+              isStopped={false}
+              isPaused={false}
+              className="z-10"
+            />
+          </div>
         </div>
       </div>
       <p className="text-center text-gray-500 mb-10">Our Partners</p>

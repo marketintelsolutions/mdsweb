@@ -1,7 +1,16 @@
 import React from "react";
 import Arrow from "../../assets/Arrow 1.png";
+import Lottie from "react-lottie";
 
 const SectionThree = ({ header, subHeader, image, id }) => {
+  const defaultOptions = {
+    loop: true,
+    autoplay: true,
+    animationData: image,
+    rendererSettings: {
+      preserveAspectRatio: "xMidYMid slice",
+    },
+  };
   return (
     <div
       className="max-w-[1300px] container d-flex lg:my-20 my-10 flex-wrap  items-center lg:pt-20 lg:py-24 py-10 justify-between"
@@ -16,8 +25,16 @@ const SectionThree = ({ header, subHeader, image, id }) => {
           </button>
         </div>
       </div>
-      <div className="w-full md:w-1/2 flex lg:justify-end">
-        <img src={image} alt={header} width="450px" height="450px" />
+      <div className="w-full md:w-1/2 flex lg:justify-end bg-red-200 rounded-full ">
+        {/* <img src={image} alt={header} width="700px" height="700px" /> */}
+        <Lottie
+          options={defaultOptions}
+          isStopped={false}
+          isPaused={false}
+          className="z-10"
+          // width={500}
+          // height={400}
+        />
       </div>
     </div>
   );
