@@ -1,5 +1,4 @@
 import React from "react";
-import AvatarThree from "../assets/western-man-4975942-4159828 1.png";
 import ShowBox from "../components/Shared/ShowBox";
 
 const About = () => {

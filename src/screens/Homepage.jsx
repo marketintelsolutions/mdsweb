@@ -1,21 +1,14 @@
 import React from "react";
-import Footer from "../components/Footers/Footer";
 import CTASection from "../components/HomePage/CTASection";
 import SectionOne from "../components/HomePage/SectionOne";
 import SectionThree from "../components/HomePage/SectionThree";
 import SectionTwo from "../components/HomePage/SectionTwo";
-import SecondImage from "../assets/managed technology services.jpg";
-import FourthImage from "../assets/png-media-removebg-preview.png";
-import ThirdImage from "../assets/fin_tech-removebg-preview.png";
-import FifthImage from "../assets/Technology_Dist-removebg-preview.png";
 import TeamSection from "../components/HomePage/TeamSection";
 import * as TechVR from "../assets/72266-vr-learning.json";
 import * as TechOne from "../assets/76220-technology.json";
 import * as TechTwo from "../assets/60586-developer-isometric-people-working-with-technology.json";
 import * as Technology from "../assets/82661-technology.json";
 import * as MediaOne from "../assets/11526-social-media.json";
-import * as FinTechOne from "../assets/95405-cash-flow-explainer.json";
-import * as FinTechTwo from "../assets/95397-dashboard-explainer-of-accounting-interface.json";
 import * as FinTechThree from "../assets/31639-fintech-services.json";
 
 const Homepage = () => {

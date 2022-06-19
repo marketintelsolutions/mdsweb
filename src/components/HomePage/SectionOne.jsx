@@ -1,5 +1,4 @@
 import React from "react";
-import FirstImage from "../../assets/business-people-discussing-business-idea.png";
 import DropBox from "../../assets/HP_Black_RGB_150_MD.png";
 import Sophos from "../../assets/sophos.png";
 import ETranzact from "../../assets/eTranzact Logo.47578ea7.png";
@@ -32,7 +31,6 @@ const SectionOne = () => {
           </button>
         </div>
         <div className="w-full md:w-1/2 flex justify-end ">
-          {/* <img src={FirstImage} alt="" width="500px" height="500px" /> */}
           <div className="bg-opacity-70 absolute -bottom-16 -right-16  w-[600px] h-[600px] rounded-full bg-red-200 flex justify-center items-center">
             <Lottie
               options={defaultOptions}
