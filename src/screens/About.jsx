@@ -1,5 +1,6 @@
 import React from "react";
 import AvatarThree from "../assets/western-man-4975942-4159828 1.png";
+import ShowBox from "../components/Shared/ShowBox";
 
 const About = () => {
   const visionElements = [
@@ -31,12 +32,6 @@ const About = () => {
     },
   ];
 
-  const ShowBox = ({ i }) => (
-    <div className="w-2/5 h-[400px] bg-[#031759]  rounded-2xl hover:bg-opacity-80 hover:text-black text-white shadow-lg m-5 flex-col flex items-center justify-center p-5">
-      <h1 className="text-6xl font-bold ">{i.title}</h1>
-      <p className="text-3xl mt-5  ">{i.description}</p>
-    </div>
-  );
   return (
     <div className=" max-w-[1300px] mx-auto pb-96">
       <h1 className="text-6xl font-bold lg:w-2/3 mx-auto  my-12">

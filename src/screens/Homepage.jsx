@@ -28,29 +28,32 @@ const Homepage = () => {
           header="Technology Distribution"
           subHeader="Development of User-Friendly Applications, Platforms and Solutions, to meet Customer needs & Expectations"
           image={TechTwo}
+          link="/TechnologyDistribution"
         />
         <SectionThree
           id="Media & Entertainment"
           header="Media & Entertainment"
           subHeader="MDS is a key player in Media infrastructure and creative Content Development to promote Africa and Global Culture"
           image={MediaOne}
+          link="/MediaEntertainment"
         />
         <SectionTwo
           id="FINTECH"
           header="FINTECH"
           subHeader="Providing technology and innovation for financial service delivery"
           image={FinTechThree}
+          link="/Fintech"
         />
         <SectionThree
           id="Managed Technology Services"
           header="Managed Technology Services"
           subHeader="We are managed service provider (MSP) deliverIng network, application, infrastructure and security through ongoing and regular support. Our team of experts with over 50 years combined experience are eager to help you solve that Technology challenge."
           image={Technology}
+          link="/ManagedTechnologyServices"
         />
         <TeamSection />
         <CTASection />
       </div>
-      <Footer />
     </div>
   );
 };

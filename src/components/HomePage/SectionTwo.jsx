@@ -1,8 +1,9 @@
 import React from "react";
 import Arrow from "../../assets/Arrow 1.png";
 import Lottie from "react-lottie";
+import { Link } from "react-router-dom";
 
-const SectionTwo = ({ header, subHeader, image, id, size }) => {
+const SectionTwo = ({ header, subHeader, image, id, size, link }) => {
   const defaultOptions = {
     loop: true,
     autoplay: true,
@@ -32,9 +33,11 @@ const SectionTwo = ({ header, subHeader, image, id, size }) => {
         <div className="max-w-[500px]">
           <h1 className="text-6xl font-bold">{header} </h1>
           <p className="text-3xl mt-10 ">{subHeader}</p>
-          <button className="text-3xl py-3 mt-10 text-left flex items-center">
-            Read more &nbsp;&nbsp; <img src={Arrow} alt="" width="22.23px" />
-          </button>
+          <Link to={link || "/"}>
+            <button className="text-3xl py-3 mt-10 text-left flex items-center">
+              Read more &nbsp;&nbsp; <img src={Arrow} alt="" width="22.23px" />
+            </button>
+          </Link>
         </div>
       </div>
     </div>
