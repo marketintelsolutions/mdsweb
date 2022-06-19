@@ -16,7 +16,7 @@ const TeamMemberCard = ({ image, name, details }) => {
         />
       </div>
       <p className="text-lg">{name}</p>
-      <p className="mt-auto">{details}</p>
+      <p className="mt-auto ">{details}</p>
     </div>
   );
 };

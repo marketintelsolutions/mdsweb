@@ -24,7 +24,7 @@ const SectionOne = () => {
           <h1 className="text-6xl font-bold">
             Building digital products, brands & experience
           </h1>
-          <p className="text-xl mt-10 ">
+          <p className="text-3xl mt-10 ">
             Technology solutions to improve lives
           </p>
           <button className="app-btn text-white py-3 px-10 mt-10">
@@ -43,7 +43,7 @@ const SectionOne = () => {
           </div>
         </div>
       </div>
-      <p className="text-center text-gray-500 mb-10">Our Partners</p>
+      <p className="text-3xl text-center text-gray-500 mb-10">Our Partners</p>
       <div className="rounded-3xl w-9/12 min-h-[86px] bg-[#F6F6F6] mx-auto  flex justify-center items-center flex-wrap mb-20">
         <img
           src={ETranzact}

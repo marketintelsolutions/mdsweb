@@ -13,7 +13,7 @@ const CTASection = () => {
           <h1 className="text-6xl font-bold">
             Be a part of the next big thing{" "}
           </h1>
-          <p className="text-xl mt-10 ">
+          <p className="text-3xl mt-10 ">
             We work with Brands, Startups, to SMEs. Colaborate for more impact
             and growt
           </p>
