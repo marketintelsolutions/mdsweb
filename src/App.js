@@ -15,7 +15,8 @@ function App() {
     <div className="App pt-56">
       <Router>
         <NavBar />
-        <Routes>
+        <Homepage />
+        {/* <Routes>
           <Route
             path="/ManagedTechnologyServices"
             element={<ManagedTechnologyServices />}
@@ -29,7 +30,7 @@ function App() {
           <Route path="/about" element={<About />} />
 
           <Route path="/" element={<Homepage />} />
-        </Routes>
+        </Routes> */}
         <Footer />
       </Router>
     </div>
