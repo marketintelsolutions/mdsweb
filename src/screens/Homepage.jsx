@@ -16,7 +16,9 @@ const Homepage = () => {
     <div>
       <div className="mx-auto">
         <SectionOne />
+
         <SectionTwo
+          animeid="TechnologyDistribution"
           id="Technology Distribution"
           header="Technology Distribution"
           subHeader="Development of User-Friendly Applications, Platforms and Solutions, to meet Customer needs & Expectations"
@@ -24,6 +26,7 @@ const Homepage = () => {
           link="/TechnologyDistribution"
         />
         <SectionThree
+          animeid="MediaEntertainment"
           id="Media & Entertainment"
           header="Media & Entertainment"
           subHeader="MDS is a key player in Media infrastructure and creative Content Development to promote Africa and Global Culture"
@@ -31,6 +34,7 @@ const Homepage = () => {
           link="/MediaEntertainment"
         />
         <SectionTwo
+          animeid="FINTECHAnime"
           id="FINTECH"
           header="FINTECH"
           subHeader="Providing technology and innovation for financial service delivery"
@@ -38,6 +42,7 @@ const Homepage = () => {
           link="/Fintech"
         />
         <SectionThree
+          animeid="ManagedTechnologyServices"
           id="Managed Technology Services"
           header="Managed Technology Services"
           subHeader="We are managed service provider (MSP) deliverIng network, application, infrastructure and security through ongoing and regular support. Our team of experts with over 50 years combined experience are eager to help you solve that Technology challenge."

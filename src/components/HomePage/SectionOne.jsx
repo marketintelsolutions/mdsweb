@@ -1,21 +1,23 @@
-import React from "react";
+import React, { useState } from "react";
 import DropBox from "../../assets/HP_Black_RGB_150_MD.png";
 import Sophos from "../../assets/sophos.png";
 import ETranzact from "../../assets/eTranzact Logo.47578ea7.png";
 import Itex from "../../assets/itex.png";
 import "./style.css";
-import Lottie from "react-lottie";
-import * as LottieFile from "../../assets/39610-design.json";
+import LottieFile from "../../assets/39610-design.json";
+import lottie from "lottie-web";
 
 const SectionOne = () => {
-  const defaultOptions = {
-    loop: true,
-    autoplay: true,
-    animationData: LottieFile,
-    rendererSettings: {
-      preserveAspectRatio: "xMidYMid slice",
-    },
-  };
+  React.useEffect(() => {
+    const instance = lottie.loadAnimation({
+      container: document.querySelector("#react-logo-now"),
+      animationData: LottieFile,
+      renderer: "svg",
+      loop: true,
+      autoplay: true,
+    });
+    return () => instance.destroy();
+  }, []);
   return (
     <div className="min-h-[calc(80vh)]  max-w-[1300px] mx-auto ">
       <div className="container d-flex my-10 flex-wrap  items-center lg:py-10 pt-48 -mt-40 sm:pt-0 sm:mt-10 first-section sm:shadow-lg  pl-10 sm:rounded-2xl relative">
@@ -32,12 +34,7 @@ const SectionOne = () => {
         </div>
         <div className="w-full md:w-1/2 flex justify-end ">
           <div className="bg-opacity-70 absolute -bottom-16 -right-16  w-[600px] h-[600px] rounded-full bg-red-200 flex justify-center items-center">
-            <Lottie
-              options={defaultOptions}
-              isStopped={false}
-              isPaused={false}
-              className="z-10"
-            />
+            <div id="react-logo-now" />
           </div>
         </div>
       </div>

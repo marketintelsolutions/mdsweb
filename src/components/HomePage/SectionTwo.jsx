@@ -1,17 +1,22 @@
 import React from "react";
 import Arrow from "../../assets/Arrow 1.png";
-import Lottie from "react-lottie";
 import { Link } from "react-router-dom";
+import lottie from "lottie-web";
 
-const SectionTwo = ({ header, subHeader, image, id, size, link }) => {
-  const defaultOptions = {
-    loop: true,
-    autoplay: true,
-    animationData: image,
-    rendererSettings: {
-      preserveAspectRatio: "xMidYMid slice",
-    },
-  };
+const SectionTwo = ({ header, subHeader, image, id, size, link, animeid }) => {
+  React.useEffect(() => {
+    const instance = lottie.loadAnimation({
+      container: document.querySelector(`#${animeid}`),
+      animationData: image,
+      renderer: "svg",
+      loop: true,
+      autoplay: true,
+      rendererSettings: {
+        preserveAspectRatio: "xMidYMid slice",
+      },
+    });
+    return () => instance.destroy();
+  }, []);
   return (
     <div
       // className="section-two shadow-lg  px-10 rounded-2xl container d-flex lg:my-20 my-10 flex-wrap  items-center lg:pt-20 lg:py-24 py-10 max-w-[1300px]"
@@ -19,15 +24,7 @@ const SectionTwo = ({ header, subHeader, image, id, size, link }) => {
       id={id}
     >
       <div className="w-full md:w-1/2 flex lg:justify-start bg-red-200 rounded-full ">
-        {/* <img src={image} alt={header} width={size} height={size} /> */}
-        <Lottie
-          options={defaultOptions}
-          isStopped={false}
-          isPaused={false}
-          className="z-10"
-          // width={500}
-          // height={400}
-        />
+        <div id={animeid} style={{ width: "100%", height: "100%" }} />
       </div>
       <div className="w-full md:w-1/2 md:text-left flex lg:justify-end">
         <div className="max-w-[500px]">
