@@ -34,7 +34,7 @@ const SectionThree = ({ header, subHeader, image, id, link, animeid }) => {
           </Link>
         </div>
       </div>
-      <div className="w-full md:w-1/2 flex lg:justify-end bg-red-200 rounded-full h-full">
+      <div className="w-full md:w-1/2 flex lg:justify-end bg-[#1a2a6c] rounded-full h-full">
         <div id={animeid} style={{ width: "100%", height: "100%" }} />
       </div>
     </div>

@@ -3,18 +3,10 @@ import ShowBox from "../../components/Shared/ShowBox";
 
 const MediaEntertainment = () => {
   const missionElements = [
-    {
-      title: "Content Distribution",
-    },
-    {
-      title: `Alternative Channels`,
-    },
-    {
-      title: `Sports and Entertainment`,
-    },
-    {
-      title: `Media Broadcast Infrastructure`,
-    },
+    { title: "Content Distribution" },
+    { title: `Alternative Channels` },
+    { title: `Sports and Entertainment` },
+    { title: `Media Broadcast Infrastructure` },
   ];
   useEffect(() => {
     window.scrollTo({ top: 0 });
@@ -31,7 +23,9 @@ const MediaEntertainment = () => {
 
       <div className="my-16 flex justify-around flex-wrap">
         {missionElements.map((i, index) => (
-          <ShowBox i={i} />
+          <div className="w-2/5  bg-[#031759] rounded-2xl hover:bg-opacity-80 hover:text-black text-white shadow-lg m-5 flex-col flex items-center justify-center p-5">
+            {i.title && <h1 className="text-6xl  font-bold ">{i.title}</h1>}
+          </div>
         ))}
       </div>
     </div>

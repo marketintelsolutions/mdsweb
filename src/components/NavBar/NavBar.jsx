@@ -16,10 +16,10 @@ const NavBar = () => {
         <div class="container-fluid max-w-[1300px] w-full h-full flex flex-wrap items-center justify-center lg:justify-between">
           <div className="flex items-center m-2 ">
             <span className="text-xs mr-3 font-medium text-gray-500">
-              📞 + (234) 000 000 00
+              📞 + (234) 8035019716
             </span>
             <span className="text-xs mx-3 font-medium text-gray-500">
-              🌎 8A Elsie Femi Pearse St, Victoria Island 106104, Lagos
+              🌎 9 Elsie Femi Pearse St, Victoria Island 106104, Lagos
             </span>
           </div>
           <div className="flex items-center m-2">
@@ -37,7 +37,7 @@ const NavBar = () => {
       </div>
       <nav class="navbar navbar-expand-lg container py-1 app-container  ">
         <div class="container-fluid max-w-[1300px]">
-          <a class="navbar-brand text-2xl font-bold" href="#">
+          <a class="navbar-brand text-2xl font-bold" href="/#">
             <img src={Logo} alt="" />
           </a>
           <button
@@ -65,7 +65,7 @@ const NavBar = () => {
               <li class="nav-item lg:mx-4 dropdown">
                 <a
                   class="nav-link text-[#212529] font-medium text-lg dropdown-toggle"
-                  href="#"
+                  href="/#"
                   id="navbarDropdown"
                   role="button"
                   data-bs-toggle="dropdown"
@@ -75,7 +75,7 @@ const NavBar = () => {
                 </a>
                 <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                   <li>
-                    <a class="dropdown-item" href="#Technology Distribution">
+                    <a class="dropdown-item" href="/#Technology Distribution">
                       Technology Distribution
                     </a>
                   </li>
@@ -83,7 +83,7 @@ const NavBar = () => {
                     <hr class="dropdown-divider" />
                   </li>
                   <li>
-                    <a class="dropdown-item" href="#Media & Entertainment">
+                    <a class="dropdown-item" href="/#Media & Entertainment">
                       Media & Entertainment
                     </a>
                   </li>
@@ -91,7 +91,7 @@ const NavBar = () => {
                     <hr class="dropdown-divider" />
                   </li>
                   <li>
-                    <a class="dropdown-item" href="#FINTECH">
+                    <a class="dropdown-item" href="/#FINTECH">
                       FINTECH
                     </a>
                   </li>
@@ -101,7 +101,7 @@ const NavBar = () => {
                   <li>
                     <a
                       class="dropdown-item"
-                      href="#Managed Technology Services"
+                      href="/#Managed Technology Services"
                     >
                       Managed Technology Services
                     </a>
@@ -125,14 +125,6 @@ const NavBar = () => {
                   href="mailto:info@marketintelsolutions.com"
                 >
                   ✉️ info@marketintelsolutions.com
-                </a>
-              </li>
-              <li class="nav-item lg:mx-4">
-                <a
-                  class="nav-link text-[#212529] font-medium text-lg"
-                  href="tel:+23436137042"
-                >
-                  ☎ +2348035019716
                 </a>
               </li>
             </ul>

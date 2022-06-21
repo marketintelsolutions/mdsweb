@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
@@ -10,21 +11,28 @@ const Footer = () => {
               <h4 class="text-white mb-5 text-xl font-bold">About</h4>
               <ul>
                 <li class="mb-4">
-                  <a
+                  <Link
                     class="inline-block text-white hover:text-gray-400 text-lg"
-                    href="#team"
+                    to="/#team"
                   >
                     Creative Team
-                  </a>
+                  </Link>
                 </li>
-
                 <li class="mb-4">
-                  <a
+                  <Link
                     class="inline-block text-white hover:text-gray-400 text-lg"
-                    href="#"
+                    to="/about/#mission"
                   >
                     Our Mission
-                  </a>
+                  </Link>
+                </li>
+                <li class="mb-4">
+                  <Link
+                    class="inline-block text-white hover:text-gray-400 text-lg"
+                    to="/about/#vision"
+                  >
+                    Our Vision
+                  </Link>
                 </li>
               </ul>
             </div>
@@ -32,36 +40,36 @@ const Footer = () => {
               <h4 class="text-white mb-5 text-xl font-bold">Product</h4>
               <ul>
                 <li class="mb-4">
-                  <a
+                  <Link
                     class="inline-block text-white hover:text-gray-400 text-lg"
-                    href="#Technology Distribution"
+                    to="/TechnologyDistribution"
                   >
                     Technology Distribution
-                  </a>
+                  </Link>
                 </li>
                 <li class="mb-4">
-                  <a
+                  <Link
                     class="inline-block text-white hover:text-gray-400 text-lg"
-                    href="#Media & Entertainment"
+                    to="/MediaEntertainment"
                   >
                     Media & Entertainment
-                  </a>
+                  </Link>
                 </li>
                 <li class="mb-4">
-                  <a
+                  <Link
                     class="inline-block text-white hover:text-gray-400 text-lg"
-                    href="#FINTECH"
+                    to="/Fintech"
                   >
                     FINTECH
-                  </a>
+                  </Link>
                 </li>
                 <li class="mb-4">
-                  <a
+                  <Link
                     class="inline-block text-white hover:text-gray-400 text-lg"
-                    href="#Managed Technology Services"
+                    to="/ManagedTechnologyServices"
                   >
                     Managed Technology Services
-                  </a>
+                  </Link>
                 </li>
               </ul>
             </div>
@@ -71,7 +79,7 @@ const Footer = () => {
                 <li class="mb-4">
                   <a
                     class="inline-block text-white hover:text-gray-400 text-lg"
-                    href="#"
+                    href="/#"
                   >
                     LinkedIn
                   </a>
@@ -79,7 +87,7 @@ const Footer = () => {
                 <li class="mb-4">
                   <a
                     class="inline-block text-white hover:text-gray-400 text-lg"
-                    href="#"
+                    href="/#"
                   >
                     Twitter
                   </a>
@@ -87,7 +95,7 @@ const Footer = () => {
                 <li class="mb-4">
                   <a
                     class="inline-block text-white hover:text-gray-400 text-lg"
-                    href="#"
+                    href="/#"
                   >
                     Snapchat
                   </a>
@@ -95,7 +103,7 @@ const Footer = () => {
                 <li class="mb-4">
                   <a
                     class="inline-block text-white hover:text-gray-400 text-lg"
-                    href="#"
+                    href="/#"
                   >
                     Instagram
                   </a>
@@ -103,7 +111,7 @@ const Footer = () => {
                 <li>
                   <a
                     class="inline-block text-white hover:text-gray-400 text-lg"
-                    href="#"
+                    href="/#"
                   >
                     Facebook
                   </a>

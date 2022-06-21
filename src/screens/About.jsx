@@ -51,7 +51,9 @@ const About = () => {
         across ICT, Media and Entertainment, with specific activities in:
       </p>
 
-      <h1 className="text-6xl font-bold lg:w-2/3 mx-auto  my-12">Vision</h1>
+      <h1 className="text-6xl font-bold lg:w-2/3 mx-auto  my-12" id="vision">
+        Vision
+      </h1>
       <p className="text-3xl mt-10 ">
         To be the foremost Technology solutions provider in our chosen markets
         and create value for all our stakeholders
@@ -64,7 +66,9 @@ const About = () => {
           <ShowBox i={i} />
         ))}
       </div>
-      <h1 className="text-6xl font-bold lg:w-2/3 mx-auto  my-12">Mission</h1>
+      <h1 className="text-6xl font-bold lg:w-2/3 mx-auto  my-12" id="mission">
+        Mission
+      </h1>
       <p className="text-3xl mt-10 ">
         To enrich lives using technology-driven products and services
       </p>

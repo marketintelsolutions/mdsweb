@@ -33,7 +33,7 @@ const SectionOne = () => {
           </button>
         </div>
         <div className="w-full md:w-1/2 flex justify-end ">
-          <div className="bg-opacity-70 absolute -bottom-16 -right-16  w-[600px] h-[600px] rounded-full bg-red-200 flex justify-center items-center">
+          <div className=" absolute -bottom-16 -right-16  w-[600px] h-[600px] rounded-full bg-[#1a2a6c] flex justify-center items-center">
             <div id="react-logo-now" />
           </div>
         </div>
