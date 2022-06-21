@@ -1,6 +1,6 @@
 import React from "react";
 import ShowBox from "../components/Shared/ShowBox";
-
+import TextImageRow from "../components/Shared/TextImageRow";
 const About = () => {
   const visionElements = [
     {
@@ -33,31 +33,65 @@ const About = () => {
 
   return (
     <div className=" max-w-[1300px] mx-auto pb-96">
-      <h1 className="text-6xl font-bold lg:w-2/3 mx-auto  my-12">
-        Marketintel Technology, Media & Digital Solutions Limited (MDS)
-      </h1>
-      <p className="text-3xl mt-10 ">
-        Marketintel Digital Solutions Limited (MDS) is a consolidated
-        Technology, Communications, Media and Entertainment business service
-        provider in Nigeria. A member of PanAfrican Capital Holdings Limited.
-      </p>
-      <p className="text-3xl mt-10 ">
-        Marketintel has a bouquet of budding Local and International
-        partnerships and licenses within its portfolio. Marketintel offers a
-        wide range of services to consumers, corporates and public institutions.
-      </p>
-      <p className="text-3xl mt-10 ">
-        Marketintel has operating and non-operating interests in businesses
-        across ICT, Media and Entertainment, with specific activities in:
-      </p>
+      <TextImageRow
+        imageClassName="about-image"
+        children={
+          <div>
+            <h1 className="text-6xl font-bold">
+              Marketintel Technology, Media & Digital Solutions Limited (MDS)
+            </h1>
+            <p className="text-3xl mt-10 ">
+              Marketintel Digital Solutions Limited (MDS) is a consolidated
+              Technology, Communications, Media and Entertainment business
+              service provider in Nigeria. A member of PanAfrican Capital
+              Holdings Limited.
+            </p>
+            <p className="text-3xl mt-10 ">
+              Marketintel has a bouquet of budding Local and International
+              partnerships and licenses within its portfolio. Marketintel offers
+              a wide range of services to consumers, corporates and public
+              institutions.
+            </p>
+            <p className="text-3xl mt-10 ">
+              Marketintel has operating and non-operating interests in
+              businesses across ICT, Media and Entertainment, with specific
+              activities in:
+            </p>
+          </div>
+        }
+      />
 
-      <h1 className="text-6xl font-bold lg:w-2/3 mx-auto  my-12" id="vision">
-        Vision
-      </h1>
-      <p className="text-3xl mt-10 ">
-        To be the foremost Technology solutions provider in our chosen markets
-        and create value for all our stakeholders
-      </p>
+      <TextImageRow
+        className="my-32 items-center"
+        imageClassName="vision-image"
+        reverse
+        children={
+          <div>
+            <h1 className="text-6xl font-bold  mx-auto  mb-12" id="vision">
+              Vision
+            </h1>
+            <p className="text-3xl mt-10 ">
+              To be the foremost Technology solutions provider in our chosen
+              markets and create value for all our stakeholders
+            </p>
+          </div>
+        }
+      />
+      <TextImageRow
+        className="my-32 items-center"
+        imageClassName="mission-image"
+        children={
+          <div>
+            <h1 className="text-6xl font-bold mx-auto  mb-12" id="vision">
+              Mission
+            </h1>
+            <p className="text-3xl mt-10 ">
+              To enrich lives using technology-driven products and services
+            </p>
+          </div>
+        }
+      />
+
       <h1 className="text-6xl font-bold lg:w-2/3 mx-auto  my-12">
         The three key elements to Our vision statement
       </h1>
@@ -66,12 +100,7 @@ const About = () => {
           <ShowBox i={i} />
         ))}
       </div>
-      <h1 className="text-6xl font-bold lg:w-2/3 mx-auto  my-12" id="mission">
-        Mission
-      </h1>
-      <p className="text-3xl mt-10 ">
-        To enrich lives using technology-driven products and services
-      </p>
+
       <h1 className="text-6xl font-bold lg:w-2/3 mx-auto  my-12">
         The two key elements to the mission statement
       </h1>
