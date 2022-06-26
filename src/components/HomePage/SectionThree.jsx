@@ -25,16 +25,16 @@ const SectionThree = ({ header, subHeader, image, id, link, animeid }) => {
     >
       <div className="w-full md:w-1/2 lg:pr-20 md:text-left flex lg:justify-start">
         <div className="max-w-[500px]">
-          <h1 className="text-6xl font-bold">{header} </h1>
+          <h1 className="text-6xl font-bold add-app-red">{header} </h1>
           <p className="text-3xl mt-10 ">{subHeader}</p>
-          <Link to={link || "/"}>
+          <Link to={link || "/"} className="text-[#f1634d]">
             <button className="text-3xl py-3 mt-10 text-left flex items-center">
               Read more &nbsp;&nbsp; <img src={Arrow} alt="" width="22.23px" />
             </button>
           </Link>
         </div>
       </div>
-      <div className="w-full md:w-1/2 flex lg:justify-end bg-[#1a2a6c] rounded-full h-full">
+      <div className="w-full md:w-1/2 flex lg:justify-end app-light-red rounded-full h-full">
         <div id={animeid} style={{ width: "100%", height: "100%" }} />
       </div>
     </div>

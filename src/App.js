@@ -9,16 +9,21 @@ import Footer from "./components/Footers/Footer";
 import MediaEntertainment from "./screens/Products/MediaEntertainment";
 import Fintech from "./screens/Products/Fintech";
 import ManagedTechnologyServices from "./screens/Products/ManagedTechnologyServices";
+import ProcurementAndDistribution from "./screens/Products/ProcurementAndDistribution";
 
 function App() {
   return (
-    <div className="App pt-56">
+    <div className="App pt-32">
       <Router>
         <NavBar />
         <Routes>
           <Route
             path="/ManagedTechnologyServices"
             element={<ManagedTechnologyServices />}
+          />
+          <Route
+            path="/ProcurementAndDistribution"
+            element={<ProcurementAndDistribution />}
           />
           <Route path="/Fintech" element={<Fintech />} />
           <Route path="/MediaEntertainment" element={<MediaEntertainment />} />

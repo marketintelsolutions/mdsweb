@@ -10,11 +10,12 @@ import * as TechTwo from "../assets/60586-developer-isometric-people-working-wit
 import * as Technology from "../assets/82661-technology.json";
 import * as MediaOne from "../assets/11526-social-media.json";
 import * as FinTechThree from "../assets/31639-fintech-services.json";
+import * as DistriButeJSON from "../assets/81760-shipping-around-the-world.json";
 
 const Homepage = () => {
   return (
-    <div>
-      <div className="mx-auto">
+    <div className="">
+      <div className="mx-auto ">
         <SectionOne />
 
         <SectionTwo
@@ -48,6 +49,14 @@ const Homepage = () => {
           subHeader="We are managed service provider (MSP) deliverIng network, application, infrastructure and security through ongoing and regular support. Our team of experts with over 50 years combined experience are eager to help you solve that Technology challenge."
           image={Technology}
           link="/ManagedTechnologyServices"
+        />
+        <SectionTwo
+          animeid="ProcurementAndDistributionAnime"
+          id="ProcurementAndDistribution"
+          header="Procurement And Distribution"
+          subHeader="Procurment and Distribution of Electronic Hardwares and consumables around the world."
+          image={DistriButeJSON}
+          link="/ProcurementAndDistribution"
         />
         <TeamSection />
         <CTASection />

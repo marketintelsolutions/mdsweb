@@ -1,7 +1,8 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 
 const Footer = () => {
+  const { pathname } = useLocation();
   return (
     <div id="footer">
       <section class="py-24 md:py-40 bg-gray-900 relative text-left">
@@ -69,6 +70,14 @@ const Footer = () => {
                     to="/ManagedTechnologyServices"
                   >
                     Managed Technology Services
+                  </Link>
+                </li>
+                <li class="mb-4">
+                  <Link
+                    class="inline-block text-white hover:text-gray-400 text-lg"
+                    to="/ProcurementAndDistribution"
+                  >
+                    Procurement And Distribution
                   </Link>
                 </li>
               </ul>

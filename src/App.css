@@ -55,6 +55,50 @@
   background-repeat: no-repeat;
   background-position:  center;
 }
+.add-app-red::before{
+  content: '';
+  width: 200px;
+  height: 15px;
+  background-color: #f1634d;
+  position: absolute;
+  transform: translateY(-15px);
+  border-radius: 8px;
+  /* opacity: .90; */
+}
+@media screen and (max-width: 900px) {
+  .add-app-red::before{
+    content: '';
+    width: 200px;
+    height: 15px;
+    background-color: #f1634d;
+    position: absolute;
+    transform: translate(-50%,-15px);
+    border-radius: 8px;
+    left: 50%;
+    /* opacity: .90; */
+  }
+  
+}
+.add-app-red-to-nav:focus{
+
+  color: #f1634d !important;
+
+  /* transform: translateX(-50%); */
+}
+.app-light-red{
+  background-color: #f1634d;
+}
+.add-app-red-to-nav:hover::before{
+  content: '';
+  width: 70%;
+  height: 5px;
+  background-color: #f1634d !important;
+  position: absolute;
+  border-radius: 8px;
+  left: 8px;
+  bottom: 0;
+
+}
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);

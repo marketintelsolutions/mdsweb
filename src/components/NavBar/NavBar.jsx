@@ -7,29 +7,30 @@ import {
   faLinkedinIn,
   faTwitter,
 } from "@fortawesome/free-brands-svg-icons";
-import { Link } from "react-router-dom";
+import { Link, useLocation, useRoutes } from "react-router-dom";
 
 const NavBar = () => {
+  const { pathname } = useLocation();
   return (
     <div className="fixed top-0 left-0 right-0 z-10 bg-white ">
-      <div className=" w-full border-b py-2">
+      <div className=" w-full border-b py-2 bg-[#031759] text-white">
         <div class="container-fluid max-w-[1300px] w-full h-full flex flex-wrap items-center justify-center lg:justify-between">
           <div className="flex items-center m-2 ">
-            <span className="text-xs mr-3 font-medium text-gray-500">
+            <span className="text-xs mr-3 font-medium text-white">
               📞 + (234) 8035019716
             </span>
-            <span className="text-xs mx-3 font-medium text-gray-500">
+            <span className="text-xs mx-3 font-medium text-white">
               🌎 9 Elsie Femi Pearse St, Victoria Island 106104, Lagos
             </span>
           </div>
           <div className="flex items-center m-2">
-            <span className="text-xs font-medium text-gray-500 mx-3">
+            <span className="text-xs font-medium text-white mx-3">
               <FontAwesomeIcon icon={faFacebookF} />
             </span>
-            <span className="text-xs font-medium text-gray-500 mx-3">
+            <span className="text-xs font-medium text-white mx-3">
               <FontAwesomeIcon icon={faTwitter} />
             </span>
-            <span className="text-xs font-medium text-gray-500 ml-3">
+            <span className="text-xs font-medium text-white ml-3">
               <FontAwesomeIcon icon={faLinkedinIn} />
             </span>
           </div>
@@ -53,75 +54,130 @@ const NavBar = () => {
           </button>
           <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
             <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-              <li class="nav-item lg:mx-4">
+              <li class="nav-item lg:mx-4 relative ">
                 <Link
-                  class="nav-link text-[#212529] font-medium text-lg active"
+                  class="nav-link text-[#031759] font-medium text-lg add-app-red-to-nav "
                   aria-current="page"
                   to="/"
                 >
                   Home
                 </Link>
               </li>
-              <li class="nav-item lg:mx-4 dropdown">
-                <a
-                  class="nav-link text-[#212529] font-medium text-lg dropdown-toggle"
-                  href="/#"
-                  id="navbarDropdown"
-                  role="button"
-                  data-bs-toggle="dropdown"
-                  aria-expanded="false"
-                >
-                  Products
-                </a>
-                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <li>
-                    <a class="dropdown-item" href="/#Technology Distribution">
-                      Technology Distribution
-                    </a>
-                  </li>
-                  <li>
-                    <hr class="dropdown-divider" />
-                  </li>
-                  <li>
-                    <a class="dropdown-item" href="/#Media & Entertainment">
-                      Media & Entertainment
-                    </a>
-                  </li>
-                  <li>
-                    <hr class="dropdown-divider" />
-                  </li>
-                  <li>
-                    <a class="dropdown-item" href="/#FINTECH">
-                      FINTECH
-                    </a>
-                  </li>
-                  <li>
-                    <hr class="dropdown-divider" />
-                  </li>
-                  <li>
-                    <a
-                      class="dropdown-item"
-                      href="/#Managed Technology Services"
-                    >
-                      Managed Technology Services
-                    </a>
-                  </li>
-                </ul>
+              <li class="nav-item lg:mx-4 relative ">
+                <div class="btn-group">
+                  <a
+                    class="nav-link text-[#031759] font-medium text-lg add-app-red-to-nav "
+                    aria-current="page"
+                    href={
+                      pathname === "/"
+                        ? "/#Technology Distribution"
+                        : "/TechnologyDistribution"
+                    }
+                  >
+                    Products
+                  </a>
+                  <a
+                    class="nav-link text-[#031759] font-medium text-lg add-app-red-to-nav dropdown-toggle"
+                    href={
+                      pathname === "/"
+                        ? "/#Technology Distribution"
+                        : "/TechnologyDistribution"
+                    }
+                    id="navbarDropdown"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  ></a>
+                  <ul
+                    class="dropdown-menu bg-[#F6F6F6]"
+                    aria-labelledby="navbarDropdown"
+                  >
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href={
+                          pathname === "/"
+                            ? "/#Technology Distribution"
+                            : "/TechnologyDistribution"
+                        }
+                      >
+                        Technology Distribution
+                      </a>
+                    </li>
+                    <li>
+                      <hr class="dropdown-divider" />
+                    </li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href={
+                          pathname === "/"
+                            ? "/#Media & Entertainment"
+                            : "/MediaEntertainment"
+                        }
+                      >
+                        Media & Entertainment
+                      </a>
+                    </li>
+                    <li>
+                      <hr class="dropdown-divider" />
+                    </li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href={pathname === "/" ? "/#FINTECH" : "/FINTECH"}
+                      >
+                        FINTECH
+                      </a>
+                    </li>
+                    <li>
+                      <hr class="dropdown-divider" />
+                    </li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href={
+                          pathname === "/"
+                            ? "/#Managed Technology Services"
+                            : "/ManagedTechnologyServices"
+                        }
+                      >
+                        Managed Technology Services
+                      </a>
+                    </li>
+                    <li>
+                      <hr class="dropdown-divider" />
+                    </li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href={
+                          pathname === "/"
+                            ? "/#ProcurementAndDistribution"
+                            : "/ProcurementAndDistribution"
+                        }
+                      >
+                        Procurement And Distribution
+                      </a>
+                    </li>
+                  </ul>
+                </div>
               </li>
-              <li class="nav-item lg:mx-4">
+
+              <li class="nav-item lg:mx-4 relative">
                 <Link
-                  class="nav-link text-[#212529] font-medium text-lg"
+                  class="nav-link text-[#031759] font-medium text-lg add-app-red-to-nav"
                   to="/about"
                 >
                   About
                 </Link>
               </li>
               {/* <li class="nav-item lg:mx-4">
-              <a class="nav-link text-[#212529] font-medium text-lg">Testimonials</a>
+              <a class="nav-link text-[#031759] font-medium text-lg">Testimonials</a>
             </li> */}
               <li class="nav-item lg:mx-4">
                 <a
-                  class="nav-link text-[#212529] font-medium text-lg"
+                  class="nav-link text-[#031759] font-medium text-lg"
                   href="mailto:info@marketintelsolutions.com"
                 >
                   ✉️ info@marketintelsolutions.com
