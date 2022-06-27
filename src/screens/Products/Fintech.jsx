@@ -23,7 +23,7 @@ const Fintech = () => {
   }, []);
 
   return (
-    <div className=" max-w-[1300px] mx-auto pb-96">
+    <div className=" max-w-[73%] mx-auto pb-96">
       <h1 className="text-6xl font-bold lg:w-2/3 mx-auto  my-12">FINTECH</h1>
       <p className="text-3xl mt-10 ">
         Providing technology and innovation for financial service delivery

@@ -22,7 +22,7 @@ const TeamMemberCard = ({ image, name, details }) => {
 };
 const TeamSection = () => {
   return (
-    <div id="team" className="max-w-[1300px] mx-auto">
+    <div id="team" className="max-w-[73%] mx-auto">
       <div className="lg:max-w-[500px] mx-auto my-10">
         <p className="text-xl mt-10 ">TEAM</p>
 

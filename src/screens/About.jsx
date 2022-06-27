@@ -1,7 +1,48 @@
 import React from "react";
 import ShowBox from "../components/Shared/ShowBox";
 import TextImageRow from "../components/Shared/TextImageRow";
+import lottie from "lottie-web";
+import * as DistriButeJSON from "../assets/81760-shipping-around-the-world.json";
+import * as MissionJSON from "../assets/25898-rocket-launched-into-space.json";
+import * as VisionJSON from "../assets/63002-artemis-vision-rocket.json";
 const About = () => {
+  React.useEffect(() => {
+    const instance = lottie.loadAnimation({
+      container: document.querySelector(`#aboutImage`),
+      animationData: DistriButeJSON,
+      renderer: "svg",
+      loop: true,
+      autoplay: true,
+      rendererSettings: {
+        preserveAspectRatio: "xMidYMid slice",
+      },
+    });
+    const missionInstance = lottie.loadAnimation({
+      container: document.querySelector(`#missionImage`),
+      animationData: MissionJSON,
+      renderer: "svg",
+      loop: true,
+      autoplay: true,
+      rendererSettings: {
+        preserveAspectRatio: "xMidYMid slice",
+      },
+    });
+    const visionInstance = lottie.loadAnimation({
+      container: document.querySelector(`#visionImage`),
+      animationData: VisionJSON,
+      renderer: "svg",
+      loop: true,
+      autoplay: true,
+      rendererSettings: {
+        preserveAspectRatio: "xMidYMid slice",
+      },
+    });
+    return () => {
+      instance.destroy();
+      missionInstance.destroy();
+      visionInstance.destroy();
+    };
+  }, []);
   const visionElements = [
     {
       title: "Solution provider",
@@ -32,10 +73,14 @@ const About = () => {
   ];
 
   return (
-    <div className=" max-w-[1300px] mx-auto pb-96">
-      <TextImageRow
-        imageClassName="about-image"
-        children={
+    <div className=" max-w-[73%] mx-auto pb-96">
+      <div className={`flex my-20`}>
+        <div
+          className={`w-1/2 bg-[#031759] min-h-[400px] h-auto m-4 rounded-[60px] shadow-lg `}
+        >
+          <div id="aboutImage" style={{ width: "100%", height: "100%" }} />
+        </div>
+        <div className="lg:w-1/2 w-full  m-4 text-left grow ">
           <div>
             <h1 className="text-6xl font-bold">
               Marketintel Technology, Media & Digital Solutions Limited (MDS)
@@ -58,14 +103,10 @@ const About = () => {
               activities in:
             </p>
           </div>
-        }
-      />
-
-      <TextImageRow
-        className="my-32 items-center"
-        imageClassName="vision-image"
-        reverse
-        children={
+        </div>
+      </div>
+      <div className={`flex items-center my-20`}>
+        <div className="lg:w-1/2 w-full  m-4 text-left grow ">
           <div>
             <h1 className="text-6xl font-bold  mx-auto  mb-12" id="vision">
               Vision
@@ -75,12 +116,20 @@ const About = () => {
               markets and create value for all our stakeholders
             </p>
           </div>
-        }
-      />
-      <TextImageRow
-        className="my-32 items-center"
-        imageClassName="mission-image"
-        children={
+        </div>
+        <div
+          className={`w-1/2 bg-red-200 min-h-[300px] h-auto m-4 rounded-[60px] shadow-lg `}
+        >
+          <div id="missionImage" style={{ width: "100%", height: "100%" }} />
+        </div>
+      </div>
+      <div className={`flex items-center my-20`}>
+        <div
+          className={`w-1/2 bg-[#031759] min-h-[300px] h-auto m-4 rounded-[60px] shadow-lg `}
+        >
+          <div id="visionImage" style={{ width: "100%", height: "100%" }} />
+        </div>
+        <div className="lg:w-1/2 w-full  m-4 text-left grow ">
           <div>
             <h1 className="text-6xl font-bold mx-auto  mb-12" id="vision">
               Mission
@@ -89,8 +138,8 @@ const About = () => {
               To enrich lives using technology-driven products and services
             </p>
           </div>
-        }
-      />
+        </div>
+      </div>
 
       <h1 className="text-6xl font-bold lg:w-2/3 mx-auto  my-12">
         The three key elements to Our vision statement

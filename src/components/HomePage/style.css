@@ -11,7 +11,10 @@
 }
 .lg-bg{
 
-    background-image: url('../../assets/Screen\ Shot\ 2022-06-23\ at\ 3.00.52\ PM.png');
+    background-image: url('../../assets/BGRed3.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
     
 .cta{

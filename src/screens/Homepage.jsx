@@ -16,7 +16,9 @@ const Homepage = () => {
   return (
     <div className="">
       <div className="mx-auto ">
-        <SectionOne />
+        <div className="lg-bg">
+          <SectionOne />
+        </div>
 
         <SectionTwo
           animeid="TechnologyDistribution"

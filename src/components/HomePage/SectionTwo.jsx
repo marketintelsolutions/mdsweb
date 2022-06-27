@@ -19,8 +19,8 @@ const SectionTwo = ({ header, subHeader, image, id, size, link, animeid }) => {
   }, []);
   return (
     <div
-      // className="section-two shadow-lg  px-10 rounded-2xl container d-flex lg:my-20 my-10 flex-wrap  items-center lg:pt-20 lg:py-24 py-10 max-w-[1300px]"
-      className=" px-10 rounded-2xl container d-flex lg:my-20 my-10 flex-wrap  items-center lg:pt-20 lg:py-24 py-10 max-w-[1300px]"
+      // className="section-two shadow-lg  px-10 rounded-2xl container d-flex lg:my-20 my-10 flex-wrap  items-center lg:pt-20 lg:py-24 py-10 max-w-[73%]"
+      className=" px-10 rounded-2xl container d-flex lg:my-20 my-10 flex-wrap  items-center lg:pt-20 lg:py-24 py-10 max-w-[73%]"
       id={id}
     >
       <div className="w-full md:w-1/2 flex lg:justify-start app-light-red rounded-full ">

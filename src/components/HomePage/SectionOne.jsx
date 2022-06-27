@@ -19,7 +19,7 @@ const SectionOne = () => {
     return () => instance.destroy();
   }, []);
   return (
-    <div className="min-h-[calc(80vh)]  max-w-[1300px] mx-auto pt-24">
+    <div className="min-h-[calc(90vh)]  max-w-[73%] mx-auto pt-12">
       <div className="container d-flex my-10 flex-wrap  items-center lg:py-10 pt-48 -mt-40 sm:pt-0 sm:mt-10 first-section sm:shadow-lg  pl-10 sm:rounded-2xl relative">
         <div className="w-full md:w-1/2  lg:pr-20 md:text-left mb-10">
           <h1 className="text-6xl font-bold add-app-red text-[#031759]">
@@ -40,17 +40,17 @@ const SectionOne = () => {
       </div>
       <p className="text-3xl text-center mb-10">Our Partners</p>
       <div className="rounded-3xl w-9/12 min-h-[86px] bg-[#F6F6F6] mx-auto  flex justify-center items-center flex-wrap mb-20">
+        <img src={DropBox} alt="" width="83px" className="m-10 grayscale" />
+        <img src={Sophos} alt="" height="48px" className="m-10 grayscale" />
         <img
-          src={ETranzact}
+          src={Itex}
           alt=""
           width="163px"
           height="48px"
           className="m-10 grayscale"
         />
-        <img src={Sophos} alt="" height="48px" className="m-10 grayscale" />
-        <img src={DropBox} alt="" width="83px" className="m-10 grayscale" />
         <img
-          src={Itex}
+          src={ETranzact}
           alt=""
           width="163px"
           height="48px"

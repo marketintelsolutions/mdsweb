@@ -1,4 +1,3 @@
-import logo from "./logo.svg";
 import "./App.css";
 import Homepage from "./screens/Homepage";
 import NavBar from "./components/NavBar/NavBar";
@@ -13,7 +12,7 @@ import ProcurementAndDistribution from "./screens/Products/ProcurementAndDistrib
 
 function App() {
   return (
-    <div className="App pt-32">
+    <div className="App pt-36">
       <Router>
         <NavBar />
         <Routes>

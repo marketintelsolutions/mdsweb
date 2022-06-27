@@ -14,7 +14,7 @@ const NavBar = () => {
   return (
     <div className="fixed top-0 left-0 right-0 z-10 bg-white ">
       <div className=" w-full border-b py-2 bg-[#031759] text-white">
-        <div class="container-fluid max-w-[1300px] w-full h-full flex flex-wrap items-center justify-center lg:justify-between">
+        <div class="container-fluid max-w-[73%] w-full h-full flex flex-wrap items-center justify-center lg:justify-between">
           <div className="flex items-center m-2 ">
             <span className="text-xs mr-3 font-medium text-white">
               📞 + (234) 8035019716
@@ -37,7 +37,7 @@ const NavBar = () => {
         </div>
       </div>
       <nav class="navbar navbar-expand-lg container py-1 app-container  ">
-        <div class="container-fluid max-w-[1300px]">
+        <div class="container-fluid ">
           <a class="navbar-brand text-2xl font-bold" href="/#">
             <img src={Logo} alt="" />
           </a>
