@@ -11,7 +11,7 @@
 }
 .lg-bg{
 
-    background-image: url('../../assets/BGRed3.png');
+    background: linear-gradient(rgba(255, 255, 255, 0.544), rgba(255, 255, 255, 0.5)), url('../../assets/IconsBG.png');
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;

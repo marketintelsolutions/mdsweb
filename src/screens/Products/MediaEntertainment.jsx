@@ -12,21 +12,23 @@ const MediaEntertainment = () => {
     window.scrollTo({ top: 0 });
   }, []);
   return (
-    <div className=" max-w-[73%] mx-auto pb-96">
-      <h1 className="text-6xl font-bold lg:w-2/3 mx-auto  my-12">
-        Media & Entertainment
-      </h1>
-      <p className="text-3xl mt-10 ">
-        MDS is a key player in Media infrastructure and creative Content
-        Development to promote Africa and Global Culture
-      </p>
+    <div className="bg-gray-50">
+      <div className=" max-w-[73%] mx-auto pb-96 pt-10">
+        <h1 className="text-6xl font-bold lg:w-2/3 mx-auto  my-12">
+          Media & Entertainment
+        </h1>
+        <p className="text-3xl mt-10 ">
+          MDS is a key player in Media infrastructure and creative Content
+          Development to promote Africa and Global Culture
+        </p>
 
-      <div className="my-16 flex justify-around flex-wrap">
-        {missionElements.map((i, index) => (
-          <div className="w-2/5  bg-[#031759] rounded-2xl hover:bg-opacity-80 hover:text-black text-white shadow-lg m-5 flex-col flex items-center justify-center p-5">
-            {i.title && <h1 className="text-6xl  font-bold ">{i.title}</h1>}
-          </div>
-        ))}
+        <div className="my-16 flex justify-around flex-wrap">
+          {missionElements.map((i, index) => (
+            <div className="w-2/5  bg-[#031759] rounded-2xl hover:bg-opacity-80 hover:text-black text-white shadow-lg m-5 flex-col flex items-center justify-center p-5">
+              {i.title && <h1 className="text-6xl  font-bold ">{i.title}</h1>}
+            </div>
+          ))}
+        </div>
       </div>
     </div>
   );

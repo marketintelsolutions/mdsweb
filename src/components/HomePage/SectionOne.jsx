@@ -19,7 +19,7 @@ const SectionOne = () => {
     return () => instance.destroy();
   }, []);
   return (
-    <div className="min-h-[calc(90vh)]  max-w-[73%] mx-auto pt-12">
+    <div className="min-h-[calc(90vh)]  max-w-[73%] mx-auto pt-12 bg-white">
       <div className="container d-flex my-10 flex-wrap  items-center lg:py-10 pt-48 -mt-40 sm:pt-0 sm:mt-10 first-section sm:shadow-lg  pl-10 sm:rounded-2xl relative">
         <div className="w-full md:w-1/2  lg:pr-20 md:text-left mb-10">
           <h1 className="text-6xl font-bold add-app-red text-[#031759]">

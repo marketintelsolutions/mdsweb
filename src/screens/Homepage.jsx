@@ -20,46 +20,56 @@ const Homepage = () => {
           <SectionOne />
         </div>
 
-        <SectionTwo
-          animeid="TechnologyDistribution"
-          id="Technology Distribution"
-          header="Technology Distribution"
-          subHeader="Development of User-Friendly Applications, Platforms and Solutions, to meet Customer needs & Expectations"
-          image={TechTwo}
-          link="/TechnologyDistribution"
-        />
-        <SectionThree
-          animeid="MediaEntertainment"
-          id="Media & Entertainment"
-          header="Media & Entertainment"
-          subHeader="MDS is a key player in Media infrastructure and creative Content Development to promote Africa and Global Culture"
-          image={MediaOne}
-          link="/MediaEntertainment"
-        />
-        <SectionTwo
-          animeid="FINTECHAnime"
-          id="FINTECH"
-          header="FINTECH"
-          subHeader="Providing technology and innovation for financial service delivery"
-          image={FinTechThree}
-          link="/Fintech"
-        />
-        <SectionThree
-          animeid="ManagedTechnologyServices"
-          id="Managed Technology Services"
-          header="Managed Technology Services"
-          subHeader="We are managed service provider (MSP) deliverIng network, application, infrastructure and security through ongoing and regular support. Our team of experts with over 50 years combined experience are eager to help you solve that Technology challenge."
-          image={Technology}
-          link="/ManagedTechnologyServices"
-        />
-        <SectionTwo
-          animeid="ProcurementAndDistributionAnime"
-          id="ProcurementAndDistribution"
-          header="Procurement And Distribution"
-          subHeader="Procurment and Distribution of Electronic Hardwares and consumables around the world."
-          image={DistriButeJSON}
-          link="/ProcurementAndDistribution"
-        />
+        <div className="lg-bg">
+          <SectionTwo
+            animeid="TechnologyDistribution"
+            id="Technology Distribution"
+            header="Technology Distribution"
+            subHeader="Development of User-Friendly Applications, Platforms and Solutions, to meet Customer needs & Expectations"
+            image={TechTwo}
+            link="/TechnologyDistribution"
+          />
+        </div>
+        <div className="lg-bg">
+          <SectionThree
+            animeid="MediaEntertainment"
+            id="Media & Entertainment"
+            header="Media & Entertainment"
+            subHeader="MDS is a key player in Media infrastructure and creative Content Development to promote Africa and Global Culture"
+            image={MediaOne}
+            link="/MediaEntertainment"
+          />
+        </div>
+        <div className="lg-bg">
+          <SectionTwo
+            animeid="FINTECHAnime"
+            id="FINTECH"
+            header="FINTECH"
+            subHeader="Providing technology and innovation for financial service delivery"
+            image={FinTechThree}
+            link="/Fintech"
+          />
+        </div>
+        <div className="lg-bg">
+          <SectionThree
+            animeid="ManagedTechnologyServices"
+            id="Managed Technology Services"
+            header="Managed Technology Services"
+            subHeader="We are managed service provider (MSP) deliverIng network, application, infrastructure and security through ongoing and regular support. Our team of experts with over 50 years combined experience are eager to help you solve that Technology challenge."
+            image={Technology}
+            link="/ManagedTechnologyServices"
+          />
+        </div>
+        <div className="lg-bg">
+          <SectionTwo
+            animeid="ProcurementAndDistributionAnime"
+            id="ProcurementAndDistribution"
+            header="Procurement And Distribution"
+            subHeader="Procurment and Distribution of Electronic Hardwares and consumables around the world."
+            image={DistriButeJSON}
+            link="/ProcurementAndDistribution"
+          />
+        </div>
         <TeamSection />
         <CTASection />
       </div>

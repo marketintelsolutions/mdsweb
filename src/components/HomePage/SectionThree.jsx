@@ -22,19 +22,16 @@ const SectionThree = ({ header, subHeader, image, id, link, animeid }) => {
 
   return (
     <div
-      className="max-w-[73%] container d-flex lg:my-20 my-10 flex-wrap  items-center lg:pt-20 lg:py-24 py-10 justify-between"
+      className="max-w-[73%] container d-flex lg:my-20 my-10 flex-wrap  items-center lg:pt-20 lg:py-24 py-10 justify-between "
       id={id}
     >
-      <div className="w-full md:w-1/2 lg:pr-20 md:text-left flex lg:justify-start">
+      <div className="w-full md:w-1/2 lg:pr-20 md:text-left flex lg:justify-start bg-white">
         <div className="max-w-[500px]">
           <h1 className="text-6xl font-bold add-app-red">{header} </h1>
-          <p className="text-3xl mt-10 ">{subHeader}</p>
+          <p className="text-[23px] mt-10 text-[#727272]">{subHeader}</p>
           <Link to={link || "/"} className="text-[#f1634d]">
-            <button className="text-3xl py-3 mt-10 text-left flex items-center">
-              Read more &nbsp;&nbsp;{" "}
-              <div className="w-8 h-8 rounded-full bg-[#031759] flex justify-center items-center">
-                <FontAwesomeIcon icon={faArrowRight} color="white" size="sm" />
-              </div>
+            <button className="app-btn text-white py-3 px-10 mt-10">
+              Read More
             </button>
           </Link>
         </div>
