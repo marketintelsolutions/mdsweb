@@ -19,9 +19,9 @@ const SectionOne = () => {
     return () => instance.destroy();
   }, []);
   return (
-    <div className="min-h-[calc(90vh)]  max-w-[73%] mx-auto pt-12 bg-white">
-      <div className="container d-flex my-10 flex-wrap  items-center lg:py-10 pt-48 -mt-40 sm:pt-0 sm:mt-10 first-section sm:shadow-lg  pl-10 sm:rounded-2xl relative">
-        <div className="w-full md:w-1/2  lg:pr-20 md:text-left mb-10">
+    <div className="min-h-[calc(90vh)]  max-w-[73%] mx-auto pt-12 xl:bg-white">
+      <div className="container d-flex my-10 flex-wrap  items-center xl:py-10 pt-48 -mt-40 sm:pt-0 sm:mt-10 first-section xl:shadow-lg  pl-10 xl:rounded-2xl relative">
+        <div className="w-full xl:w-1/2  xl:pr-20 xl:text-left mb-10">
           <h1 className="text-6xl font-bold add-app-red text-[#031759]">
             Building digital products, brands & experience
           </h1>
@@ -32,8 +32,8 @@ const SectionOne = () => {
             Contact Us
           </button>
         </div>
-        <div className="w-full md:w-1/2 flex justify-end ">
-          <div className=" lg:absolute -bottom-16 -right-16  lg:w-[600px] lg:h-[600px] rounded-full bg-red-200 flex justify-center items-center">
+        <div className="w-full xl:w-1/2 flex xl:justify-end justify-center">
+          <div className=" xl:absolute -bottom-16 -right-16  xl:w-[600px] w-[50%]  xl:h-[600px] rounded-full bg-red-200 flex justify-center items-center">
             <div id="react-logo-now" />
           </div>
         </div>

@@ -22,11 +22,11 @@ const SectionThree = ({ header, subHeader, image, id, link, animeid }) => {
 
   return (
     <div
-      className="max-w-[73%] container d-flex lg:my-20 my-10 flex-wrap  items-center lg:pt-20 lg:py-24 py-10 justify-between "
+      className="xl:max-w-[73%] container d-flex xl:my-20 my-10 flex-wrap  items-center xl:pt-20 xl:py-24 py-10 justify-center xl:justify-between "
       id={id}
     >
-      <div className="w-full md:w-1/2 lg:pr-20 md:text-left flex lg:justify-start bg-white">
-        <div className="max-w-[500px]">
+      <div className="w-full xl:w-1/2  xl:text-left  flex xl:justify-start bg-white">
+        <div className="xl:max-w-[500px]">
           <h1 className="text-6xl font-bold add-app-red">{header} </h1>
           <p className="text-[23px] mt-10 text-[#727272]">{subHeader}</p>
           <Link to={link || "/"} className="text-[#f1634d]">
@@ -36,8 +36,8 @@ const SectionThree = ({ header, subHeader, image, id, link, animeid }) => {
           </Link>
         </div>
       </div>
-      <div className="w-full md:w-1/2 flex lg:justify-end app-light-red rounded-full h-full min-h-[700px] justify-center items-center">
-        <div id={animeid} style={{ width: "100%", height: "100%" }} />
+      <div className="w-[300px] xl:w-1/2 flex mx-auto my-5 xl:justify-end app-light-red rounded-full xl:h-full h-[300px] xl:min-h-[700px] justify-center items-center">
+        <div id={animeid} className="w-full h-full" />
       </div>
     </div>
   );

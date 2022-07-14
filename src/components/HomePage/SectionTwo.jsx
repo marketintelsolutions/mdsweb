@@ -21,15 +21,15 @@ const SectionTwo = ({ header, subHeader, image, id, size, link, animeid }) => {
   }, []);
   return (
     <div
-      // className="section-two shadow-lg  px-10 rounded-2xl container d-flex lg:my-20 my-10 flex-wrap  items-center lg:pt-20 lg:py-24 py-10 max-w-[73%]"
-      className=" px-10 rounded-2xl container d-flex lg:my-20 my-10 flex-wrap  items-center  shadow-2xl shadow-[#282c34] max-w-[73%]  bg-white"
+      // className="section-two shadow-lg  px-10 rounded-2xl container d-flex xl:my-20 my-10 flex-wrap  items-center xl:pt-20 xl:py-24 py-10 max-w-[73%]"
+      className=" px-10 rounded-2xl container d-flex xl:my-20 my-10 flex-wrap  items-center justify-center   xl:shadow-2xl shadow-[#282c34] xl:max-w-[73%]  xl:bg-white"
       id={id}
     >
-      <div className="w-full md:w-1/2 flex lg:justify-start rounded-full ">
+      <div className=" h-[300px] xl:h-full w-[300px] xl:w-1/2 flex xl:justify-start rounded-full ">
         <div id={animeid} style={{ width: "100%", height: "100%" }} />
       </div>
-      <div className="w-full md:w-1/2 md:text-left flex lg:justify-end bg-white">
-        <div className="max-w-[500px]">
+      <div className="w-full xl:w-1/2 xl:text-left flex xl:justify-end bg-white">
+        <div className="xl:max-w-[500px]">
           <h1 className="text-6xl font-bold add-app-red">{header} </h1>
           <p className="text-[23px] mt-10 text-[#727272]">{subHeader}</p>
           <Link to={link || "/"} className="text-[#f1634d]">

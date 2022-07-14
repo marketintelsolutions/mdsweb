@@ -4,8 +4,6 @@ import SectionOne from "../components/HomePage/SectionOne";
 import SectionThree from "../components/HomePage/SectionThree";
 import SectionTwo from "../components/HomePage/SectionTwo";
 import TeamSection from "../components/HomePage/TeamSection";
-import * as TechVR from "../assets/72266-vr-learning.json";
-import * as TechOne from "../assets/76220-technology.json";
 import * as TechTwo from "../assets/60586-developer-isometric-people-working-with-technology.json";
 import * as Technology from "../assets/82661-technology.json";
 import * as MediaOne from "../assets/11526-social-media.json";
@@ -16,11 +14,11 @@ const Homepage = () => {
   return (
     <div className="">
       <div className="mx-auto ">
-        <div className="lg-bg">
+        <div className="one-bg">
           <SectionOne />
         </div>
 
-        <div className="lg-bg">
+        <div className="tech-bg">
           <SectionTwo
             animeid="TechnologyDistribution"
             id="Technology Distribution"
@@ -30,7 +28,7 @@ const Homepage = () => {
             link="/TechnologyDistribution"
           />
         </div>
-        <div className="lg-bg">
+        <div className="mandd-bg">
           <SectionThree
             animeid="MediaEntertainment"
             id="Media & Entertainment"
@@ -50,7 +48,7 @@ const Homepage = () => {
             link="/Fintech"
           />
         </div>
-        <div className="lg-bg">
+        <div className="tech-bg">
           <SectionThree
             animeid="ManagedTechnologyServices"
             id="Managed Technology Services"
@@ -60,7 +58,7 @@ const Homepage = () => {
             link="/ManagedTechnologyServices"
           />
         </div>
-        <div className="lg-bg">
+        <div className="pandd-bg">
           <SectionTwo
             animeid="ProcurementAndDistributionAnime"
             id="ProcurementAndDistribution"

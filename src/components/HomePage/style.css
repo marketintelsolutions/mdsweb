@@ -9,6 +9,30 @@
     /* background: -webkit-linear-gradient(to right, #fdbb2d, #b21f1f, #1a2a6c);   */
     /* background: linear-gradient(to right, #fdbb2d, #b21f1f, #1a2a6c);  */
 }
+.pandd-bg{
+    background: linear-gradient(rgba(255, 255, 255, 0.544), rgba(255, 255, 255, 0.5)), url('../../assets/panddbg.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.mandd-bg{
+    background: linear-gradient(rgba(255, 255, 255, 0.544), rgba(255, 255, 255, 0.5)), url('../../assets/mandebg.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.tech-bg{
+    background: linear-gradient(rgba(255, 255, 255, 0.544), rgba(255, 255, 255, 0.5)), url('../../assets/techbg.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.one-bg{
+    background: linear-gradient(rgba(255, 255, 255, 0.544), rgba(255, 255, 255, 0.5)), url('../../assets/homepageone.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
 .lg-bg{
 
     background: linear-gradient(rgba(255, 255, 255, 0.544), rgba(255, 255, 255, 0.5)), url('../../assets/IconsBG.png');
@@ -29,4 +53,10 @@
     background: -webkit-linear-gradient(86deg, rgba(11,3,89,0.3688068977591037) 0%, rgba(231,63,36,0.29597776610644255) 45%, rgba(255,255,255,1) 100%);
     background: linear-gradient(86deg, rgba(11,3,89,0.3688068977591037) 0%, rgba(231,63,36,0.29597776610644255) 45%, rgba(255,255,255,1) 100%);
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#0b0359",endColorstr="#ffffff",GradientType=1);
+}
+@media screen and (max-width: 1280px) {
+    .first-section{
+        background: rgb(11,3,89);
+        background: none
+    }
 }
