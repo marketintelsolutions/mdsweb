@@ -73,10 +73,10 @@ const About = () => {
   ];
 
   return (
-    <div className=" max-w-[73%] mx-auto pb-96">
+    <div className=" xl:max-w-[73%] mx-auto pb-96">
       <div className={`flex my-20`}>
         <div
-          className={`w-1/2 bg-[#031759] min-h-[400px] h-auto m-4 rounded-[60px] shadow-lg `}
+          className={`lg:w-1/2 bg-[#031759] min-h-[400px] h-auto m-4 rounded-[60px] shadow-lg `}
         >
           <div id="aboutImage" style={{ width: "100%", height: "100%" }} />
         </div>
@@ -125,7 +125,7 @@ const About = () => {
       </div>
       <div className={`flex items-center my-20`}>
         <div
-          className={`w-1/2 bg-[#031759] min-h-[300px] h-auto m-4 rounded-[60px] shadow-lg `}
+          className={`lg:w-1/2 bg-[#031759] min-h-[300px] h-auto m-4 rounded-[60px] shadow-lg `}
         >
           <div id="visionImage" style={{ width: "100%", height: "100%" }} />
         </div>
@@ -141,7 +141,7 @@ const About = () => {
         </div>
       </div>
 
-      <h1 className="text-6xl font-bold lg:w-2/3 mx-auto  my-12">
+      <h1 className="text-6xl font-bold lg:w-2/3 mx-auto text-center  my-12">
         The three key elements to Our vision statement
       </h1>
       <div className="my-16 flex justify-around flex-wrap">
@@ -150,7 +150,7 @@ const About = () => {
         ))}
       </div>
 
-      <h1 className="text-6xl font-bold lg:w-2/3 mx-auto  my-12">
+      <h1 className="text-6xl font-bold lg:w-2/3 mx-auto text-center my-12">
         The two key elements to the mission statement
       </h1>
       <div className="my-16 flex justify-around flex-wrap">
@@ -158,19 +158,19 @@ const About = () => {
           <ShowBox i={i} />
         ))}
       </div>
-      <p className="text-3xl mt-10 ">
+      <p className="text-3xl mt-10 text-center ">
         Our principal aim is to deliver increased productivity, greater customer
         engagement and top-line results n frontier and emerging markets,
         beckoned on world class standard through investments in our chosen
         markets.{" "}
       </p>
-      <p className="text-3xl mt-10 ">
+      <p className="text-3xl mt-10 text-center">
         MDS seeks to develop products and solutions based on emerging and
         futuristic outlook in the business and lifestyle environment, infusing
         new ways, forms and ideas for overall improvement. Ensuring productive &
         mutually beneficial partnerships to attain business objectives
       </p>
-      <h1 className="text-6xl font-bold lg:w-2/3 mx-auto  my-12">
+      <h1 className="text-6xl font-bold lg:w-2/3 mx-auto text-center  my-12">
         Core values{" "}
       </h1>
       <div class="flex justify-center  p-4 w-2/3 mx-auto flex-wrap">

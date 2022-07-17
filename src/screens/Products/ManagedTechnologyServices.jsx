@@ -21,7 +21,7 @@ const ManagedTechnologyServices = () => {
   }, []);
 
   return (
-    <div className="bg-gray-50">
+    <div className="bg-gray-50 text-center">
       <div className=" max-w-[73%] mx-auto pb-96 pt-10">
         <h1 className="text-6xl font-bold lg:w-2/3 mx-auto  my-12">
           Managed Technology Services

@@ -19,18 +19,20 @@ const SectionOne = () => {
     return () => instance.destroy();
   }, []);
   return (
-    <div className="min-h-[calc(90vh)]  max-w-[73%] mx-auto pt-12 xl:bg-white">
-      <div className="container d-flex my-10 flex-wrap  items-center xl:py-10 pt-48 -mt-40 sm:pt-0 sm:mt-10 first-section xl:shadow-lg  pl-10 xl:rounded-2xl relative">
-        <div className="w-full xl:w-1/2  xl:pr-20 xl:text-left mb-10">
+    <div className="min-h-[calc(90vh)]  lg:max-w-[73%] mx-auto pt-12 xl:bg-white">
+      <div className="container text-left d-flex my-10 flex-wrap  items-center xl:py-10 pt-48 -mt-40 sm:pt-0 sm:mt-10 first-section xl:shadow-lg  pl-10 xl:rounded-2xl relative">
+        <div className="w-full xl:w-1/2  xl:pr-20    mb-10">
           <h1 className="text-6xl font-bold add-app-red text-[#031759]">
             Building digital products, brands & experience
           </h1>
           <p className="text-3xl mt-10 text-[#031759] ">
             Technology solutions to improve lives
           </p>
-          <button className="app-btn text-white py-3 px-10 mt-10">
-            Contact Us
-          </button>
+          <a href="tel:+23412718630">
+            <button className="app-btn text-white py-3 px-10 mt-10">
+              Contact Us
+            </button>
+          </a>
         </div>
         <div className="w-full xl:w-1/2 flex xl:justify-end justify-center">
           <div className=" xl:absolute -bottom-16 -right-16  xl:w-[600px] w-[50%]  xl:h-[600px] rounded-full bg-red-200 flex justify-center items-center">
