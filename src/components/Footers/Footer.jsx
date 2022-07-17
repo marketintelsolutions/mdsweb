@@ -8,7 +8,7 @@ const Footer = () => {
       <section class="py-24 md:py-40 bg-gray-900 relative text-left">
         <div class="container px-4 mx-auto">
           <div class="flex flex-wrap -mx-4 -mb-8">
-            <div class="w-1/2 lg:w-1/3 xl:w-1/4 px-4 mb-8">
+            <div class="w-full lg:w-1/3 xl:w-1/4 px-4 mb-8">
               <h4 class="text-white mb-5 text-xl font-bold">About</h4>
               <ul>
                 <li class="mb-4">
@@ -37,7 +37,7 @@ const Footer = () => {
                 </li>
               </ul>
             </div>
-            <div class="w-1/2 lg:w-1/3 xl:w-1/4 px-4 mb-8">
+            <div class="w-full lg:w-1/3 xl:w-1/4 px-4 mb-8">
               <h4 class="text-white mb-5 text-xl font-bold">Product</h4>
               <ul>
                 <li class="mb-4">
@@ -82,7 +82,7 @@ const Footer = () => {
                 </li>
               </ul>
             </div>
-            <div class="w-1/2 lg:w-1/3 xl:w-1/4 px-4 mb-8">
+            <div class="w-full lg:w-1/3 xl:w-1/4 px-4 mb-8">
               <h4 class="text-white mb-5 text-xl font-bold">Follow</h4>
               <ul>
                 <li class="mb-4">
@@ -128,15 +128,15 @@ const Footer = () => {
               </ul>
             </div>
 
-            <div class="w-1/2 lg:w-1/3 xl:w-1/4 px-4 mb-8">
+            <div class="w-full lg:w-1/3 xl:w-1/4 px-4 mb-8">
               <h4 class="text-white mb-5 text-xl font-bold">Support</h4>
               <ul>
                 <li class="mb-4">
                   <a
                     class="inline-block text-white hover:text-gray-400 text-lg"
-                    href="tel:+23436137042"
+                    href="tel:+23412718630"
                   >
-                    ☎ &nbsp; +2348035019716
+                    ☎ &nbsp; +234 (1) 271 8630
                   </a>
                 </li>
                 <li>

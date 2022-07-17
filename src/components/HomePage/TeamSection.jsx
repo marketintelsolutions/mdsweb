@@ -1,53 +1,77 @@
 import React from "react";
-import AvatarOne from "../../assets/asian-woman-4975939-4159825 1.png";
-import AvatarTwo from "../../assets/black-woman-4975941-4159827 1.png";
-import AvatarThree from "../../assets/western-man-4975942-4159828 1.png";
 
-const TeamMemberCard = ({ image, name, details }) => {
-  return (
-    <div className="w-[345px] lg:w-[30%] h-[334px] bg-[#DEDCDB80] rounded-2xl m-4 flex flex-col items-center p-8">
-      <div className="w-32 h-32 rounded-full bg-[#DEDCDB80] shadow-sm overflow-hidden">
-        <img
-          src={image}
-          alt=""
-          width="100%"
-          height="100%"
-          className="self-center"
-        />
-      </div>
-      <p className="text-lg">{name}</p>
-      <p className="mt-auto ">{details}</p>
-    </div>
-  );
-};
+import Emeka from "../../assets/Emeka.png";
+import Jimmy from "../../assets/Jimmy.png";
+import Usman from "../../assets/usman.jpg";
+
 const TeamSection = () => {
   return (
-    <div id="team" className="max-w-[73%] mx-auto">
-      <div className="lg:max-w-[500px] mx-auto my-10">
-        <p className="text-xl mt-10 ">TEAM</p>
+    <div id="team" className="mx-auto ">
+      <section class="relative pt-24 pb-32 bg-gray-50 overflow-hidden">
+        <div class="container mx-auto px-4">
+          <h2 class="mb-5 max-w-2xl mx-auto font-heading font-bold text-center text-6xl sm:text-7xl text-gray-900">
+            Team Members
+          </h2>
+          <p class="mb-16 text-base max-w-md mx-auto text-center text-gray-600">
+            Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
+            sint. Velit officia consequat duis enim velit mollit.
+          </p>
+          <div class="flex flex-wrap max-w-6xl mx-auto -m-7 justify-center">
+            <div class="w-full md:w-1/2 xl:w-1/3 p-7">
+              <div class="text-center p-16 bg-white transform hover:-translate-y-3 rounded-10 shadow-7xl transition ease-out duration-1000">
+                <img
+                  width="150px"
+                  class=" mb-11 mx-auto rounded-lg"
+                  src={Emeka}
+                  alt="Emeka Osuocha"
+                />
+                <h3 class="mb-1 font-heading font-bold text-gray-900 text-lg">
+                  Emeka Osuocha
+                </h3>
+                <p class="text-sm text-gray-500">Managing Director/CEO</p>
+              </div>
+            </div>
+            <div class="w-full md:w-1/2 xl:w-1/3 p-7">
+              <div class="xl:relative xl:top-16 text-center p-16 bg-white transform hover:-translate-y-3 rounded-10 shadow-7xl transition ease-out duration-1000">
+                <img
+                  width="150px"
+                  class=" mb-11 mx-auto rounded-lg"
+                  src={Jimmy}
+                  alt="Jimmy Ogunnowo"
+                />
+                <h3 class="mb-1 font-heading font-bold text-gray-900 text-lg">
+                  Jimmy Ogunnowo
+                </h3>
+                <p class="text-sm text-gray-500">Financial Director</p>
+              </div>
+            </div>
+            <div class="w-full md:w-1/2 xl:w-1/3 p-7">
+              <div class="text-center p-16 bg-white transform hover:-translate-y-3 rounded-10 shadow-7xl transition ease-out duration-1000">
+                <img
+                  width="150px"
+                  class=" mb-11 mx-auto rounded-lg"
+                  src={Usman}
+                  alt="Usman Ayobami"
+                />
+                <h3 class="mb-1 font-heading font-bold text-gray-900 text-lg">
+                  Usman Ayobami
+                </h3>
+                <p class="text-sm text-gray-500">Software Engineer</p>
+              </div>
+            </div>
 
-        <h1 className="text-6xl font-bold mt-4">Meet our team members</h1>
-      </div>
-      <div className="flex my-10 justify-center flex-wrap">
-        <TeamMemberCard
-          image={AvatarOne}
-          name="Andrew Rathore"
-          details=" Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
-        ullamcorper scelerisque mi, in malesuada felis malesuada vel."
-        />
-        <TeamMemberCard
-          image={AvatarTwo}
-          name="Andrew Rathore"
-          details=" Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
-        ullamcorper scelerisque mi, in malesuada felis malesuada vel."
-        />
-        <TeamMemberCard
-          image={AvatarThree}
-          name="Andrew Rathore"
-          details=" Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
-        ullamcorper scelerisque mi, in malesuada felis malesuada vel."
-        />
-      </div>
+            <div class="w-full md:w-1/2 xl:w-1/3 p-7">
+              <div class="xl:relative xl:top-16 text-center p-16 bg-white transform hover:-translate-y-3 rounded-10 shadow-7xl transition ease-out duration-1000">
+                <img width="150px" class=" mb-11 mx-auto" alt="Joseph Dele" />
+                <h3 class="mb-1 font-heading font-bold text-gray-900 text-lg">
+                  Joseph Dele
+                </h3>
+                <p class="text-sm text-gray-500">Software Engineer</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </div>
   );
 };

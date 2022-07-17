@@ -9,10 +9,11 @@ import MediaEntertainment from "./screens/Products/MediaEntertainment";
 import Fintech from "./screens/Products/Fintech";
 import ManagedTechnologyServices from "./screens/Products/ManagedTechnologyServices";
 import ProcurementAndDistribution from "./screens/Products/ProcurementAndDistribution";
+import Profile from "./screens/Profile";
 
 function App() {
   return (
-    <div className="App pt-36">
+    <div className=" pt-36">
       <Router>
         <NavBar />
         <Routes>
@@ -30,6 +31,7 @@ function App() {
             path="/TechnologyDistribution"
             element={<TechnologyDistribution />}
           />
+          <Route path="/profile" element={<Profile />} />
           <Route path="/about" element={<About />} />
 
           <Route path="/" element={<Homepage />} />

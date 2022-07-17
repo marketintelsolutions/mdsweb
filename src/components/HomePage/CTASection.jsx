@@ -17,9 +17,11 @@ const CTASection = () => {
             We work with Brands, Startups, to SMEs. Colaborate for more impact
             and growt
           </p>
-          <button className="app-btn  text-white py-3 px-10 mt-10">
-            Contact Us
-          </button>
+          <a href="tel:+23412718630">
+            <button className="app-btn  text-white py-3 px-10 mt-10">
+              Contact Us
+            </button>
+          </a>
         </div>
       </div>
     </div>
