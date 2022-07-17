@@ -2,9 +2,9 @@ import React from "react";
 import ShowBox from "../components/Shared/ShowBox";
 import TextImageRow from "../components/Shared/TextImageRow";
 import lottie from "lottie-web";
-import * as DistriButeJSON from "../assets/81760-shipping-around-the-world.json";
-import * as MissionJSON from "../assets/25898-rocket-launched-into-space.json";
-import * as VisionJSON from "../assets/63002-artemis-vision-rocket.json";
+import * as DistriButeJSON from "../assets/aboutUs2.json";
+import * as MissionJSON from "../assets/mission.json";
+import * as VisionJSON from "../assets/25898-rocket-launched-into-space.json";
 const About = () => {
   React.useEffect(() => {
     const instance = lottie.loadAnimation({
@@ -76,7 +76,7 @@ const About = () => {
     <div className=" xl:max-w-[73%] mx-auto pb-96">
       <div className={`flex my-20`}>
         <div
-          className={`lg:w-1/2 bg-[#031759] min-h-[400px] h-auto m-4 rounded-[60px] shadow-lg `}
+          className={`lg:w-1/2  shadow-lg min-h-[400px] h-[400px]  m-4 rounded-[60px] `}
         >
           <div id="aboutImage" style={{ width: "100%", height: "100%" }} />
         </div>
@@ -105,7 +105,7 @@ const About = () => {
           </div>
         </div>
       </div>
-      <div className={`flex items-center my-20`}>
+      <div className={`flex flex-wrap items-center my-20`}>
         <div className="lg:w-1/2 w-full  m-4 text-left grow ">
           <div>
             <h1 className="text-6xl font-bold  mx-auto  mb-12" id="vision">
@@ -118,12 +118,12 @@ const About = () => {
           </div>
         </div>
         <div
-          className={`w-1/2 bg-red-200 min-h-[300px] h-auto m-4 rounded-[60px] shadow-lg `}
+          className={`w-full lg:w-1/2 bg-red-200 min-h-[300px] overflow-hidden h-[400px]  m-4 rounded-[60px] shadow-lg `}
         >
           <div id="missionImage" style={{ width: "100%", height: "100%" }} />
         </div>
       </div>
-      <div className={`flex items-center my-20`}>
+      <div className={`flex flex-wrap items-center my-20`}>
         <div
           className={`lg:w-1/2 bg-[#031759] min-h-[300px] h-auto m-4 rounded-[60px] shadow-lg `}
         >
