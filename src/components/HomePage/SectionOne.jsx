@@ -20,9 +20,9 @@ const SectionOne = () => {
   }, []);
   return (
     <div className="min-h-[calc(90vh)]  lg:max-w-[73%] mx-auto pt-12 xl:bg-white">
-      <div className="container text-left d-flex my-10 flex-wrap  items-center xl:py-10 pt-48 -mt-40 sm:pt-0 sm:mt-10 first-section xl:shadow-lg  pl-10 xl:rounded-2xl relative">
+      <div className="container h-[450px] text-left d-flex my-10 flex-wrap  items-center xl:py-10 pt-48 -mt-40 sm:pt-0 sm:mt-10 first-section xl:shadow-lg  pl-10 xl:rounded-2xl relative">
         <div className="w-full xl:w-1/2  xl:pr-20    mb-10">
-          <h1 className="text-6xl font-bold add-app-red text-[#031759]">
+          <h1 className="text-5xl font-bold add-app-red text-[#031759]">
             Building digital products, brands & experience
           </h1>
           <p className="text-3xl mt-10 text-[#031759] ">
@@ -35,7 +35,7 @@ const SectionOne = () => {
           </a>
         </div>
         <div className="w-full xl:w-1/2 flex xl:justify-end justify-center">
-          <div className=" xl:absolute -bottom-16 -right-16  xl:w-[600px] w-[50%]  xl:h-[600px] rounded-full bg-red-200 flex justify-center items-center">
+          <div className=" xl:absolute -bottom-16 -right-16  xl:w-[500px] w-[50%]  xl:h-[500px] rounded-full bg-red-200 flex justify-center items-center">
             <div id="react-logo-now" />
           </div>
         </div>

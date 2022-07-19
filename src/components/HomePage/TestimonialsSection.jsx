@@ -26,7 +26,7 @@ const TestimonialsSection = () => {
       <div className="lg:max-w-[500px] mx-auto my-10">
         <p className="text-xl mt-10 ">TESTIMONIALS</p>
 
-        <h1 className="text-6xl font-bold mt-4">
+        <h1 className="text-5xl font-bold mt-4">
           Read What Other have to Say{" "}
         </h1>
       </div>

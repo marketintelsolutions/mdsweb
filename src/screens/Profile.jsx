@@ -1,9 +1,6 @@
 import React, { useEffect, useState } from "react";
 import {
-  useLocation,
-  useRoutes,
   useSearchParams,
-  useMatch,
 } from "react-router-dom";
 import Chris from "../assets/Chris.jpeg";
 import Dele from "../assets/Dele.jpeg";
@@ -13,7 +10,6 @@ import Jimmy from "../assets/Jimmy.png";
 import Sina from "../assets/sina.jpeg";
 
 export default function Profile() {
-  const { search } = useLocation();
   const [searchParams, setSearchParams] = useSearchParams();
   const [profile, setProfile] = useState(null);
 
@@ -246,15 +242,16 @@ export default function Profile() {
   }, [searchParams.get("name")]);
 
   return (
-    <section class="py-24">
+    <section class="my-10">
       <div class="container px-4 mx-auto mb-12 lg:mb-24">
-        <div class="flex flex-wrap -mx-4 items-center">
+        <div class="flex flex-wrap -mx-4 items-start">
           <div class="w-full lg:w-1/2 px-4 mb-12 lg:mb-0">
-            <h2 class="mb-6 text-5xl text-blue-800 font-bold font-heading">
-              {profile?.name}
-            </h2>
+            
             <div class="flex items-center">
               <div class="text-left">
+              <h2 class="mb-6 text-5xl text-blue-800 font-bold font-heading">
+              {profile?.name}
+            </h2>
                 <h3 class="mb-2 text-lg text-gray-500 font-semibold font-heading">
                   Member of Board of Directors for PAC Market Intel Digital
                   Solution
@@ -263,6 +260,7 @@ export default function Profile() {
                   {new Date().toDateString()} |{" "}
                   {new Date().toLocaleTimeString()}
                 </p>
+                <div class="max-w-2xl mx-auto mt-4">{profile?.description}</div>
               </div>
             </div>
           </div>
@@ -272,11 +270,12 @@ export default function Profile() {
               src={profile?.image}
               alt=""
             />
+           
           </div>
         </div>
       </div>
       <div class="container px-4 mx-auto">
-        <div class="max-w-2xl mx-auto">{profile?.description}</div>
+        
       </div>
     </section>
   );

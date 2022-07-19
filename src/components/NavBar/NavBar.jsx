@@ -75,17 +75,139 @@ const NavBar = () => {
             <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
               <li class="nav-item lg:mx-4 relative ">
                 <Link
-                  class="nav-link text-[#031759] font-medium text-lg add-app-red-to-nav "
+                  class="nav-link text-[#031759] font-medium text-base add-app-red-to-nav "
                   aria-current="page"
                   to="/"
                 >
                   Home
                 </Link>
               </li>
+
+
+              <li class="nav-item lg:mx-4 relative">
+                <div class="btn-group">
+                  <a
+                    class="nav-link text-[#031759] font-medium text-base add-app-red-to-nav "
+                    aria-current="page"
+                    href="/about"
+                  >
+                    About
+                  </a>
+                  <a
+                    class="nav-link text-[#031759] font-medium text-base add-app-red-to-nav dropdown-toggle"
+                    href="/about"
+                    id="navbarDropdown"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >&nbsp;</a>
+                  <ul
+                    class="dropdown-menu bg-[#F6F6F6]"
+                    aria-labelledby="navbarDropdown"
+                  ><li>
+                  <a
+                    class="dropdown-item relative"
+                    href="/profile?name=Chris Oshiafi"
+                    onMouseOver={() => setShowDirectors(true)}
+                    onMouseLeave={() => setShowDirectors(false)}
+                  >
+                    Directors
+                    {showDirectors && (
+                      <div className="absolute bg-[#F6F6F6] border rounded-lg left-[101%] top-0 overflow-hidden">
+                        <ul class=" bg-[#F6F6F6]">
+                          <li>
+                            <a
+                              class="dropdown-item"
+                              href="/profile?name=Chris Oshiafi"
+                            >
+                              Chris Oshiafi
+                            </a>
+                          </li>
+                          <li>
+                            <hr class="dropdown-divider" />
+                          </li>
+                          <li>
+                            <a
+                              class="dropdown-item"
+                              href="/profile?name=Sina Alimi"
+                            >
+                              Sina Alimi
+                            </a>
+                          </li>
+                          <li>
+                            <hr class="dropdown-divider" />
+                          </li>
+                          <li>
+                            <a
+                              class="dropdown-item"
+                              href="/profile?name=Eric Okoruwa"
+                            >
+                              Eric Okoruwa
+                            </a>
+                          </li>
+                          <li>
+                            <hr class="dropdown-divider" />
+                          </li>
+                          <li>
+                            <a
+                              class="dropdown-item"
+                              href="/profile?name=Dele Ige"
+                            >
+                              Dele Ige
+                            </a>
+                          </li>
+                        </ul>
+                      </div>
+                    )}
+                  </a>
+                </li>
+                <li>
+                      <hr class="dropdown-divider" />
+                    </li>
+                    <li>
+                      <a
+                        class="dropdown-item relative"
+                        href="/profile?name=Emeka Osuocha"
+                        onMouseOver={() => setShowStaff(true)}
+                        onMouseLeave={() => setShowStaff(false)}
+                      >
+                        Management Staff
+                        {showStaff && (
+                          <div className="absolute bg-[#F6F6F6] border rounded-lg left-[101%] top-0">
+                            <ul class=" bg-[#F6F6F6]">
+                              <li>
+                                <a
+                                  class="dropdown-item"
+                                  href="/profile?name=Emeka Osuocha"
+                                >
+                                  Emeka Osuocha
+                                </a>
+                              </li>
+                              <li>
+                                <hr class="dropdown-divider" />
+                              </li>
+                              <li>
+                                <a
+                                  class="dropdown-item"
+                                  href="/profile?name=Jimmy Ogunnowo"
+                                >
+                                  Jimmy Ogunnowo
+                                </a>
+                              </li>
+                            </ul>
+                          </div>
+                        )}
+                      </a>
+                    </li>
+                    
+                    
+                  </ul>
+                </div>
+              </li>
               <li class="nav-item lg:mx-4 relative ">
                 <div class="btn-group">
                   <a
-                    class="nav-link text-[#031759] font-medium text-lg add-app-red-to-nav "
+                    class="nav-link text-[#031759] font-medium text-base add-app-red-to-nav "
                     aria-current="page"
                     href={
                       pathname === "/"
@@ -96,7 +218,7 @@ const NavBar = () => {
                     Products
                   </a>
                   <a
-                    class="nav-link text-[#031759] font-medium text-lg add-app-red-to-nav dropdown-toggle"
+                    class="nav-link text-[#031759] font-medium text-base add-app-red-to-nav dropdown-toggle"
                     href={
                       pathname === "/"
                         ? "/#Technology Distribution"
@@ -183,129 +305,11 @@ const NavBar = () => {
                 </div>
               </li>
 
-              <li class="nav-item lg:mx-4 relative">
-                <div class="btn-group">
-                  <a
-                    class="nav-link text-[#031759] font-medium text-lg add-app-red-to-nav "
-                    aria-current="page"
-                    href="/about"
-                  >
-                    About
-                  </a>
-                  <a
-                    class="nav-link text-[#031759] font-medium text-lg add-app-red-to-nav dropdown-toggle"
-                    href="/about"
-                    id="navbarDropdown"
-                    role="button"
-                    data-bs-toggle="dropdown"
-                    aria-expanded="false"
-                  ></a>
-                  <ul
-                    class="dropdown-menu bg-[#F6F6F6]"
-                    aria-labelledby="navbarDropdown"
-                  >
-                    <li>
-                      <a
-                        class="dropdown-item relative"
-                        href="/profile?name=Emeka Osuocha"
-                        onMouseOver={() => setShowStaff(true)}
-                        onMouseLeave={() => setShowStaff(false)}
-                      >
-                        Management Staff
-                        {showStaff && (
-                          <div className="absolute bg-[#F6F6F6] border rounded-lg left-[101%] top-0">
-                            <ul class=" bg-[#F6F6F6]">
-                              <li>
-                                <a
-                                  class="dropdown-item"
-                                  href="/profile?name=Emeka Osuocha"
-                                >
-                                  Emeka Osuocha
-                                </a>
-                              </li>
-                              <li>
-                                <hr class="dropdown-divider" />
-                              </li>
-                              <li>
-                                <a
-                                  class="dropdown-item"
-                                  href="/profile?name=Jimmy Ogunnowo"
-                                >
-                                  Jimmy Ogunnowo
-                                </a>
-                              </li>
-                            </ul>
-                          </div>
-                        )}
-                      </a>
-                    </li>
-                    <li>
-                      <hr class="dropdown-divider" />
-                    </li>
-                    <li>
-                      <a
-                        class="dropdown-item relative"
-                        href="/profile?name=Chris Oshiafi"
-                        onMouseOver={() => setShowDirectors(true)}
-                        onMouseLeave={() => setShowDirectors(false)}
-                      >
-                        Directors
-                        {showDirectors && (
-                          <div className="absolute bg-[#F6F6F6] border rounded-lg left-[101%] top-0 overflow-hidden">
-                            <ul class=" bg-[#F6F6F6]">
-                              <li>
-                                <a
-                                  class="dropdown-item"
-                                  href="/profile?name=Chris Oshiafi"
-                                >
-                                  Chris Oshiafi
-                                </a>
-                              </li>
-                              <li>
-                                <hr class="dropdown-divider" />
-                              </li>
-                              <li>
-                                <a
-                                  class="dropdown-item"
-                                  href="/profile?name=Sina Alimi"
-                                >
-                                  Sina Alimi
-                                </a>
-                              </li>
-                              <li>
-                                <hr class="dropdown-divider" />
-                              </li>
-                              <li>
-                                <a
-                                  class="dropdown-item"
-                                  href="/profile?name=Eric Okoruwa"
-                                >
-                                  Eric Okoruwa
-                                </a>
-                              </li>
-                              <li>
-                                <hr class="dropdown-divider" />
-                              </li>
-                              <li>
-                                <a
-                                  class="dropdown-item"
-                                  href="/profile?name=Dele Ige"
-                                >
-                                  Dele Ige
-                                </a>
-                              </li>
-                            </ul>
-                          </div>
-                        )}
-                      </a>
-                    </li>
-                  </ul>
-                </div>
-              </li>
+             
 
               <li class="nav-item lg:mx-4">
                 <a
-                  class="nav-link text-[#031759] font-medium text-lg"
+                  class="nav-link text-[#031759] font-medium text-base"
                   href="mailto:info@marketintelsolutions.com"
                 >
                   ✉️ info@marketintelsolutions.com

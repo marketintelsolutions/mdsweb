@@ -10,7 +10,7 @@ const CTASection = () => {
       </div>
       <div className="w-full xl:w-1/2 xl:text-left">
         <div className="xl:max-w-[500px]">
-          <h1 className="text-6xl font-bold">
+          <h1 className="text-5xl font-bold">
             Be a part of the next big thing{" "}
           </h1>
           <p className="text-3xl mt-10 ">

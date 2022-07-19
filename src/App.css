@@ -32,6 +32,8 @@
   min-width: 167px;
   min-height: 48px;
   background-color: #031759;
+  
+  
 }
 .app-btn:hover{
   /* background-color: #f1634d; */
@@ -64,7 +66,7 @@
   height: 15px;
   background-color: #f1634d;
   position: absolute;
-  transform: translateY(-15px);
+  transform: translateY(-20px);
   border-radius: 8px;
   /* opacity: .90; */
 }
@@ -110,4 +112,12 @@
   to {
     transform: rotate(360deg);
   }
+}
+.app-common-bg{
+
+  background: linear-gradient(rgba(255, 255, 255, 0.544), rgba(255, 255, 255, 0.5)), url('./assets/IconsBG.png');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+
+background-size: cover;
 }

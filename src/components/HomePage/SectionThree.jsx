@@ -27,7 +27,7 @@ const SectionThree = ({ header, subHeader, image, id, link, animeid }) => {
     >
       <div className="w-full xl:w-1/2  xl:text-left  flex xl:justify-start bg-white">
         <div className="xl:max-w-[500px]">
-          <h1 className="text-6xl font-bold add-app-red">{header} </h1>
+          <h1 className="text-5xl font-bold add-app-red">{header} </h1>
           <p className="text-[23px] mt-10 text-[#727272]">{subHeader}</p>
           <Link to={link || "/"} className="text-[#f1634d]">
             <button className="app-btn text-white py-3 px-10 mt-10">
@@ -36,7 +36,7 @@ const SectionThree = ({ header, subHeader, image, id, link, animeid }) => {
           </Link>
         </div>
       </div>
-      <div className="w-[300px] xl:w-1/2 flex mx-auto my-5 xl:justify-end app-light-red rounded-full xl:h-full h-[300px] xl:min-h-[700px] justify-center items-center">
+      <div className="w-[300px] xl:w-[500px] shadow-lg drop-shadow-lg flex mx-auto my-5 xl:justify-end app-light-red rounded-full  h-[300px] xl:h-[500px] justify-center items-center">
         <div id={animeid} className="w-full h-full" />
       </div>
     </div>

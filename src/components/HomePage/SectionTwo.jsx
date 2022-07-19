@@ -30,7 +30,7 @@ const SectionTwo = ({ header, subHeader, image, id, size, link, animeid }) => {
       </div>
       <div className="w-full xl:w-1/2 xl:text-left flex xl:justify-end bg-white">
         <div className="xl:max-w-[500px]">
-          <h1 className="text-6xl font-bold add-app-red">{header} </h1>
+          <h1 className="text-5xl font-bold add-app-red">{header} </h1>
           <p className="text-[23px] mt-10 text-[#727272]">{subHeader}</p>
           <Link to={link || "/"} className="text-[#f1634d]">
             <button className="app-btn text-white py-3 px-10 mt-10">

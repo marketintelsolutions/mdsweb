@@ -1,11 +1,10 @@
 import React from "react";
-import { Link, useLocation } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
-  const { pathname } = useLocation();
   return (
     <div id="footer">
-      <section class="py-24 md:py-40 bg-gray-900 relative text-left">
+      <section class="py-10 bg-gray-900 relative text-left">
         <div class="container px-4 mx-auto">
           <div class="flex flex-wrap -mx-4 -mb-8">
             <div class="w-full lg:w-1/3 xl:w-1/4 px-4 mb-8">

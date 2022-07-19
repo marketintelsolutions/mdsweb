@@ -14,7 +14,7 @@ const TeamSection = () => {
               <p class="mb-9 max-w-max text-transparent bg-clip-text bg-gradient-cyan font-heading text-xs uppercase font-semibold tracking-px">
                 The team that made us successful
               </p>
-              <h2 class="mb-7 font-heading font-semibold text-6xl sm:text-7xl text-gray-900">
+              <h2 class="mb-7 font-heading font-semibold text-5xl sm:text-7xl text-gray-900">
                 Our mission is making the customers lives easier now.
               </h2>
               <p class="text-xl text-gray-900">

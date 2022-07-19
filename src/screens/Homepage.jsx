@@ -12,13 +12,13 @@ import * as DistriButeJSON from "../assets/81760-shipping-around-the-world.json"
 
 const Homepage = () => {
   return (
-    <div className="">
+    <div className="app-common-bg">
       <div className="mx-auto ">
-        <div className="one-bg">
+        <div className="">
           <SectionOne />
         </div>
 
-        <div className="tech-bg">
+        <div className="">
           <SectionTwo
             animeid="TechnologyDistribution"
             id="Technology Distribution"
@@ -28,7 +28,7 @@ const Homepage = () => {
             link="/TechnologyDistribution"
           />
         </div>
-        <div className="mandd-bg">
+        <div className="">
           <SectionThree
             animeid="MediaEntertainment"
             id="Media & Entertainment"
@@ -38,7 +38,7 @@ const Homepage = () => {
             link="/MediaEntertainment"
           />
         </div>
-        <div className="lg-bg">
+        <div className="">
           <SectionTwo
             animeid="FINTECHAnime"
             id="FINTECH"
@@ -48,7 +48,7 @@ const Homepage = () => {
             link="/Fintech"
           />
         </div>
-        <div className="tech-bg">
+        <div className="">
           <SectionThree
             animeid="ManagedTechnologyServices"
             id="Managed Technology Services"
@@ -58,7 +58,7 @@ const Homepage = () => {
             link="/ManagedTechnologyServices"
           />
         </div>
-        <div className="pandd-bg">
+        <div className="">
           <SectionTwo
             animeid="ProcurementAndDistributionAnime"
             id="ProcurementAndDistribution"
@@ -68,7 +68,6 @@ const Homepage = () => {
             link="/ProcurementAndDistribution"
           />
         </div>
-        <TeamSection />
         <CTASection />
       </div>
     </div>

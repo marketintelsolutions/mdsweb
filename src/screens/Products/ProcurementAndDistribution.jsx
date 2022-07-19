@@ -22,7 +22,7 @@ const ProcurementAndDistribution = () => {
     if (!visible) return null;
 
     return (
-      <div class="bg-green-500 z-20 fixed bottom-0 end-0 p-3 w-1/2 h-14 flex items-center">
+      <div class="bg-green-500 z-20 fixed bottom-0 end-0 p-3 w-1/2 h-14 flex items-center ">
         <small onClick={close} className="cursor-pointer">
           Close
         </small>
@@ -31,9 +31,9 @@ const ProcurementAndDistribution = () => {
     );
   };
   return (
-    <div className="bg-gray-50 text-center">
+    <div className="bg-gray-50 text-center app-common-bg">
       <div className=" xl:max-w-[73%] mx-auto pb-96 pt-10">
-        <h1 className="text-6xl font-bold lg:w-2/3 mx-auto  my-12">
+        <h1 className="text-5xl font-bold lg:w-2/3 mx-auto  my-12">
           Procurement And Distribution
         </h1>
         <p className="text-3xl mt-10 ">
