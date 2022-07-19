@@ -242,7 +242,7 @@ export default function Profile() {
   }, [searchParams.get("name")]);
 
   return (
-    <section class="my-10">
+    <section class="my-24">
       <div class="container px-4 mx-auto mb-12 lg:mb-24">
         <div class="flex flex-wrap -mx-4 items-start">
           <div class="w-full lg:w-1/2 px-4 mb-12 lg:mb-0">
