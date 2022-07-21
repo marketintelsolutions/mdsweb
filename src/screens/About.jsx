@@ -72,7 +72,8 @@ const About = () => {
   ];
 
   return (
-    <div className=" xl:max-w-[73%] mx-auto pb-96 app-common-bg">
+    <div className="app-common-bg" >
+    <div className=" xl:max-w-[73%] mx-auto pb-96">
       <div className={`flex `}>
         <div
           className={`lg:w-1/2  shadow-lg min-h-[400px] h-[400px]  m-4 rounded-[60px] `}
@@ -82,7 +83,7 @@ const About = () => {
         <div className="lg:w-1/2 w-full  m-4 text-left grow ">
           <div>
             <h1 className="text-5xl font-bold">
-              Marketintel Technology, Media & Digital Solutions Limited (MDS)
+              Market Intel Technology, Media & Digital Solutions Limited (MDS)
             </h1>
             <p className="text-lg mt-10 ">
               Marketintel Digital Solutions Limited (MDS) is a consolidated
@@ -98,8 +99,7 @@ const About = () => {
             </p>
             <p className="text-lg mt-10 ">
               Marketintel has operating and non-operating interests in
-              businesses across ICT, Media and Entertainment, with specific
-              activities in:
+              businesses across ICT, Media and Entertainment.
             </p>
           </div>
         </div>
@@ -198,6 +198,7 @@ const About = () => {
           <h1 className="text-lg  font-bold">Innovation</h1>
         </div>
       </div>
+    </div>
     </div>
   );
 };

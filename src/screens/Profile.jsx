@@ -266,7 +266,7 @@ export default function Profile() {
           </div>
           <div class="w-full lg:w-1/2 px-4">
             <img
-              class="w-full h-full object-cover lg:clip-path-left-top"
+              class="w-full object-cover lg:clip-path-left-top shadow-lg drop-shadow-sm"
               src={profile?.image}
               alt=""
             />

@@ -145,17 +145,7 @@ const NavBar = () => {
                               Eric Okoruwa
                             </a>
                           </li>
-                          <li>
-                            <hr class="dropdown-divider" />
-                          </li>
-                          <li>
-                            <a
-                              class="dropdown-item"
-                              href="/profile?name=Dele Ige"
-                            >
-                              Dele Ige
-                            </a>
-                          </li>
+                         
                         </ul>
                       </div>
                     )}

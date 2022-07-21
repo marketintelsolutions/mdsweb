@@ -12,7 +12,7 @@ const Footer = () => {
               <ul>
                 <li class="mb-4">
                   <Link
-                    class="inline-block text-white hover:text-gray-400 text-lg"
+                    class="inline-block text-white hover:text-gray-400 text-base"
                     to="/#team"
                   >
                     Creative Team
@@ -20,7 +20,7 @@ const Footer = () => {
                 </li>
                 <li class="mb-4">
                   <Link
-                    class="inline-block text-white hover:text-gray-400 text-lg"
+                    class="inline-block text-white hover:text-gray-400 text-base"
                     to="/about/#mission"
                   >
                     Our Mission
@@ -28,7 +28,7 @@ const Footer = () => {
                 </li>
                 <li class="mb-4">
                   <Link
-                    class="inline-block text-white hover:text-gray-400 text-lg"
+                    class="inline-block text-white hover:text-gray-400 text-base"
                     to="/about/#vision"
                   >
                     Our Vision
@@ -41,7 +41,7 @@ const Footer = () => {
               <ul>
                 <li class="mb-4">
                   <Link
-                    class="inline-block text-white hover:text-gray-400 text-lg"
+                    class="inline-block text-white hover:text-gray-400 text-base"
                     to="/TechnologyDistribution"
                   >
                     Technology Distribution
@@ -49,7 +49,7 @@ const Footer = () => {
                 </li>
                 <li class="mb-4">
                   <Link
-                    class="inline-block text-white hover:text-gray-400 text-lg"
+                    class="inline-block text-white hover:text-gray-400 text-base"
                     to="/MediaEntertainment"
                   >
                     Media & Entertainment
@@ -57,7 +57,7 @@ const Footer = () => {
                 </li>
                 <li class="mb-4">
                   <Link
-                    class="inline-block text-white hover:text-gray-400 text-lg"
+                    class="inline-block text-white hover:text-gray-400 text-base"
                     to="/Fintech"
                   >
                     FINTECH
@@ -65,7 +65,7 @@ const Footer = () => {
                 </li>
                 <li class="mb-4">
                   <Link
-                    class="inline-block text-white hover:text-gray-400 text-lg"
+                    class="inline-block text-white hover:text-gray-400 text-base"
                     to="/ManagedTechnologyServices"
                   >
                     Managed Technology Services
@@ -73,7 +73,7 @@ const Footer = () => {
                 </li>
                 <li class="mb-4">
                   <Link
-                    class="inline-block text-white hover:text-gray-400 text-lg"
+                    class="inline-block text-white hover:text-gray-400 text-base"
                     to="/ProcurementAndDistribution"
                   >
                     Procurement And Distribution
@@ -86,7 +86,7 @@ const Footer = () => {
               <ul>
                 <li class="mb-4">
                   <a
-                    class="inline-block text-white hover:text-gray-400 text-lg"
+                    class="inline-block text-white hover:text-gray-400 text-base"
                     href="/#"
                   >
                     LinkedIn
@@ -94,7 +94,7 @@ const Footer = () => {
                 </li>
                 <li class="mb-4">
                   <a
-                    class="inline-block text-white hover:text-gray-400 text-lg"
+                    class="inline-block text-white hover:text-gray-400 text-base"
                     href="/#"
                   >
                     Twitter
@@ -102,7 +102,7 @@ const Footer = () => {
                 </li>
                 <li class="mb-4">
                   <a
-                    class="inline-block text-white hover:text-gray-400 text-lg"
+                    class="inline-block text-white hover:text-gray-400 text-base"
                     href="/#"
                   >
                     Snapchat
@@ -110,7 +110,7 @@ const Footer = () => {
                 </li>
                 <li class="mb-4">
                   <a
-                    class="inline-block text-white hover:text-gray-400 text-lg"
+                    class="inline-block text-white hover:text-gray-400 text-base"
                     href="/#"
                   >
                     Instagram
@@ -118,7 +118,7 @@ const Footer = () => {
                 </li>
                 <li>
                   <a
-                    class="inline-block text-white hover:text-gray-400 text-lg"
+                    class="inline-block text-white hover:text-gray-400 text-base"
                     href="/#"
                   >
                     Facebook
@@ -132,7 +132,7 @@ const Footer = () => {
               <ul>
                 <li class="mb-4">
                   <a
-                    class="inline-block text-white hover:text-gray-400 text-lg"
+                    class="inline-block text-white hover:text-gray-400 text-base"
                     href="tel:+23412718630"
                   >
                     ☎ &nbsp; +234 (1) 271 8630
@@ -140,7 +140,7 @@ const Footer = () => {
                 </li>
                 <li>
                   <a
-                    class="inline-block text-white hover:text-gray-400 text-lg"
+                    class="inline-block text-white hover:text-gray-400 text-base"
                     href="mailto:info@marketintelsolutions.com"
                   >
                     ✉️ &nbsp; info@marketintelsolutions.com
