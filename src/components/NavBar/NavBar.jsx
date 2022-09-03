@@ -1,9 +1,8 @@
 import React, { useState } from "react";
 import "./style.css";
-import Logo from "../../assets/Revised_Market_Intel_Logo_-_2019-removebg-preview.png";
+import Logo from "../../assets/logo.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
-  faFacebookF,
   faLinkedinIn,
   faTiktok,
   faTwitter,
@@ -58,7 +57,7 @@ const NavBar = () => {
       <nav class="navbar navbar-expand-lg container py-1 app-container  ">
         <div class="container-fluid ">
           <a class="navbar-brand text-2xl font-bold" href="/#">
-            <img src={Logo} alt="" />
+            <img src={Logo} alt="" className="w-[100px] xl:w-[200px]" />
           </a>
           <button
             class="navbar-toggler"
