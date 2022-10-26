@@ -11,7 +11,7 @@ import Fintech from "./screens/Products/Fintech";
 import ManagedTechnologyServices from "./screens/Products/ManagedTechnologyServices";
 import ProcurementAndDistribution from "./screens/Products/ProcurementAndDistribution";
 import Profile from "./screens/Profile";
-
+//Trying to fix
 function App() {
   return (
     <div className=" pt-36">
