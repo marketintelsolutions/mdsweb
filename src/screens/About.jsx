@@ -1,47 +1,47 @@
 import React from "react";
 import ShowBox from "../components/Shared/ShowBox";
-import lottie from "lottie-web";
+// import lottie from "lottie-web";
 import * as DistriButeJSON from "../assets/aboutUs2.json";
 import * as MissionJSON from "../assets/mission.json";
 import * as VisionJSON from "../assets/25898-rocket-launched-into-space.json";
 const About = () => {
-  React.useEffect(() => {
-    const instance = lottie.loadAnimation({
-      container: document.querySelector(`#aboutImage`),
-      animationData: DistriButeJSON,
-      renderer: "svg",
-      loop: true,
-      autoplay: true,
-      rendererSettings: {
-        preserveAspectRatio: "xMidYMid slice",
-      },
-    });
-    const missionInstance = lottie.loadAnimation({
-      container: document.querySelector(`#missionImage`),
-      animationData: MissionJSON,
-      renderer: "svg",
-      loop: true,
-      autoplay: true,
-      rendererSettings: {
-        preserveAspectRatio: "xMidYMid slice",
-      },
-    });
-    const visionInstance = lottie.loadAnimation({
-      container: document.querySelector(`#visionImage`),
-      animationData: VisionJSON,
-      renderer: "svg",
-      loop: true,
-      autoplay: true,
-      rendererSettings: {
-        preserveAspectRatio: "xMidYMid slice",
-      },
-    });
-    return () => {
-      instance.destroy();
-      missionInstance.destroy();
-      visionInstance.destroy();
-    };
-  }, []);
+  // React.useEffect(() => {
+  //   const instance = lottie.loadAnimation({
+  //     container: document.querySelector(`#aboutImage`),
+  //     animationData: DistriButeJSON,
+  //     renderer: "svg",
+  //     loop: true,
+  //     autoplay: true,
+  //     rendererSettings: {
+  //       preserveAspectRatio: "xMidYMid slice",
+  //     },
+  //   });
+  //   const missionInstance = lottie.loadAnimation({
+  //     container: document.querySelector(`#missionImage`),
+  //     animationData: MissionJSON,
+  //     renderer: "svg",
+  //     loop: true,
+  //     autoplay: true,
+  //     rendererSettings: {
+  //       preserveAspectRatio: "xMidYMid slice",
+  //     },
+  //   });
+  //   const visionInstance = lottie.loadAnimation({
+  //     container: document.querySelector(`#visionImage`),
+  //     animationData: VisionJSON,
+  //     renderer: "svg",
+  //     loop: true,
+  //     autoplay: true,
+  //     rendererSettings: {
+  //       preserveAspectRatio: "xMidYMid slice",
+  //     },
+  //   });
+  //   return () => {
+  //     instance.destroy();
+  //     missionInstance.destroy();
+  //     visionInstance.destroy();
+  //   };
+  // }, []);
   const visionElements = [
     {
       title: "Solution provider",

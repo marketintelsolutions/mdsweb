@@ -1,24 +1,24 @@
 import React from "react";
 import Arrow from "../../assets/Arrow 1.png";
 import { Link } from "react-router-dom";
-import lottie from "lottie-web";
+// import lottie from "lottie-web";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 
 const SectionThree = ({ header, subHeader, image, id, link, animeid }) => {
-  React.useEffect(() => {
-    const instance = lottie.loadAnimation({
-      container: document.querySelector(`#${animeid}`),
-      animationData: image,
-      renderer: "svg",
-      loop: true,
-      autoplay: true,
-      rendererSettings: {
-        preserveAspectRatio: "xMidYMid slice",
-      },
-    });
-    return () => instance.destroy();
-  }, []);
+  // React.useEffect(() => {
+  //   const instance = lottie.loadAnimation({
+  //     container: document.querySelector(`#${animeid}`),
+  //     animationData: image,
+  //     renderer: "svg",
+  //     loop: true,
+  //     autoplay: true,
+  //     rendererSettings: {
+  //       preserveAspectRatio: "xMidYMid slice",
+  //     },
+  //   });
+  //   return () => instance.destroy();
+  // }, []);
 
   return (
     <div
