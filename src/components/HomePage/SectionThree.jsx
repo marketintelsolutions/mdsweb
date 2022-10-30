@@ -1,44 +1,47 @@
 import React from "react";
 import Arrow from "../../assets/Arrow 1.png";
 import { Link } from "react-router-dom";
-import lottie from "lottie-web";
+// import lottie from "lottie-web";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
+import illustration from '../../assets/illustration.png'
 
 const SectionThree = ({ header, subHeader, image, id, link, animeid }) => {
-  React.useEffect(() => {
-    const instance = lottie.loadAnimation({
-      container: document.querySelector(`#${animeid}`),
-      animationData: image,
-      renderer: "svg",
-      loop: true,
-      autoplay: true,
-      rendererSettings: {
-        preserveAspectRatio: "xMidYMid slice",
-      },
-    });
-    return () => instance.destroy();
-  }, []);
+  // React.useEffect(() => {
+  //   const instance = lottie.loadAnimation({
+  //     container: document.querySelector(`#${animeid}`),
+  //     animationData: image,
+  //     renderer: "svg",
+  //     loop: true,
+  //     autoplay: true,
+  //     rendererSettings: {
+  //       preserveAspectRatio: "xMidYMid slice",
+  //     },
+  //   });
+  //   return () => instance.destroy();
+  // }, []);
 
   return (
     <div
-      className="xl:max-w-[73%] container d-flex xl:my-20 my-10 flex-wrap  items-center xl:pt-20 xl:py-24 py-10 justify-center xl:justify-between "
+      className="xl:max-w-[73%] container mx-auto flex justify-around xl:my-20 my-10 flex-wrap  items-center xl:pt-20 xl:py-24 py-10 justify-center xl:justify-around "
       id={id}
     >
-      <div className="w-full xl:w-1/2  xl:text-left  flex xl:justify-start bg-white">
+      <div className="w-72 xl:text-left  flex xl:justify-start bg-white">
         <div className="xl:max-w-[500px]">
-          <h1 className="text-5xl font-bold add-app-red">{header} </h1>
-          <p className="text-[23px] mt-10 text-[#727272]">{subHeader}</p>
-          <Link to={link || "/"} className="text-[#f1634d]">
-            <button className="app-btn text-white py-3 px-10 mt-10">
+          <h1 className="text-3xl font-bold text-[#FF3B00]">{header} </h1>
+          <p className="text-[16px] leading-7 mt-5 text-[#727272]">{subHeader}</p>
+          <Link to={link || "/"} className="text-[#f1634d] bg-[#F26836] rounded-full p-3 ">
+            <button className="text-white py-3 px-8 mt-5">
               Read More
             </button>
           </Link>
         </div>
       </div>
-      <div className="w-[300px] xl:w-[500px] shadow-lg drop-shadow-lg flex mx-auto my-5 xl:justify-end app-light-red rounded-full  h-[300px] xl:h-[500px] justify-center items-center">
-        <div id={animeid} className="w-full h-full" />
+     
+      <div className="w-5/12">
+        <img src={illustration} alt="" className='w-full' />
       </div>
+
     </div>
   );
 };

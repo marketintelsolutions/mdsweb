@@ -3,6 +3,8 @@ import CTASection from "../components/HomePage/CTASection";
 import SectionOne from "../components/HomePage/SectionOne";
 import SectionThree from "../components/HomePage/SectionThree";
 import SectionTwo from "../components/HomePage/SectionTwo";
+import SectionFour from "../components/HomePage/SectionFour";
+import SectionFive from "../components/HomePage/SectionFive";
 import TeamSection from "../components/HomePage/TeamSection";
 import * as TechTwo from "../assets/60586-developer-isometric-people-working-with-technology.json";
 import * as Technology from "../assets/82661-technology.json";
@@ -20,50 +22,49 @@ const Homepage = () => {
 
         <div className="">
           <SectionTwo
-            animeid="TechnologyDistribution"
-            id="Technology Distribution"
-            header="Technology Distribution"
-            subHeader="Development of User-Friendly Applications, Platforms and Solutions, to meet Customer needs & Expectations"
+            animeid="FINTECH"
+            id="fintech"
+            header="FINTECH"
+            subHeader="Providing technology and innovation for financial service delivery"
             image={TechTwo}
             link="/TechnologyDistribution"
           />
         </div>
         <div className="">
           <SectionThree
-            animeid="MediaEntertainment"
-            id="Media & Entertainment"
-            header="Media & Entertainment"
-            subHeader="MDS is a key player in Media infrastructure and creative Content Development to promote Africa and Global Culture"
+            animeid="Managed Technology Services"
+            id="Managed Technology Services"
+            header="Managed Technology Services"
+            subHeader="We are managed service provider (MSP) deliverIng network, application, infrastructure and security through ongoing and regular support. Our team of experts with over 50 years combined experience are eager to help you solve that Technology challenge."
             image={MediaOne}
             link="/MediaEntertainment"
           />
         </div>
         <div className="">
-          <SectionTwo
-            animeid="FINTECHAnime"
-            id="FINTECH"
-            header="FINTECH"
-            subHeader="Providing technology and innovation for financial service delivery"
-            image={FinTechThree}
+          <SectionFour
+            animeid="SmartCreative"
+            id="Smart-Creative"
+            header="Smart Creative"
+            subHeader="There's no limit to what you can get designed at Ziltch1 Smart Designs. Whether you're looking for a spectacular new logo or some stunning flyers or an amazing animation, our talented designers at Ziltch1 Technologies can make it happen. Click on the button below to see our wide range of design services. "
             link="/Fintech"
           />
         </div>
         <div className="">
-          <SectionThree
-            animeid="ManagedTechnologyServices"
-            id="Managed Technology Services"
-            header="Managed Technology Services"
-            subHeader="We are managed service provider (MSP) deliverIng network, application, infrastructure and security through ongoing and regular support. Our team of experts with over 50 years combined experience are eager to help you solve that Technology challenge."
-            image={Technology}
+          <SectionFive
+            animeid="TechnologyDistribution"
+            id="Technology Distribution"
+            header="Technology Distribution"
+            subHeader="Development of User-Friendly Applications, Platforms and Solutions, to meet Customer needs & Expectations."
             link="/ManagedTechnologyServices"
           />
         </div>
         <div className="">
-          <SectionTwo
+          <SectionThree
             animeid="ProcurementAndDistributionAnime"
             id="ProcurementAndDistribution"
-            header="Procurement And Distribution"
-            subHeader="Procurment and Distribution of Electronic Hardwares and consumables around the world."
+            header="Media & Entertainment"
+            subHeader="Ziltch is a key player in Media infrastructure and creative Content Development to promote Africa and Global Culture
+."
             image={DistriButeJSON}
             link="/ProcurementAndDistribution"
           />

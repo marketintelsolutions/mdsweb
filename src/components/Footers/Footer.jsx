@@ -1,163 +1,42 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import './footer.css'
+import { FaTwitter, FaLinkedin, FaInstagram, FaFacebook } from 'react-icons/fa'
 
 const Footer = () => {
   return (
-    <div id="footer">
-      <section class="py-10 bg-gray-900 relative text-left">
-        <div class="container px-4 mx-auto">
-          <div class="flex flex-wrap -mx-4 -mb-8">
-            <div class="w-full lg:w-1/3 xl:w-1/4 px-4 mb-8">
-              <h4 class="text-white mb-5 text-xl font-bold">About</h4>
-              <ul>
-                <li class="mb-4">
-                  <Link
-                    class="inline-block text-white hover:text-gray-400 text-base"
-                    to="/#team"
-                  >
-                    Creative Team
-                  </Link>
-                </li>
-                <li class="mb-4">
-                  <Link
-                    class="inline-block text-white hover:text-gray-400 text-base"
-                    to="/about/#mission"
-                  >
-                    Our Mission
-                  </Link>
-                </li>
-                <li class="mb-4">
-                  <Link
-                    class="inline-block text-white hover:text-gray-400 text-base"
-                    to="/about/#vision"
-                  >
-                    Our Vision
-                  </Link>
-                </li>
-              </ul>
-            </div>
-            <div class="w-full lg:w-1/3 xl:w-1/4 px-4 mb-8">
-              <h4 class="text-white mb-5 text-xl font-bold">Product</h4>
-              <ul>
-                <li class="mb-4">
-                  <Link
-                    class="inline-block text-white hover:text-gray-400 text-base"
-                    to="/TechnologyDistribution"
-                  >
-                    Technology Distribution
-                  </Link>
-                </li>
-                <li class="mb-4">
-                  <Link
-                    class="inline-block text-white hover:text-gray-400 text-base"
-                    to="/MediaEntertainment"
-                  >
-                    Media & Entertainment
-                  </Link>
-                </li>
-                <li class="mb-4">
-                  <Link
-                    class="inline-block text-white hover:text-gray-400 text-base"
-                    to="/Fintech"
-                  >
-                    FINTECH
-                  </Link>
-                </li>
-                <li class="mb-4">
-                  <Link
-                    class="inline-block text-white hover:text-gray-400 text-base"
-                    to="/ManagedTechnologyServices"
-                  >
-                    Managed Technology Services
-                  </Link>
-                </li>
-                <li class="mb-4">
-                  <Link
-                    class="inline-block text-white hover:text-gray-400 text-base"
-                    to="/ProcurementAndDistribution"
-                  >
-                    Procurement And Distribution
-                  </Link>
-                </li>
-              </ul>
-            </div>
-            <div class="w-full lg:w-1/3 xl:w-1/4 px-4 mb-8">
-              <h4 class="text-white mb-5 text-xl font-bold">Follow</h4>
-              <ul>
-                <li class="mb-4">
-                  <a
-                    class="inline-block text-white hover:text-gray-400 text-base"
-                    href="/#"
-                  >
-                    LinkedIn
-                  </a>
-                </li>
-                <li class="mb-4">
-                  <a
-                    class="inline-block text-white hover:text-gray-400 text-base"
-                    href="/#"
-                  >
-                    Twitter
-                  </a>
-                </li>
-                <li class="mb-4">
-                  <a
-                    class="inline-block text-white hover:text-gray-400 text-base"
-                    href="/#"
-                  >
-                    Snapchat
-                  </a>
-                </li>
-                <li class="mb-4">
-                  <a
-                    class="inline-block text-white hover:text-gray-400 text-base"
-                    href="/#"
-                  >
-                    Instagram
-                  </a>
-                </li>
-                <li>
-                  <a
-                    class="inline-block text-white hover:text-gray-400 text-base"
-                    href="/#"
-                  >
-                    Facebook
-                  </a>
-                </li>
-              </ul>
-            </div>
-
-            <div class="w-full lg:w-1/3 xl:w-1/4 px-4 mb-8">
-              <h4 class="text-white mb-5 text-xl font-bold">Support</h4>
-              <ul>
-                <li class="mb-4">
-                  <a
-                    class="inline-block text-white hover:text-gray-400 text-base"
-                    href="tel:+23412718630"
-                  >
-                    ☎ &nbsp; +234 (1) 271 8630
-                  </a>
-                </li>
-                <li>
-                  <a
-                    class="inline-block text-white hover:text-gray-400 text-base"
-                    href="mailto:info@marketintelsolutions.com"
-                  >
-                    ✉️ &nbsp; info@marketintelsolutions.com
-                  </a>
-                </li>
-              </ul>
-            </div>
-          </div>
-
-          <div class="flex items-center justify-center mt-10 pt-10 border-t border-gray-700 ">
-            <span class="text-white text-center">
-              &copy; 2022 Marketintel Technology, Media & Digital Solutions
-              Limited (MDS)
-            </span>
-          </div>
-        </div>
+    <div className="flex flex-wrap items-start text-gray-400 mx-auto bg-gray-800 px-8 py-10 w-full justify-around items-start">
+      <section className="text-sm mb-5">
+        <h4 className="mb-5 text-bold text-xl font-semibold text-white">About</h4>
+        <li>Our Team</li>
+        <li>Our Mission</li>
+        <li>Our Vision</li>
       </section>
+
+      <section className="text-sm mb-5">
+        <h4 className="mb-5 text-bold text-xl font-semibold text-white">Product</h4>
+        <ul>
+          <li>Technology Distribution</li>
+          <li>Media & Entertainment</li>
+          <li>FINTECH</li>
+          <li>Managed Technology Services</li>
+          <li>Procurement and distribution</li>
+          <li>Smart Creatives</li>
+        </ul>
+      </section>
+
+      <section className="text-sm mb-5">
+        <h4 className="mb-5 text-bold text-xl font-semibold text-white">Follow</h4>
+        <li className="flex text-lg justify-between mb-4"><FaLinkedin /><FaTwitter /></li>
+        <li className="flex justify-between text-lg"><FaInstagram /><FaFacebook /></li>
+      </section>
+
+      <section className="text-sm mb-5">
+        <h4 className="mb-5 text-bold text-xl font-semibold text-white">Support</h4>
+        <li>+234(1)2718630</li>
+        <li><a href="mailto:info@marketintelsolutions.com">info@marketintelsolutions.com</a></li>
+      </section>
+
     </div>
   );
 };
