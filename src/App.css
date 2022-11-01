@@ -60,6 +60,12 @@
   background-repeat: no-repeat;
   background-position:  center;
 }
+.techdistbg{
+  background-image: url('./assets/techdistbg.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position:  center;
+}
 .add-app-red::before{
   content: '';
   width: 200px;
@@ -120,4 +126,38 @@
   background-attachment: fixed;
 
 background-size: cover;
+}
+.techdisttext{
+
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: 40px;
+text-align: center;
+
+color: #FFFFFF;
+}
+.styledListItem{
+  margin-left: 20px;
+position: relative;
+display: flex;
+align-items: center;
+/* font-family: 'Kozuka Gothic Pro'; */
+font-style: normal;
+font-weight: 400;
+font-size: 18px;
+line-height: 40px;
+display: flex;
+align-items: center;
+
+color: #474747;
+}
+.styledListItem::before{
+  content: '';
+  width: 10px;
+  height: 10px;
+  background-color: #f1634d;
+  position: absolute;
+left: -20px;
+border-radius: 20px;
 }

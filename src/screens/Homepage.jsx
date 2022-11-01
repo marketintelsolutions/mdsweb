@@ -11,11 +11,12 @@ import * as Technology from "../assets/82661-technology.json";
 import * as MediaOne from "../assets/11526-social-media.json";
 import * as FinTechThree from "../assets/31639-fintech-services.json";
 import * as DistriButeJSON from "../assets/81760-shipping-around-the-world.json";
+import SectionSeven from "../components/HomePage/SectionSeven";
 
 const Homepage = () => {
   return (
-    <div className="app-common-bg">
-      <div className="mx-auto ">
+    <div className="">
+      <div className="mx-auto mb-[400px]">
         <div className="">
           <SectionOne />
         </div>
@@ -27,17 +28,17 @@ const Homepage = () => {
             header="FINTECH"
             subHeader="Providing technology and innovation for financial service delivery"
             image={TechTwo}
-            link="/TechnologyDistribution"
+            link="/Fintech"
           />
         </div>
         <div className="">
           <SectionThree
             animeid="Managed Technology Services"
             id="Managed Technology Services"
-            header="Managed Technology Services"
+            header={`Managed \n Technology Services`}
             subHeader="We are managed service provider (MSP) deliverIng network, application, infrastructure and security through ongoing and regular support. Our team of experts with over 50 years combined experience are eager to help you solve that Technology challenge."
             image={MediaOne}
-            link="/MediaEntertainment"
+            link="/ManagedTechnologyServices"
           />
         </div>
         <div className="">
@@ -46,7 +47,7 @@ const Homepage = () => {
             id="Smart-Creative"
             header="Smart Creative"
             subHeader="There's no limit to what you can get designed at Ziltch1 Smart Designs. Whether you're looking for a spectacular new logo or some stunning flyers or an amazing animation, our talented designers at Ziltch1 Technologies can make it happen. Click on the button below to see our wide range of design services. "
-            link="/Fintech"
+            link="/SmartCreative"
           />
         </div>
         <div className="">
@@ -55,21 +56,30 @@ const Homepage = () => {
             id="Technology Distribution"
             header="Technology Distribution"
             subHeader="Development of User-Friendly Applications, Platforms and Solutions, to meet Customer needs & Expectations."
-            link="/ManagedTechnologyServices"
+            link="/TechnologyDistribution"
           />
         </div>
         <div className="">
           <SectionThree
-            animeid="ProcurementAndDistributionAnime"
-            id="ProcurementAndDistribution"
+            animeid="MediaAndEntertainment"
+            id="MediaAndEntertainment"
             header="Media & Entertainment"
             subHeader="Ziltch is a key player in Media infrastructure and creative Content Development to promote Africa and Global Culture
 ."
             image={DistriButeJSON}
-            link="/ProcurementAndDistribution"
+            link="/MediaAndEntertainment"
           />
         </div>
-        <CTASection />
+        <div className="">
+          <SectionSeven
+            animeid="CTA"
+            id="CTA"
+            header="Be a part of the next big thing"
+            subHeader="We work with Brands, Startups, to SMEs. Colaborate for more impact and growth"
+            image={TechTwo}
+            link="/CTA"
+          />
+        </div>
       </div>
     </div>
   );
