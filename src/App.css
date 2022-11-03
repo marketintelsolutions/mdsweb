@@ -43,22 +43,50 @@
   margin: auto;
 }
 .about-image{
-  background-image: url('./assets/engineer-4922420_1920.jpeg');
+  /* background-image: url('./assets/engineer-4922420_1920.jpeg'); */
   background-size: cover;
   background-repeat: no-repeat;
   background-position:  center;
 }
 .mission-image{
-  background-image: url('./assets/cog-wheels-2125169_1920.jpeg');
+  /* background-image: url('./assets/cog-wheels-2125169_1920.jpeg'); */
   background-size: cover;
   background-repeat: no-repeat;
   background-position:  center;
 }
 .vision-image{
-  background-image: url('./assets/metaverse-7081849_1280.png');
+  /* background-image: url('./assets/metaverse-7081849_1280.png'); */
   background-size: cover;
   background-repeat: no-repeat;
   background-position:  center;
+}
+.techdistbg{
+  background-image: url('./assets/techdistbg.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position:  center;
+}
+.finbg{
+  background-image: url('./assets/finbg.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position:  center;
+}
+.ccbg{
+  background-image:
+  linear-gradient(to bottom, rgb(18, 51, 255,.75), rgba(18, 50, 255,0.750)),
+  url('./assets/ccbg.png');
+clip-path: polygon(100% 100%, 0% 100% , 0% 35.00%, 1% 34.97%, 2% 34.90%, 3% 34.77%, 4% 34.59%, 5% 34.37%, 6% 34.10%, 7% 33.78%, 8% 33.41%, 9% 33.00%, 10% 32.56%, 11% 32.07%, 12% 31.55%, 13% 30.99%, 14% 30.40%, 15% 29.79%, 16% 29.15%, 17% 28.49%, 18% 27.81%, 19% 27.12%, 20% 26.42%, 21% 25.71%, 22% 24.99%, 23% 24.28%, 24% 23.57%, 25% 22.87%, 26% 22.18%, 27% 21.50%, 28% 20.84%, 29% 20.20%, 30% 19.59%, 31% 19.00%, 32% 18.44%, 33% 17.92%, 34% 17.44%, 35% 16.99%, 36% 16.58%, 37% 16.22%, 38% 15.90%, 39% 15.63%, 40% 15.40%, 41% 15.23%, 42% 15.10%, 43% 15.02%, 44% 15.00%, 45% 15.03%, 46% 15.10%, 47% 15.23%, 48% 15.41%, 49% 15.64%, 50% 15.91%, 51% 16.23%, 52% 16.60%, 53% 17.00%, 54% 17.45%, 55% 17.94%, 56% 18.46%, 57% 19.02%, 58% 19.61%, 59% 20.22%, 60% 20.86%, 61% 21.52%, 62% 22.20%, 63% 22.89%, 64% 23.60%, 65% 24.31%, 66% 25.02%, 67% 25.73%, 68% 26.44%, 69% 27.15%, 70% 27.84%, 71% 28.51%, 72% 29.17%, 73% 29.81%, 74% 30.42%, 75% 31.01%, 76% 31.57%, 77% 32.09%, 78% 32.57%, 79% 33.02%, 80% 33.42%, 81% 33.79%, 82% 34.11%, 83% 34.38%, 84% 34.60%, 85% 34.78%, 86% 34.90%, 87% 34.98%, 88% 35.00%, 89% 34.97%, 90% 34.89%, 91% 34.77%, 92% 34.59%, 93% 34.36%, 94% 34.09%, 95% 33.76%, 96% 33.40%, 97% 32.99%, 98% 32.54%, 99% 32.05%, 100% 31.53%);
+
+
+}
+.mssbg{
+  background-image:
+  linear-gradient(to bottom, rgba(241, 99, 77,.75), rgba(241, 99, 77,.75)),
+  url('./assets/ccbg.png');
+clip-path: polygon(100% 100%, 0% 100% , 0% 35.00%, 1% 34.97%, 2% 34.90%, 3% 34.77%, 4% 34.59%, 5% 34.37%, 6% 34.10%, 7% 33.78%, 8% 33.41%, 9% 33.00%, 10% 32.56%, 11% 32.07%, 12% 31.55%, 13% 30.99%, 14% 30.40%, 15% 29.79%, 16% 29.15%, 17% 28.49%, 18% 27.81%, 19% 27.12%, 20% 26.42%, 21% 25.71%, 22% 24.99%, 23% 24.28%, 24% 23.57%, 25% 22.87%, 26% 22.18%, 27% 21.50%, 28% 20.84%, 29% 20.20%, 30% 19.59%, 31% 19.00%, 32% 18.44%, 33% 17.92%, 34% 17.44%, 35% 16.99%, 36% 16.58%, 37% 16.22%, 38% 15.90%, 39% 15.63%, 40% 15.40%, 41% 15.23%, 42% 15.10%, 43% 15.02%, 44% 15.00%, 45% 15.03%, 46% 15.10%, 47% 15.23%, 48% 15.41%, 49% 15.64%, 50% 15.91%, 51% 16.23%, 52% 16.60%, 53% 17.00%, 54% 17.45%, 55% 17.94%, 56% 18.46%, 57% 19.02%, 58% 19.61%, 59% 20.22%, 60% 20.86%, 61% 21.52%, 62% 22.20%, 63% 22.89%, 64% 23.60%, 65% 24.31%, 66% 25.02%, 67% 25.73%, 68% 26.44%, 69% 27.15%, 70% 27.84%, 71% 28.51%, 72% 29.17%, 73% 29.81%, 74% 30.42%, 75% 31.01%, 76% 31.57%, 77% 32.09%, 78% 32.57%, 79% 33.02%, 80% 33.42%, 81% 33.79%, 82% 34.11%, 83% 34.38%, 84% 34.60%, 85% 34.78%, 86% 34.90%, 87% 34.98%, 88% 35.00%, 89% 34.97%, 90% 34.89%, 91% 34.77%, 92% 34.59%, 93% 34.36%, 94% 34.09%, 95% 33.76%, 96% 33.40%, 97% 32.99%, 98% 32.54%, 99% 32.05%, 100% 31.53%);
+
+
 }
 .add-app-red::before{
   content: '';
@@ -68,6 +96,7 @@
   position: absolute;
   transform: translateY(-20px);
   border-radius: 8px;
+  color: #0000ff0d;
   /* opacity: .90; */
 }
 @media screen and (max-width: 1280px) {
@@ -120,4 +149,75 @@
   background-attachment: fixed;
 
 background-size: cover;
+}
+.app-common-bg-not-fixed{
+
+  background: linear-gradient(rgba(255, 255, 255, 0.544), rgba(255, 255, 255, 0.5)), url('./assets/IconsBG.png');
+  background-repeat: no-repeat;
+
+background-size: cover;
+}
+.techdisttext{
+
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: 40px;
+text-align: center;
+
+color: #FFFFFF;
+}
+.styledListItem{
+  margin-left: 20px;
+position: relative;
+display: flex;
+align-items: center;
+/* font-family: 'Kozuka Gothic Pro'; */
+font-style: normal;
+font-weight: 400;
+font-size: 18px;
+line-height: 40px;
+display: flex;
+align-items: center;
+
+color: #474747;
+}
+.styledListItem::before{
+  content: '';
+  width: 10px;
+  height: 10px;
+  background-color: #f1634d;
+  position: absolute;
+left: -20px;
+border-radius: 20px;
+}
+.detailbox p{
+  /* font-family: 'Kozuka Gothic Pro'; */
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: 40px;
+text-align: center;
+
+color: #FFFFFF;
+}
+@media screen and (max-width: 900px) {
+  .mssbg, .ccbg{
+
+  clip-path:none;
+  border-radius: 20px;
+  
+  
+  }
+ .techdisttext, .detailbox p{
+    /* font-family: 'Kozuka Gothic Pro'; */
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 25px;
+  text-align: center;
+  
+  color: #FFFFFF;
+  }
+
 }

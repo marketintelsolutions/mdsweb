@@ -5,6 +5,7 @@ const ProcurementAndDistribution = () => {
   useEffect(() => {
     window.scrollTo({ top: 0 });
   }, []);
+
   const [showForm, setShowForm] = useState(false);
   const [sendingRequest, setSendingRequest] = useState(false);
   const [type, setType] = useState("Hardware");

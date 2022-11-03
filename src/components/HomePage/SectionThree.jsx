@@ -1,43 +1,31 @@
 import React from "react";
-import Arrow from "../../assets/Arrow 1.png";
 import { Link } from "react-router-dom";
-import lottie from "lottie-web";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
+import illustration from "../../assets/illustration.png";
 
 const SectionThree = ({ header, subHeader, image, id, link, animeid }) => {
-  React.useEffect(() => {
-    const instance = lottie.loadAnimation({
-      container: document.querySelector(`#${animeid}`),
-      animationData: image,
-      renderer: "svg",
-      loop: true,
-      autoplay: true,
-      rendererSettings: {
-        preserveAspectRatio: "xMidYMid slice",
-      },
-    });
-    return () => instance.destroy();
-  }, []);
-
   return (
     <div
-      className="xl:max-w-[73%] container d-flex xl:my-20 my-10 flex-wrap  items-center xl:pt-20 xl:py-24 py-10 justify-center xl:justify-between "
+      className="xl:max-w-[70%] container mx-auto flex  xl:my-20 my-10 flex-wrap p-5  items-center xl:pt-20 xl:py-24 py-10 justify-b xl:justify-around "
       id={id}
     >
-      <div className="w-full xl:w-1/2  xl:text-left  flex xl:justify-start bg-white">
+      <div className="lg:w-5/12 w-full xl:text-left  flex xl:justify-start bg-white lg:order-1 order-2">
         <div className="xl:max-w-[500px]">
-          <h1 className="text-5xl font-bold add-app-red">{header} </h1>
-          <p className="text-[23px] mt-10 text-[#727272]">{subHeader}</p>
-          <Link to={link || "/"} className="text-[#f1634d]">
-            <button className="app-btn text-white py-3 px-10 mt-10">
+          <h1 className="lg:text-5xl text-3xl font-[900] text-[#FF3B00] ">
+            {header}{" "}
+          </h1>
+          <p className="text-lg leading-7 mt-5 text-[#727272] lg:my-10">
+            {subHeader}
+          </p>
+          <Link to={link || "/"} className=" ">
+            <button className="bg-[#F26836] rounded-full text-white p-4 px-6 mt-4">
               Read More
             </button>
           </Link>
         </div>
       </div>
-      <div className="w-[300px] xl:w-[500px] shadow-lg drop-shadow-lg flex mx-auto my-5 xl:justify-end app-light-red rounded-full  h-[300px] xl:h-[500px] justify-center items-center">
-        <div id={animeid} className="w-full h-full" />
+
+      <div className="lg:w-5/12 w-full lg:order-2 order-1">
+        <img src={illustration} alt="" className="w-full" />
       </div>
     </div>
   );

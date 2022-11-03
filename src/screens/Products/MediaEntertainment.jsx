@@ -1,34 +1,36 @@
 import React, { useEffect } from "react";
-import ShowBox from "../../components/Shared/ShowBox";
+import imageOne from "../../assets/72927-social-media.gif";
 
 const MediaEntertainment = () => {
-  const missionElements = [
-    { title: "Content Distribution" },
-    { title: `Alternative Channels` },
-    { title: `Sports and Entertainment` },
-    { title: `Media Broadcast Infrastructure` },
-  ];
   useEffect(() => {
     window.scrollTo({ top: 0 });
   }, []);
-  return (
-    <div className="bg-gray-50 text-center app-common-bg">
-        <div className=" max-w-[73%] mx-auto  pb-10">
-        <h1 className="text-5xl font-bold lg:w-2/3 mx-auto  my-12">
-          Media & Entertainment
-        </h1>
-        <p className="text-3xl mt-10 ">
-          MDS is a key player in Media infrastructure and creative Content
-          Development to promote Africa and Global Culture
-        </p>
 
-        <div className="my-16 flex justify-around flex-wrap">
-          {missionElements.map((i, index) => (
-            <div className="w-2/5  bg-[#031759] rounded-2xl hover:bg-opacity-80 hover:text-black text-white shadow-lg m-3 flex-col flex items-center justify-center p-3">
-              {i.title && <h1 className="text-3xl  font-bold ">{i.title}</h1>}
-            </div>
-          ))}
+  return (
+    <div className="xl:max-w-[70%] container mx-auto flex  xl:my-20 lg:my-10 flex-wrap  items-center xl:pt-20 xl:py-24 lg:py-10 p-3 justify-b xl:justify-around ">
+      <div className="lg:w-5/12 w-full lg:order-1 order-2 xl:text-left  flex xl:justify-start bg-white">
+        <div className="xl:max-w-[500px]">
+          <h1 className="lg:text-5xl text-3xl font-[900] text-[#1233FE] ">
+            Media & Entertainment
+          </h1>
+          <p className="text-lg lg:leading-7 mt-5 text-[#727272] my-10">
+            Our investment and partnership interests span across.
+          </p>
+          <ul>
+            <li className="styledListItem">Content Distribution</li>
+            <li className="styledListItem">Alternative Channels </li>
+            <li className="styledListItem">Sport and Entertainment</li>
+            <li className="styledListItem">Media Broadcast Infrastructure</li>
+          </ul>
+          <p className="text-lg lg:leading-7 mt-5 text-[#727272] my-10">
+            Our aim is to continue developing innovative solutions in all
+            verticals of the media industry in order to meet the challenges
+            faced by businesses in this ever-changing technology environment.
+          </p>
         </div>
+      </div>
+      <div className="lg:w-5/12 w-full lg:order-2 order-1">
+        <img src={imageOne} alt="" className="w-full" />
       </div>
     </div>
   );

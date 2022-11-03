@@ -7,307 +7,509 @@ import {
   faTiktok,
   faTwitter,
 } from "@fortawesome/free-brands-svg-icons";
-import { Link, useLocation, useRoutes } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
+import {
+  FaHome,
+  FaEnvelope,
+  FaPhoneAlt,
+  FaBars,
+  FaAngleDown,
+} from "react-icons/fa";
 
 const NavBar = () => {
   const { pathname } = useLocation();
-  const [showStaff, setShowStaff] = useState(false);
-  const [showDirectors, setShowDirectors] = useState(false);
+
+  const [showNav, setShowNav] = useState(false);
+  const [showProducts, setShowProducts] = useState(false);
+  const [showAbout, setShowAbout] = useState(false);
+  const [showTeam, setShowTeam] = useState(false);
+  const [showExcos, setShowExcos] = useState(false);
+  const toggle = () => {
+    setShowNav(!showNav);
+  };
+  const toggleExcos = () => {
+    setShowExcos(!showExcos);
+  };
+  const toggleTeam = () => {
+    setShowTeam(!showTeam);
+  };
+  const toggleAbout = () => {
+    setShowAbout(!showAbout);
+  };
+  const toggleProducts = () => {
+    setShowProducts(!showProducts);
+  };
 
   return (
-    <div className="fixed top-0 left-0 right-0 z-10 bg-white ">
-      <div className=" w-full border-b py-2 bg-[#031759] text-white">
-        <div class="container-fluid xl:max-w-[73%] w-full h-full flex flex-wrap items-center justify-center lg:justify-between">
-          <div className="flex items-center m-2 ">
-            <a
-              href="tel:+23412718630"
-              className="text-xs mr-3 font-medium text-white"
-            >
-              📞 +234 (1) 271 8630
-            </a>
-            <a
-              href="https://goo.gl/maps/YQkx4EsJdUSinavS8"
-              className="text-xs mx-3 font-medium text-white"
-            >
-              🌎 9 Elsie Femi Pearse St, Victoria Island 106104, Lagos
-            </a>
+    <div>
+      <div className="lg:block fixed hidden top-0 left-0 right-0 z-10 bg-white ">
+        <div className=" w-full border-b py-1 bg-blue-700 text-white">
+          <div className="container-fluid xl:max-w-[100%] w-full h-full flex flex-wrap items-center justify-around lg:justify-around">
+            <div className="flex items-center m-2 ">
+              <FaPhoneAlt />
+              <a
+                href="tel:+23412718630"
+                className="text-xs ml-1 mr-10 font-normal text-white"
+              >
+                +234 (1) 271 8630
+              </a>
+              <FaHome />
+              <a
+                href="https://goo.gl/maps/YQkx4EsJdUSinavS8"
+                className="text-xs mx-3 font-normal text-white"
+              >
+                9 Elsie Femi Pearse St, Victoria Island 106104, Lagos
+              </a>
+            </div>
+            <div className="flex items-center m-2">
+              <a
+                href="https://www.tiktok.com/@mdstech2?lang=en"
+                className="text-xs font-normal text-white mx-3"
+              >
+                <FontAwesomeIcon icon={faTiktok} />
+              </a>
+              <a
+                href="https://twitter.com/MDSTech3"
+                className="text-xs font-normal text-white mx-3"
+              >
+                <FontAwesomeIcon icon={faTwitter} />
+              </a>
+              <a
+                href="https://www.linkedin.com/in/mds-tech-950666242/"
+                className="text-xs font-normal text-white ml-3"
+              >
+                <FontAwesomeIcon icon={faLinkedinIn} />
+              </a>
+            </div>
           </div>
-          <div className="flex items-center m-2">
+        </div>
+        <div className="flex justify-around p-5 w-full text-[#888888]">
+          <div className="w-24 h-10">
+            <Link to="/">
+              <img src={Logo} alt="" className="w-auto" />
+            </Link>
+          </div>
+          <div className="flex items-center gap-2 font-normal">
+            <Link to="/">Home</Link>
+            {/* start of the dropdown */}
+            <div class="group inline-block text-[#888888]">
+              <button class="outline-none focus:outline-none bg-white rounded-sm px-3 py-1 flex items-center min-w-32">
+                <span class="font-normal flex-1">
+                  <Link to="about">About</Link>
+                </span>
+                <span>
+                  <svg
+                    class="fill-current h-4 w-4 transform group-hover:-rotate-180
+          transition duration-150 ease-in-out"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 20 20"
+                  >
+                    <path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z" />
+                  </svg>
+                </span>
+              </button>
+              <ul
+                class="bg-white border rounded-sm transform scale-0 group-hover:scale-100 absolute 
+        transition duration-150 ease-in-out origin-top min-w-32 text-[#888888]"
+              >
+                <li class="rounded-sm relative px-3 py-1 hover:bg-gray-100">
+                  <button class="w-full text-left flex items-center outline-none focus:outline-none">
+                    <span class="pr-1 flex-1 text-[#888888]">Directors</span>
+                    <span class="mr-auto">
+                      <svg
+                        class="fill-current h-4 w-4
+              transition duration-150 ease-in-out"
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 20 20"
+                      >
+                        <path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z" />
+                      </svg>
+                    </span>
+                  </button>
+                  <ul class="bg-white border rounded-sm absolute top-0 right-0 transition duration-150 ease-in-out origin-top-left min-w-32">
+                    <li class="rounded-sm relative px-3 py-1 hover:bg-gray-100">
+                      <button class="w-full text-left flex items-center outline-none focus:outline-none">
+                        <span class="pr-1 flex-1 text-[#888888]">
+                          Directors
+                        </span>
+                        <span class="mr-auto">
+                          <svg
+                            class="fill-current h-4 w-4
+                  transition duration-150 ease-in-out"
+                            xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 20 20"
+                          >
+                            <path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z" />
+                          </svg>
+                        </span>
+                      </button>
+                      <ul
+                        class="bg-white border rounded-sm absolute top-0 right-0
+        transition duration-150 ease-in-out origin-top-left
+        min-w-32
+        "
+                      >
+                        <Link to="/profile?name=Chris Oshiafi">
+                          <li class="px-3 py-1 hover:bg-gray-100 text-[#888888]">
+                            Chris Oshiafi
+                          </li>
+                        </Link>
+                        <Link to="/profile?name=Sina Alimi">
+                          <li class="px-3 py-1 hover:bg-gray-100 text-[#888888]">
+                            Sina Alimi
+                          </li>
+                        </Link>
+                        <Link to="/profile?name=Eric Okoruwa">
+                          <li class="px-3 py-1 hover:bg-gray-100 text-[#888888]">
+                            Eric Okoruwa
+                          </li>
+                        </Link>
+                      </ul>
+                    </li>
+                    <li class="rounded-sm relative px-3 py-1 hover:bg-gray-100 text-[#888888]">
+                      <button class="w-full text-left flex items-center outline-none focus:outline-none">
+                        <span class="pr-1 flex-1">Our Team</span>
+                        <span class="mr-auto">
+                          <svg
+                            class="fill-current h-4 w-4
+                  transition duration-150 ease-in-out"
+                            xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 20 20"
+                          >
+                            <path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z" />
+                          </svg>
+                        </span>
+                      </button>
+                      <ul
+                        class="bg-white border rounded-sm absolute top-0 right-0
+        transition duration-150 ease-in-out origin-top-left
+        min-w-32
+        "
+                      >
+                        <Link to="profile?name=Emeka Osuocha">
+                          <li class="px-3 py-1 hover:bg-gray-100 text-[#888888]">
+                            Emeka Osuocha
+                          </li>
+                        </Link>
+                        <Link to="profile?name=Jimmy Ogunnowo">
+                          <li class="px-3 py-1 hover:bg-gray-100 text-[#888888]">
+                            Jimmy Ogunnowo
+                          </li>
+                        </Link>
+                        {/* <Link to="profile?name=Joseph Dele">
+                          <li class="px-3 py-1 hover:bg-gray-100 text-[#888888]">
+                            Joseph Dele
+                          </li>
+                        </Link>
+                        <Link to="profile?name=Usman Ayobami">
+                          <li class="px-3 py-1 hover:bg-gray-100 text-[#888888]">
+                            Usman Ayobami
+                          </li>
+                        </Link>
+                        <Link to="profile?name=Ademola Olusesan">
+                          <li class="px-3 py-1 hover:bg-gray-100 text-[#888888]">
+                            Ademola Olusesan
+                          </li>
+                        </Link>
+                        <Link to="profile?name=DSP Ayomide Oluwole">
+                          <li className="px-3 py-1 hover:bg-gray-100 text-[#888888]">
+                            DSP Ayomide Oluwole
+                          </li>
+                        </Link> */}
+                      </ul>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+            {/* end of a dropdown */}
+            <div class="group inline-block">
+              <button class="outline-none focus:outline-none px-3 py-1 bg-white rounded-sm flex items-center min-w-32">
+                <span class="pr-1 font-normal flex-1">Products</span>
+                <span>
+                  <svg
+                    class="fill-current h-4 w-4 transform group-hover:-rotate-180
+          transition duration-150 ease-in-out"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 20 20"
+                  >
+                    <path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z" />
+                  </svg>
+                </span>
+              </button>
+              <ul
+                class="bg-white border rounded-sm transform scale-0 group-hover:scale-100 absolute 
+        transition duration-150 ease-in-out origin-top min-w-32"
+              >
+                <Link to={pathname === "/" ? "/#Fintech" : "/Fintech"}>
+                  <li className="rounded-sm px-3 py-1 hover:bg-gray-100 text-[#888888]">
+                    Fintech
+                  </li>
+                </Link>
+                <Link
+                  to={
+                    pathname === "/"
+                      ? "/#Managed Technology Services"
+                      : "/ManagedTechnologyServices"
+                  }
+                >
+                  <li class="rounded-sm px-3 py-1 hover:bg-gray-100 text-[#888888]">
+                    Managed Technology Sevices
+                  </li>
+                </Link>
+                <Link
+                  to={pathname === "/" ? "/#Smart Creative" : "/SmartCreative"}
+                >
+                  <li class="rounded-sm px-3 py-1 hover:bg-gray-100 text-[#888888]">
+                    Smart Creative
+                  </li>
+                </Link>
+                <Link
+                  to={
+                    pathname === "/"
+                      ? "/#Technology Distribution"
+                      : "/TechnologyDistribution"
+                  }
+                >
+                  <li class="rounded-sm px-3 py-1 hover:bg-gray-100 text-[#888888]">
+                    Technology Distribution
+                  </li>
+                </Link>
+                <Link
+                  to={
+                    pathname === "/"
+                      ? "/#Media & Entertainment"
+                      : "/MediaEntertainment"
+                  }
+                >
+                  <li class="rounded-sm px-3 py-1 hover:bg-gray-100 text-[#888888]">
+                    Media & Entertainment
+                  </li>
+                </Link>
+              </ul>
+            </div>
+            {/* end of a dropdown */}
             <a
-              href="https://www.tiktok.com/@mdstech2?lang=en"
-              className="text-xs font-medium text-white mx-3"
+              href="mailto:info@marketintelsolutions.com"
+              className="flex items-center gap-1"
             >
-              <FontAwesomeIcon icon={faTiktok} />
-            </a>
-            <a
-              href="https://twitter.com/MDSTech3"
-              className="text-xs font-medium text-white mx-3"
-            >
-              <FontAwesomeIcon icon={faTwitter} />
-            </a>
-            <a
-              href="https://www.linkedin.com/in/mds-tech-950666242/"
-              className="text-xs font-medium text-white ml-3"
-            >
-              <FontAwesomeIcon icon={faLinkedinIn} />
+              <FaEnvelope />
+              <span>info@marketintelsolutions.com</span>
             </a>
           </div>
         </div>
       </div>
-      <nav class="navbar navbar-expand-lg container py-1 app-container  ">
-        <div class="container-fluid ">
-          <a class="navbar-brand text-2xl font-bold" href="/#">
-            <img src={Logo} alt="" className="w-[100px] xl:w-[200px]" />
-          </a>
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarTogglerDemo02"
-            aria-controls="navbarTogglerDemo02"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-              <li class="nav-item lg:mx-4 relative ">
-                <Link
-                  class="nav-link text-[#031759] font-medium text-base add-app-red-to-nav "
-                  aria-current="page"
-                  to="/"
-                >
-                  Home
-                </Link>
-              </li>
 
-
-              <li class="nav-item lg:mx-4 relative">
-                <div class="btn-group">
-                  <a
-                    class="nav-link text-[#031759] font-medium text-base add-app-red-to-nav "
-                    aria-current="page"
-                    href="/about"
-                  >
-                    About
-                  </a>
-                  <a
-                    class="nav-link text-[#031759] font-medium text-base add-app-red-to-nav dropdown-toggle"
-                    href="/about"
-                    id="navbarDropdown"
-                    role="button"
-                    data-bs-toggle="dropdown"
-                    aria-expanded="false"
-                  >&nbsp;</a>
-                  <ul
-                    class="dropdown-menu bg-[#F6F6F6]"
-                    aria-labelledby="navbarDropdown"
-                  ><li>
-                  <a
-                    class="dropdown-item relative"
-                    href="/profile?name=Chris Oshiafi"
-                    onMouseOver={() => setShowDirectors(true)}
-                    onMouseLeave={() => setShowDirectors(false)}
-                  >
-                    Directors
-                    {showDirectors && (
-                      <div className="absolute bg-[#F6F6F6] border rounded-lg left-[101%] top-0 overflow-hidden">
-                        <ul class=" bg-[#F6F6F6]">
-                          <li>
-                            <a
-                              class="dropdown-item"
-                              href="/profile?name=Chris Oshiafi"
+      <div className=" lg:hidden">
+        <div className="bg-white p-3 flex justify-between items-center border-b-8 border-[#0000FF] ">
+          <div className="w-24 h-10">
+            <Link to="/">
+              <img src={Logo} alt="" className="w-auto" />
+            </Link>
+          </div>
+          <FaBars color="#0000FF" size={30} onClick={toggle} />
+        </div>
+        {showNav && (
+          <div className="h-screen w-screen fixed z-10 top-0 bg-[#F26836] overflow-y-scroll p-3">
+            <div className="flex justify-end ">
+              <FaBars
+                color="white"
+                size={30}
+                onClick={toggle}
+                className="rotate-90"
+              />
+            </div>
+            <div className="mt-20">
+              <ul>
+                <li className="text-white font-[900] text-3xl my-3">Home</li>
+                <li className="text-white font-[900] text-3xl my-3 flex items-center">
+                  About{" "}
+                  <FaAngleDown
+                    color="white"
+                    size={30}
+                    className={`${showAbout && "rotate-180"}`}
+                    onClick={toggleAbout}
+                  />
+                </li>
+                {showAbout && (
+                  <div>
+                    <li className="text-white font-[400] text-xl ml-3 my-3 flex items-center">
+                      Directors
+                      <FaAngleDown
+                        color="white"
+                        size={30}
+                        onClick={toggleExcos}
+                        className={`${showExcos && "rotate-180"}`}
+                      />
+                    </li>
+                    {showExcos && (
+                      <div>
+                        <ul class="min-w-32">
+                          <Link to="/profile?name=Chris Oshiafi">
+                            <li
+                              class="px-3 py-1 hover:bg-gray-100 text-[#ffffff]"
+                              onClick={toggle}
                             >
                               Chris Oshiafi
-                            </a>
-                          </li>
-                          <li>
-                            <hr class="dropdown-divider" />
-                          </li>
-                          <li>
-                            <a
-                              class="dropdown-item"
-                              href="/profile?name=Sina Alimi"
+                            </li>
+                          </Link>
+                          <Link to="/profile?name=Sina Alimi">
+                            <li
+                              class="px-3 py-1 hover:bg-gray-100 text-[#ffffff]"
+                              onClick={toggle}
                             >
                               Sina Alimi
-                            </a>
-                          </li>
-                          <li>
-                            <hr class="dropdown-divider" />
-                          </li>
-                          <li>
-                            <a
-                              class="dropdown-item"
-                              href="/profile?name=Eric Okoruwa"
+                            </li>
+                          </Link>
+                          <Link to="/profile?name=Eric Okoruwa">
+                            <li
+                              class="px-3 py-1 hover:bg-gray-100 text-[#ffffff]"
+                              onClick={toggle}
                             >
                               Eric Okoruwa
-                            </a>
-                          </li>
-                         
+                            </li>
+                          </Link>
                         </ul>
                       </div>
                     )}
-                  </a>
+                    <li className="text-white font-[400] text-xl ml-3 my-3 flex items-center">
+                      Our Team
+                      <FaAngleDown
+                        color="white"
+                        size={30}
+                        onClick={toggleTeam}
+                        className={`${showTeam && "rotate-180"}`}
+                      />
+                    </li>
+                    {showTeam && (
+                      <div>
+                        <ul class="min-w-32">
+                          <Link to="profile?name=Emeka Osuocha">
+                            <li
+                              class="px-3 py-1 hover:bg-gray-100 text-[#ffffff]"
+                              onClick={toggle}
+                            >
+                              Emeka Osuocha
+                            </li>
+                          </Link>
+                          <Link to="profile?name=Jimmy Ogunnowo">
+                            <li
+                              class="px-3 py-1 hover:bg-gray-100 text-[#ffffff]"
+                              onClick={toggle}
+                            >
+                              Jimmy Ogunnowo
+                            </li>
+                          </Link>
+                          {/* <Link to="profile?name=Joseph Dele">
+                          <li class="px-3 py-1 hover:bg-gray-100 text-[#ffffff]" onClick={toggle} >
+                            Joseph Dele
+                          </li>
+                        </Link>
+                        <Link to="profile?name=Usman Ayobami">
+                          <li class="px-3 py-1 hover:bg-gray-100 text-[#888888]">
+                            Usman Ayobami
+                          </li>
+                        </Link>
+                        <Link to="profile?name=Ademola Olusesan">
+                          <li class="px-3 py-1 hover:bg-gray-100 text-[#888888]">
+                            Ademola Olusesan
+                          </li>
+                        </Link>
+                        <Link to="profile?name=DSP Ayomide Oluwole">
+                          <li className="px-3 py-1 hover:bg-gray-100 text-[#888888]">
+                            DSP Ayomide Oluwole
+                          </li>
+                        </Link> */}
+                        </ul>
+                      </div>
+                    )}
+                  </div>
+                )}
+                <li
+                  className="text-white font-[900] text-3xl my-3 flex items-center"
+                  onClick={toggleProducts}
+                >
+                  Products{" "}
+                  <FaAngleDown
+                    color="white"
+                    size={30}
+                    className={`${showProducts && "rotate-180"}`}
+                  />
                 </li>
-                <li>
-                      <hr class="dropdown-divider" />
-                    </li>
-                    <li>
-                      <a
-                        class="dropdown-item relative"
-                        href="/profile?name=Emeka Osuocha"
-                        onMouseOver={() => setShowStaff(true)}
-                        onMouseLeave={() => setShowStaff(false)}
+                {showProducts && (
+                  <ul class=" min-w-32">
+                    <Link to={pathname === "/" ? "/#Fintech" : "/Fintech"}>
+                      <li
+                        onClick={toggle}
+                        className="rounded-sm px-3 py-1 hover:bg-gray-100 text-[#ffffff]"
                       >
-                        Management Staff
-                        {showStaff && (
-                          <div className="absolute bg-[#F6F6F6] border rounded-lg left-[101%] top-0">
-                            <ul class=" bg-[#F6F6F6]">
-                              <li>
-                                <a
-                                  class="dropdown-item"
-                                  href="/profile?name=Emeka Osuocha"
-                                >
-                                  Emeka Osuocha
-                                </a>
-                              </li>
-                              <li>
-                                <hr class="dropdown-divider" />
-                              </li>
-                              <li>
-                                <a
-                                  class="dropdown-item"
-                                  href="/profile?name=Jimmy Ogunnowo"
-                                >
-                                  Jimmy Ogunnowo
-                                </a>
-                              </li>
-                            </ul>
-                          </div>
-                        )}
-                      </a>
-                    </li>
-                    
-                    
-                  </ul>
-                </div>
-              </li>
-              <li class="nav-item lg:mx-4 relative ">
-                <div class="btn-group">
-                  <a
-                    class="nav-link text-[#031759] font-medium text-base add-app-red-to-nav "
-                    aria-current="page"
-                    href={
-                      pathname === "/"
-                        ? "/#Technology Distribution"
-                        : "/TechnologyDistribution"
-                    }
-                  >
-                    Products
-                  </a>
-                  <a
-                    class="nav-link text-[#031759] font-medium text-base add-app-red-to-nav dropdown-toggle"
-                    href={
-                      pathname === "/"
-                        ? "/#Technology Distribution"
-                        : "/TechnologyDistribution"
-                    }
-                    id="navbarDropdown"
-                    role="button"
-                    data-bs-toggle="dropdown"
-                    aria-expanded="false"
-                  ></a>
-                  <ul
-                    class="dropdown-menu bg-[#F6F6F6]"
-                    aria-labelledby="navbarDropdown"
-                  >
-                    <li>
-                      <a
-                        class="dropdown-item"
-                        href={
-                          pathname === "/"
-                            ? "/#Technology Distribution"
-                            : "/TechnologyDistribution"
-                        }
+                        Fintech
+                      </li>
+                    </Link>
+                    <Link
+                      to={
+                        pathname === "/"
+                          ? "/#Managed Technology Services"
+                          : "/ManagedTechnologyServices"
+                      }
+                    >
+                      <li
+                        onClick={toggle}
+                        class="rounded-sm px-3 py-1 hover:bg-gray-100 text-[#ffffff]"
+                      >
+                        Managed Technology Sevices
+                      </li>
+                    </Link>
+                    <Link
+                      to={
+                        pathname === "/" ? "/#Smart Creative" : "/SmartCreative"
+                      }
+                    >
+                      <li
+                        onClick={toggle}
+                        class="rounded-sm px-3 py-1 hover:bg-gray-100 text-[#ffffff]"
+                      >
+                        Smart Creative
+                      </li>
+                    </Link>
+                    <Link
+                      to={
+                        pathname === "/"
+                          ? "/#Technology Distribution"
+                          : "/TechnologyDistribution"
+                      }
+                    >
+                      <li
+                        onClick={toggle}
+                        class="rounded-sm px-3 py-1 hover:bg-gray-100 text-[#ffffff]"
                       >
                         Technology Distribution
-                      </a>
-                    </li>
-                    <li>
-                      <hr class="dropdown-divider" />
-                    </li>
-                    <li>
-                      <a
-                        class="dropdown-item"
-                        href={
-                          pathname === "/"
-                            ? "/#Media & Entertainment"
-                            : "/MediaEntertainment"
-                        }
+                      </li>
+                    </Link>
+                    <Link
+                      to={
+                        pathname === "/"
+                          ? "/#Media & Entertainment"
+                          : "/MediaEntertainment"
+                      }
+                    >
+                      <li
+                        onClick={toggle}
+                        class="rounded-sm px-3 py-1 hover:bg-gray-100 text-[#ffffff]"
                       >
                         Media & Entertainment
-                      </a>
-                    </li>
-                    <li>
-                      <hr class="dropdown-divider" />
-                    </li>
-                    <li>
-                      <a
-                        class="dropdown-item"
-                        href={pathname === "/" ? "/#FINTECH" : "/FINTECH"}
-                      >
-                        FINTECH
-                      </a>
-                    </li>
-                    <li>
-                      <hr class="dropdown-divider" />
-                    </li>
-                    <li>
-                      <a
-                        class="dropdown-item"
-                        href={
-                          pathname === "/"
-                            ? "/#Managed Technology Services"
-                            : "/ManagedTechnologyServices"
-                        }
-                      >
-                        Managed Technology Services
-                      </a>
-                    </li>
-                    <li>
-                      <hr class="dropdown-divider" />
-                    </li>
-                    <li>
-                      <a
-                        class="dropdown-item"
-                        href={
-                          pathname === "/"
-                            ? "/#ProcurementAndDistribution"
-                            : "/ProcurementAndDistribution"
-                        }
-                      >
-                        Procurement And Distribution
-                      </a>
-                    </li>
+                      </li>
+                    </Link>
                   </ul>
-                </div>
-              </li>
-
-             
-
-              <li class="nav-item lg:mx-4">
-                <a
-                  class="nav-link text-[#031759] font-medium text-base"
-                  href="mailto:info@marketintelsolutions.com"
-                >
-                  ✉️ info@marketintelsolutions.com
-                </a>
-              </li>
-            </ul>
+                )}
+                <li className="text-white font-[900] text-3xl my-3">
+                  Contact Us
+                </li>
+              </ul>
+            </div>
           </div>
-        </div>
-      </nav>
+        )}
+      </div>
     </div>
   );
 };
