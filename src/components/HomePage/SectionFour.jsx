@@ -5,17 +5,19 @@ import { Link } from "react-router-dom";
 const SectionFour = ({ header, subHeader, image, id, link, animeid }) => {
   return (
     <div
-      className="xl:max-w-[73%] container mx-auto flex xl:my-20 my-10 flex-wrap  items-center xl:pt-20 xl:py-24 py-10 justify-between xl:justify-around "
+      className="xl:max-w-[73%] container mx-auto flex xl:my-20 my-10 flex-wrap p-5  items-center xl:pt-20 xl:py-24 py-10 justify-between xl:justify-around "
       id={id}
     >
-      <div className="w-5/12">
-        <img src={creative} alt="" className="h-full" />
+      <div className="lg:w-5/12 w-full">
+        <img src={creative} alt="" className="lg:h-full" />
       </div>
 
-      <div className="w-5/12 xl:text-left  flex xl:justify-start bg-white">
+      <div className="lg:w-5/12 w-full xl:text-left  flex xl:justify-start bg-white">
         <div className="xl:max-w-[500px]">
-          <h1 className="text-5xl font-[900] text-[#1233FF]">{header} </h1>
-          <p className="text-lg leading-7 mt-5 text-[#727272] my-10">
+          <h1 className="lg:text-5xl text-3xl font-[900] text-[#1233FF]">
+            {header}{" "}
+          </h1>
+          <p className="text-lg leading-7 mt-5 text-[#727272] lg:my-10">
             {subHeader}
           </p>
           <Link to={link || "/"} className="">

@@ -1,8 +1,6 @@
 import React from "react";
-
 import Emeka from "../../assets/Emeka.png";
 import Jimmy from "../../assets/Jimmy.png";
-import Usman from "../../assets/usman.jpg";
 
 const TeamSection = () => {
   return (
