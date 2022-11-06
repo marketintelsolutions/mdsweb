@@ -321,7 +321,14 @@ const NavBar = () => {
             </div>
             <div className="mt-20">
               <ul>
-                <li className="text-white font-[900] text-3xl my-3">Home</li>
+                <Link to="/">
+                  <li
+                    className="text-white font-[900] text-3xl my-3"
+                    onClick={toggle}
+                  >
+                    Home
+                  </li>
+                </Link>
                 <li className="text-white font-[900] text-3xl my-3 flex items-center">
                   About{" "}
                   <FaAngleDown
@@ -502,9 +509,14 @@ const NavBar = () => {
                     </Link>
                   </ul>
                 )}
-                <li className="text-white font-[900] text-3xl my-3">
-                  Contact Us
-                </li>
+                <Link to="/ContactUs">
+                  <li
+                    className="text-white font-[900] text-3xl my-3"
+                    onClick={toggle}
+                  >
+                    Contact Us
+                  </li>
+                </Link>
               </ul>
             </div>
           </div>
