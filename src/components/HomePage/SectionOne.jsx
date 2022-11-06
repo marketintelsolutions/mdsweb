@@ -30,7 +30,7 @@ const SectionOne = () => {
           <img
             src={monitor}
             alt=""
-            className=" lg:absolute lg:h-[130%] h-full bottom-0 "
+            className=" lg:absolute lg:h-[130%]   bottom-0 "
           />
         </div>
       </div>
