@@ -62,7 +62,7 @@ export default function ContactUs() {
               setSendingRequest(false);
               setShowForm(false);
               setShow(true);
-              window.scrollTo(0, 0);
+              // window.scrollTo(0, 0);
             }}
           >
             <p className="text-left">Name</p>

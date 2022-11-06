@@ -174,7 +174,7 @@ const ManagedTechnologyServices = () => {
             setSendingRequest(false);
             setShowForm(false);
             setShow(true);
-            window.scrollTo(0, 0);
+            // window.scrollTo(0, 0);
           }}
         >
           <p className="text-left">Select Type</p>
