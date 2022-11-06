@@ -48,7 +48,7 @@ export default function ContactUs() {
       </div>
 
       <div className="xl:max-w-[70%] container mx-auto flex flex-wrap  items-start xl:pt-20 xl:py-24 lg:py-10 p-3 justify-b xl:justify-around ">
-        <div className="w-[40%] bg-white shadow-lg p-5 rounded-lg">
+        <div className="lg:w-[40%] w-full bg-white shadow-lg p-5 rounded-lg">
           <h1 className="text-3xl font-[900] text-[#888888] flex mb-5">
             Send Us A Message
           </h1>
@@ -107,7 +107,7 @@ export default function ContactUs() {
             </button>
           </form>
         </div>
-        <div className="w-[40%] bg-white shadow-lg p-5 rounded-lg">
+        <div className="lg:w-[40%] w-full bg-white shadow-lg p-5 rounded-lg">
           <h1 className="text-3xl font-[900] text-[#1233FE] flex mb-5">
             Contact Info
           </h1>

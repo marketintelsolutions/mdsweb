@@ -1,7 +1,8 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import Locations from "../../assets/Locations 1.png";
 import { Link } from "react-router-dom";
 import illustration from "../../assets/illustration.png";
+import { addRequest } from "../../firebase";
 
 const ManagedTechnologyServices = () => {
   const missionElements = [
@@ -30,6 +31,30 @@ const ManagedTechnologyServices = () => {
     window.scrollTo({ top: 0 });
   }, []);
 
+  const [showForm, setShowForm] = useState(false);
+  const [sendingRequest, setSendingRequest] = useState(false);
+  const [type, setType] = useState("Hardware");
+  const [text, setText] = useState("");
+  const [email, setEmail] = useState("");
+  const [phone, setPhone] = useState("");
+  const [show, setShow] = useState(false);
+  const ToastShow = ({ visible, close, text }) => {
+    useEffect(() => {
+      setTimeout(() => {
+        close();
+      }, 2000);
+    }, [visible]);
+    if (!visible) return null;
+
+    return (
+      <div class="bg-green-500 z-20 fixed bottom-0 end-0 p-3 w-1/2 h-14 flex items-center ">
+        <small onClick={close} className="cursor-pointer">
+          Close
+        </small>
+        <div className="w-full">{text}</div>
+      </div>
+    );
+  };
   return (
     // <div className="bg-gray-50 text-center app-common-bg">
     //   <div className=" max-w-[73%] mx-auto  pb-10">
@@ -119,11 +144,17 @@ const ManagedTechnologyServices = () => {
               surprises and everything is kept transparent, with prior
               approval. 
             </p>
-            <Link to={"/"} className="">
-              <button className="bg-[#F26836] rounded-full text-white p-4 px-6 mt-4">
+
+            {!showForm && (
+              <button
+                onClick={() => {
+                  setShowForm(true);
+                }}
+                className="bg-[#F26836] rounded-full text-white p-4 px-6 mt-4"
+              >
                 Send Us A Request
               </button>
-            </Link>
+            )}
           </div>
         </div>
 
@@ -131,6 +162,78 @@ const ManagedTechnologyServices = () => {
           <img src={Locations} alt="" className="w-full" />
         </div>
       </div>
+
+      {showForm && (
+        <form
+          className="container lg:w-[40%] p-3   mx-auto mb-20"
+          onSubmit={async (e) => {
+            e.preventDefault();
+            setSendingRequest(true);
+            await addRequest({ type, text, email, phone });
+
+            setSendingRequest(false);
+            setShowForm(false);
+            setShow(true);
+            window.scrollTo(0, 0);
+          }}
+        >
+          <p className="text-left">Select Type</p>
+          <select
+            className="w-full h-14 bg-gray-100 text-lg p-3 my-3 rounded-lg"
+            required
+            onChange={(e) => setType(e.target.value)}
+          >
+            <option value="Hardware">
+              Hardware (Laptop, Printers, Accesories e.t.c.)
+            </option>
+            <option value="Licenses">Licenses</option>
+            <option value="Consumables">Consumables</option>
+          </select>
+          <p className="text-left">Enter details of your request.</p>
+          <textarea
+            required
+            onChange={(e) => setText(e.target.value)}
+            type="text"
+            placeholder="E.g. I need a HP Pro-Book with 256GB SSD and 16GB RAM."
+            className="w-full  bg-gray-100 text-lg p-3 my-3 rounded-lg"
+            rows={10}
+          />
+          <p className="text-left">Your Email.</p>
+          <input
+            onChange={(e) => setEmail(e.target.value)}
+            required
+            type="email"
+            placeholder="johndoe@email.com"
+            className="w-full  bg-gray-100 text-lg p-3 my-3 rounded-lg"
+          />
+          <p className="text-left">Your Phone Number.</p>
+          <input
+            onChange={(e) => setPhone(e.target.value)}
+            required
+            type="text"
+            placeholder="+234 000 000 000"
+            className="w-full  bg-gray-100 text-lg p-3 my-3 rounded-lg"
+          />
+          <div className="flex justify-around">
+            <button
+              className="py-3 text-white mt-3 bg-red-600 px-10 w-full"
+              onClick={() => {
+                setShowForm(false);
+              }}
+              type="button"
+            >
+              Cancel
+            </button>
+            <button
+              className="p-3 text-white mt-3 bg-[#031759] w-full"
+              onClick={() => {}}
+              type="submit"
+            >
+              {sendingRequest ? "Sending Request..." : "Send Request"}
+            </button>
+          </div>
+        </form>
+      )}
     </div>
   );
 };
