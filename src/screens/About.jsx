@@ -22,7 +22,7 @@ const About = () => {
   return (
     <div className=" p-3">
       <div className="app-common-bg-not-fixed">
-        <div className=" xl:max-w-[73%] mx-auto pb-96 lg:py-20">
+        <div className=" xl:max-w-[73%] mx-auto lg:pb-96 lg:py-20">
           <div className={`  flex  flex-wrap lg:flex-nowrap`}>
             <div className="lg:w-1/2 w-full lg:order-1 order-2   lg:m-4  text-left grow ">
               <div>
@@ -67,10 +67,7 @@ const About = () => {
           </div>
           <div className="lg:w-[40%] w-full   text-left  ">
             <div>
-              <h1
-                className="lg:text-6xl text-3xl font-bold  mx-auto  lg:mb-12 text-[#1233FF;]"
-                id="vision"
-              >
+              <h1 className="lg:text-6xl text-3xl font-bold  mx-auto  lg:mb-12 text-[#1233FF;]">
                 Vision
               </h1>
               <p className="text-lg lg:mt-10 mt-5 ">
@@ -89,7 +86,7 @@ const About = () => {
             <div>
               <h1
                 className="lg:text-6xl text-3xl font-bold mx-auto  lg:mb-12 text-[#F26836;]"
-                id="vision"
+                id="mission"
               >
                 Mission
               </h1>

@@ -9,7 +9,7 @@ const SectionTwo = ({ header, subHeader, image, id, size, link, animeid }) => {
       id={id}
     >
       <div className="lg:w-5/12 w-full">
-        <img src={man} alt="" className="h-full" />
+        <img src={man} alt="" className=" " />
       </div>
       <div className="lg:w-5/12 w-full xl:text-left flex xl:justify-end bg-white">
         <div className="xl:max-w-[500px]">
