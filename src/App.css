@@ -1,3 +1,10 @@
+
+@import url('https://fonts.cdnfonts.com/css/kozuka-gothic-pro');
+
+ html{
+  font-family: 'Kozuka Gothic Pro', sans-serif;
+                                                
+ }               
 .App {
   text-align: center;
 }
