@@ -26,38 +26,43 @@ const Fintech = () => {
   }, []);
 
   return (
-    <div>
-      <div className="xl:max-w-[70%] container mx-auto flex  xl:my-20 lg:my-10 flex-wrap  items-center xl:pt-20 xl:py-24 lg:py-10 p-3 justify-b xl:justify-around ">
-        <div className="lg:w-5/12 w-full xl:text-left  flex xl:justify-start bg-white">
+    <div className="app-common-bg">
+      <div className="xl:max-w-[73%] container mx-auto flex  xl:my-20 lg:my-10 flex-wrap  items-center relative  py-28  p-6 justify-b xl:justify-between ">
+        <div className="lg:w-5/12 w-full xl:text-left  flex xl:justify-start bg-white lg:order-1 order-2">
           <div className="xl:max-w-[500px]">
-            <h1 className="lg:text-5xl text-3xl font-[900] text-[#1233FE] ">
+            <h1 className="lg:text-[50px] leading-[130%] text-3xl font-[900] text-[#0D229E] ">
               FINTECH
             </h1>
-            <p className="text-lg leading-7 mt-5 text-[#727272] lg:my-10">
+            <p className="text-xl leading-10 mt-5 text-[#727272] lg:my-10">
               We Provide technology and innovation for financial service
               delivery. At Ziltch1 we integrate technology into offering
               financial services in order to improve uses and delivery to
               consumers.
             </p>
-            <p className="text-lg leading-7 mt-5 text-[#727272] my-10">
+            <p className="text-xl leading-10 mt-5 text-[#727272] my-10">
               Some of the FINTECH applications we deal with are payments apps,
               peer-to-peer (P2P) lending apps, investment apps, and crypto apps,
               among others.
             </p>
           </div>
         </div>
-        <div className="lg:w-5/12 w-full">
-          <img src={imageOne} alt="" className="w-full" />
+        <img
+          src={imageOne}
+          alt=""
+          className=" absolute right-0 xl:h-full 2xl:h-auto  2xl:block hidden"
+        />
+        <div className="lg:w-5/12 w-full  lg:order-2 order-1">
+          <img src={imageOne} alt="" className="w-full 2xl:hidden block " />
         </div>
       </div>
-      <div className="finbg  w-full flex items-center lg:mb-60 py-10 flex-wrap justify-center lg:gap-10 gap-5 lg:p-40 p-3">
+      <div className="finbg  w-full flex items-center lg:mb-60 py-10 flex-wrap justify-center gap-10  lg:p-40 p-10">
         {missionElements.map((i, index) => (
           <div
             key={index}
-            className="detailbox lg:w-[617px] w-full lg:h-[339px] bg-[#F26836] flex justify-center items-center flex-col p-6 rounded-xl"
+            className="detailbox  p98638 transition duration-150 ease-in-out origin-top lg:w-[617px] w-full lg:h-[339px]  flex justify-center items-center flex-col p-6 rounded-xl"
           >
             {i.title && (
-              <h1 className="lg:text-4xl text-2xl mb-3 font-[900] text-white text-center">
+              <h1 className="lg:text-4xl text-2xl mb-3 font-[900]    text-center">
                 {i.title}
               </h1>
             )}

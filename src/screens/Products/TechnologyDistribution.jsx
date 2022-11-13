@@ -20,23 +20,28 @@ const TechnologyDistribution = () => {
 
   return (
     <div>
-      <div className="app-common-bg xl:max-w-[70%] container mx-auto flex  xl:my-20 lg:my-10 flex-wrap  items-center xl:pt-20 xl:py-24 lg:py-10 p-3 justify-b xl:justify-around ">
-        <div className="lg:w-5/12 w-full lg:order-1 order-2 xl:text-left  flex xl:justify-start bg-white">
-          <div className="xl:max-w-[500px]">
-            <h1 className="lg:text-5xl text-3xl font-[900] text-[#1233FE] ">
-              Technology Distribution{" "}
-            </h1>
-            <p className="text-lg leading-7 mt-5 text-[#727272] my-10">
-              Development of User-Friendly Applications, Platforms and
-              Solutions, to meet Customer needs & Expectations
-            </p>
+      <div className="app-common-bg  ">
+        <div className="xl:max-w-[73%] container mx-auto flex lg:my-0 flex-wrap  items-center lg:p-0 p-6  xl:justify-between ">
+          <div className="lg:w-5/12 w-full xl:text-left  flex xl:justify-start bg-white lg:order-1 order-2 lg:mt-0 mt-5">
+            <div className="xl:max-w-[500px]">
+              <h1 className="lg:text-6xl text-3xl leading-[107%] font-[900] text-[#0D229E] ">
+                Technology Distribution{" "}
+              </h1>
+              <p className="lg:text-xl text-sm leading-8    lg:leading-10 mt-5 text-[#727272] my-10">
+                Distribution and Payment Platforms for Multinationals, FMCGs,
+                Public and Private organizations
+              </p>
+            </div>
           </div>
-        </div>
-        <div className="lg:w-5/12 w-full lg:order-2 order-1">
-          <img src={imageOne} alt="" className="w-full" />
+          <img
+            src={imageOne}
+            alt=""
+            className="lg:w-1/2 w-full lg:order-2 order-1 mb-5"
+          />
         </div>
       </div>
-      <div className="techdistbg lg:h-[745px] w-full flex justify-center items-center p-3">
+
+      <div className="techdistbg lg:h-[745px] w-full flex justify-center items-center p-6 py-20">
         <div className="lg:w-[45%]">
           <p className="techdisttext">
             At Ziltch1 we develop systems that provide a simple, secure, and
@@ -57,19 +62,19 @@ const TechnologyDistribution = () => {
         </div>
       </div>
 
-      <div className="xl:max-w-[70%] container mx-auto flex  xl:my-20 lg:my-10 flex-wrap  items-center xl:pt-20 xl:py-24 lg:py-10 p-3 justify-b xl:justify-around ">
-        <div className="lg:w-5/12 w-full lg:order-1 order-2 xl:text-left  flex xl:justify-start bg-white">
-          <div className="xl:max-w-[600px]">
-            <h1 className="lg:text-5xl text-3xl font-[900] text-[#FF3B00] ">
+      <div className="xl:max-w-[73%] container mx-auto flex lg:my-40 flex-wrap  items-center  p-6  xl:justify-between ">
+        <div className="lg:w-1/2 w-full xl:text-left  flex xl:justify-start bg-white lg:order-1 order-2 lg:mt-0 mt-5">
+          <div className=" ">
+            <h1 className="lg:text-6xl text-3xl leading-[107%] font-[900] text-[#F26836] ">
               Mobile/web Business to Business (B2B) and Business to Consumer
               (B2C) Services{" "}
             </h1>
-            <p className="text-lg leading-7 mt-5 text-[#727272] my-10">
+            <p className="lg:text-xl text-sm leading-8 lg:font-[500]   lg:leading-10 mt-5 text-[#727272] my-10">
               We design and develop different types of B2B and B2C mobile/web
               applications for B2B/B2C companies and brands to streamline
               in-house B2B processes.
             </p>
-            <p className="text-lg leading-7 mt-5 text-[#727272] my-10">
+            <p className="lg:text-xl text-sm leading-8 lg:font-[500]   lg:leading-10 mt-5 text-[#727272] my-10">
               Attracting new business, manage finances, track leads, monitor
               sales, and sales activities are everyday challenges faced by
               C-Suite executives. With day-to-day business meetings, it is
@@ -80,9 +85,11 @@ const TechnologyDistribution = () => {
           </div>
         </div>
 
-        <div className="lg:w-5/12 w-full lg:order-2 order-1">
-          <img src={mobile_and_web} alt="" className="w-full" />
-        </div>
+        <img
+          src={mobile_and_web}
+          alt=""
+          className="lg:w-1/2 w-full lg:order-2 order-1"
+        />
       </div>
     </div>
   );

@@ -7,13 +7,13 @@ const MediaEntertainment = () => {
   }, []);
 
   return (
-    <div className="xl:max-w-[70%] container mx-auto flex  xl:my-20 lg:my-10 flex-wrap  items-center xl:pt-20 xl:py-24 lg:py-10 p-3 justify-b xl:justify-around ">
-      <div className="lg:w-5/12 w-full lg:order-1 order-2 xl:text-left  flex xl:justify-start bg-white">
+    <div className="xl:max-w-[73%] container mx-auto flex lg:my-0 flex-wrap  items-center lg:p-0 p-6  xl:justify-between ">
+      <div className="lg:w-5/12 w-full xl:text-left  flex xl:justify-start bg-white lg:order-1 order-2 lg:mt-0 mt-5">
         <div className="xl:max-w-[500px]">
-          <h1 className="lg:text-5xl text-3xl font-[900] text-[#1233FE] ">
+          <h1 className="lg:text-6xl text-3xl leading-[107%] font-[900] text-[#0D229E] ">
             Media & Entertainment
           </h1>
-          <p className="text-lg lg:leading-7 mt-5 text-[#727272] my-10">
+          <p className="lg:text-xl text-sm leading-8    lg:leading-10 mt-5 text-[#727272] my-10">
             Our investment and partnership interests span across.
           </p>
           <ul>
@@ -22,16 +22,18 @@ const MediaEntertainment = () => {
             <li className="styledListItem">Sport and Entertainment</li>
             <li className="styledListItem">Media Broadcast Infrastructure</li>
           </ul>
-          <p className="text-lg lg:leading-7 mt-5 text-[#727272] my-10">
+          <p className="lg:text-xl text-sm leading-8    lg:leading-10 mt-5 text-[#727272] my-10">
             Our aim is to continue developing innovative solutions in all
             verticals of the media industry in order to meet the challenges
             faced by businesses in this ever-changing technology environment.
           </p>
         </div>
       </div>
-      <div className="lg:w-5/12 w-full lg:order-2 order-1">
-        <img src={imageOne} alt="" className="w-full" />
-      </div>
+      <img
+        src={imageOne}
+        alt=""
+        className="lg:w-1/2 w-full lg:order-2 order-1 mb-5"
+      />
     </div>
   );
 };

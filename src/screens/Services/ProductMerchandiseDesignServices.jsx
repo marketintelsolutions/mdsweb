@@ -1,6 +1,7 @@
 import React, { useEffect } from "react";
 import pmds from "../../assets/pmds.png";
 import { Link } from "react-router-dom";
+import SmartCreativeButton from "../../components/Shared/SmartCreativeButton";
 
 export default function ProductMerchandiseDesignServices() {
   useEffect(() => {
@@ -8,15 +9,15 @@ export default function ProductMerchandiseDesignServices() {
   }, []);
 
   return (
-    <div className="lg:px-0 px-5 ">
+    <div className="lg:px-0  ">
       <div className="app-common-bg-not-fixed">
-        <div className=" xl:max-w-[70%] container mx-auto flex  xl:my-20 flex-wrap  items-center   py-10  justify-b xl:justify-around ">
+        <div className="xl:max-w-[73%] container mx-auto flex lg:my-0 flex-wrap  items-center lg:p-0 p-6  xl:justify-between ">
           <div className="lg:w-5/12 w-full xl:text-left  flex xl:justify-start bg-white lg:order-1 order-2 lg:mt-0 mt-5">
             <div className="xl:max-w-[500px]">
-              <h1 className="lg:text-5xl text-3xl font-[900] text-[#1233FE] ">
+              <h1 className="lg:text-6xl text-3xl leading-[107%] font-[900] text-[#1233FE] ">
                 Product & Merchandise Design Services
               </h1>
-              <p className="text-lg leading-7 mt-5 text-[#727272] my-10">
+              <p className="lg:text-xl text-sm leading-8    lg:leading-10 mt-5 text-[#727272] my-10">
                 Need some walking advertising? A little promotional gear for the
                 team manning the tradeshow booth? Get custom apparel, mugs, or
                 caps from our professional designers.
@@ -31,17 +32,17 @@ export default function ProductMerchandiseDesignServices() {
               </ul>
             </div>
           </div>
-          <div className="lg:w-5/12 w-full lg:order-2 order-1">
-            <img src={pmds} alt="" className="w-full" />
-          </div>
+          <img
+            src={pmds}
+            alt=""
+            className="lg:w-1/2 w-full lg:order-2 order-1 mb-5"
+          />
         </div>
       </div>
 
       <div className="w-full flex justify-center my-5 mb-20 ">
         <Link to="/SmartCreative">
-          <button className=" rounded-full text-blue-700 p-4 px-10 border border-black">
-            Smart Creative
-          </button>
+          <SmartCreativeButton />
         </Link>
       </div>
     </div>

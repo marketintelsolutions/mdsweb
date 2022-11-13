@@ -13,6 +13,7 @@ import ke4 from "../assets/ke4.png";
 import kem4 from "../assets/kem4.png";
 import ke5 from "../assets/ke5.png";
 import kem5 from "../assets/kem5.png";
+import { Link } from "react-router-dom";
 
 const About = () => {
   useEffect(() => {
@@ -20,44 +21,44 @@ const About = () => {
   }, []);
 
   return (
-    <div className=" p-3">
+    <div className="lg:p-0 p-6">
       <div className="app-common-bg-not-fixed">
-        <div className=" xl:max-w-[73%] mx-auto lg:pb-96 lg:py-20">
+        <div className=" xl:max-w-[73%] mx-auto  ">
           <div className={`  flex  flex-wrap lg:flex-nowrap`}>
-            <div className="lg:w-1/2 w-full lg:order-1 order-2   lg:m-4  text-left grow ">
+            <div className="lg:w-1/2 w-full lg:order-1 order-2      text-left grow ">
               <div>
                 <h1 className="lg:text-6xl text-3xl font-bold text-[#F26836;]">
                   Ziltch1 Technology, Media & Digital Solutions Limited{" "}
                 </h1>
                 <p className="text-lg mt-10 ">
-                  Marketintel Digital Solutions Limited (MDS) is a consolidated
-                  Technology, Communications, Media and Entertainment business
-                  service provider in Nigeria. A member of PanAfrican Capital
-                  Holdings Limited.
+                  ZiltchOne Solutions Limited is a consolidated Technology,
+                  Communications, Media and Entertainment business service
+                  provider in Nigeria. A member of PanAfrican Capital Holdings
+                  Limited.
                 </p>
                 <p className="text-lg mt-10 ">
-                  Marketintel has a bouquet of budding Local and International
+                  ZiltchOne has a bouquet of budding Local and International
                   partnerships and licenses within its portfolio. Marketintel
                   offers a wide range of services to consumers, corporates and
                   public institutions.
                 </p>
                 <p className="text-lg mt-10 ">
-                  Marketintel has operating and non-operating interests in
+                  ZiltchOne has operating and non-operating interests in
                   businesses across ICT, Media and Entertainment.
                 </p>
               </div>
             </div>
             <div
-              className={`lg:w-1/2 w-full  lg:order-2 order-1 min-h-[400px] lg:h-[400px]  lg:m-4 `}
+              className={`lg:w-1/2 w-full  lg:order-2 order-1 lg:min-h-[400px] lg:h-[400px]  lg:m-4 `}
             >
               <img src={mobiledevice} alt="loading..." />
             </div>
           </div>
         </div>
       </div>
-      <div className=" xl:max-w-[73%] mx-auto pb-96 lg:py-20">
+      <div className=" xl:max-w-[73%] mx-auto  lg:py-20">
         <div
-          className={`flex flex-wrap xl:flex-nowrap justify-between items-center lg:my-20 `}
+          className={`flex flex-wrap xl:flex-nowrap justify-between items-center lg:my-20 my-20`}
           id="vision"
         >
           <div
@@ -79,7 +80,7 @@ const About = () => {
         </div>
 
         <div
-          className={`flex flex-wrap xl:flex-nowrap justify-between items-center lg:my-20 `}
+          className={`flex flex-wrap xl:flex-nowrap justify-between items-center lg:my-40 my-20`}
           id="mission"
         >
           <div className="lg:w-[40%] w-full lg:order-1 order-2  lg:m-4 text-left grow ">
@@ -108,9 +109,9 @@ const About = () => {
         <div className="lg:block hidden h-[482px]">
           <div className="w-full bg-gray-200 border-[15px] border-white rounded-full h-16 shadow-lg relative ">
             <div className="flex -top-10 absolute w-full justify-around ">
-              <img src={ke1} alt="" />
-              <img src={ke2} alt="" />
-              <img src={ke3} alt="" />
+              <img src={ke1} alt="" className="h-full  " />
+              <img src={ke2} alt="" className="h-full  " />
+              <img src={ke3} alt="" className="h-full  " />
             </div>
           </div>
         </div>
@@ -132,13 +133,13 @@ const About = () => {
           <img src={kem5} alt="" />
         </div>
 
-        <p className="text-lg mt-10 text-center ">
+        <p className="text-xl leading-10 text-[#3E3E3E] mt-10 text-center ">
           Our principal aim is to deliver increased productivity, greater
           customer engagement and top-line results n frontier and emerging
           markets, beckoned on world class standard through investments in our
           chosen markets.{" "}
         </p>
-        <p className="text-lg mt-10 text-center">
+        <p className="text-xl leading-10 text-[#3E3E3E] mt-10 text-center">
           MDS seeks to develop products and solutions based on emerging and
           futuristic outlook in the business and lifestyle environment, infusing
           new ways, forms and ideas for overall improvement. Ensuring productive
@@ -146,7 +147,7 @@ const About = () => {
         </p>
 
         <div
-          className={`flex flex-wrap lg:flex-nowrap mt-40 items-center lg:h-auto h-[400px]`}
+          className={`flex flex-wrap lg:flex-nowrap lg:mt-40 items-center lg:h-auto lg:h-[400px]`}
         >
           <div className="lg:w-1/2 w-full lg:order-1 order-2  m-4 text-left grow ">
             <div>
@@ -166,6 +167,23 @@ const About = () => {
             {/* <div id="aboutImage" style={{ width: "100%", height: "100%" }} /> */}
             <img src={aboutgif} alt="loading..." />
           </div>
+        </div>
+      </div>
+      <div className=" xl:max-w-[73%] mx-auto my-10 h-auto">
+        <h1 className="lg:text-5xl text-3xl font-bold lg:w-[40%] mx-auto  text-center my-12 lg:mt-32">
+          MEET OUR
+        </h1>
+        <div className="w-full flex  justify-around lg:mb-40">
+          <Link to="/directors">
+            <button className="bg-[#1233FF] rounded-full text-white p-4 px-6 mt-4">
+              <span className="font-[900] text-2xl">Directors</span>
+            </button>
+          </Link>
+          <Link to="/team">
+            <button className="bg-[#F26836] rounded-full text-white p-4 px-6 mt-4">
+              <span className="font-[900] text-2xl">Team</span>
+            </button>
+          </Link>
         </div>
       </div>
     </div>

@@ -2,6 +2,7 @@ import React, { useEffect } from "react";
 import { FaCheckCircle } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import itgif from "../../assets/itgif.gif";
+import OrangeTextPlusImageRow from "../../components/Shared/OrangeTextPlusImageRow";
 
 export default function ITConsulting() {
   useEffect(() => {
@@ -17,36 +18,26 @@ export default function ITConsulting() {
     "Priced as a flat per annum fee",
   ];
   return (
-    <div className="lg:px-0 px-5 ">
+    <div className="lg:px-0  ">
       <div className="app-common-bg-not-fixed">
-        <div className="xl:max-w-[70%] container mx-auto flex my-10 flex-wrap  items-center    justify-b xl:justify-around ">
-          <div className="lg:w-5/12 w-full xl:text-left  flex xl:justify-start bg-white lg:order-1 order-2 lg:mt-0 mt-5">
-            <div className="xl:max-w-[500px]">
-              <h1 className="lg:text-6xl text-3xl font-[900] text-[#F26836] ">
-                IT Consulting
-              </h1>
-              <p className="text-2xl font-[500] leading-10 mt-5 text-[#727272] my-10">
-                ZiltchOne helps your business operate more efficiently by
-                recommending the best possible IT solutions for your unique
-                setup. We will plan, budget, and leverage technology in ways
-                that will change the way you do business forever.
-              </p>
-            </div>
-          </div>
-          <div className="lg:w-5/12 w-full lg:order-2 order-1">
-            <img src={itgif} alt="" className="w-full" />
-          </div>
-        </div>
+        <OrangeTextPlusImageRow
+          header="IT Consulting"
+          text="ZiltchOne helps your business operate more efficiently by
+          recommending the best possible IT solutions for your unique
+          setup. We will plan, budget, and leverage technology in ways
+          that will change the way you do business forever."
+          image={itgif}
+        />
       </div>
 
-      <div className=" lg:p-10 p-3 mb-40">
-        <div className="xl:max-w-[40%] container mx-auto lg:my-10  lg:py-10   ">
+      <div className=" lg:p-10 p-3 lg:mb-40">
+        <div className="xl:max-w-[40%] container mx-auto   py-10  px-6  ">
           <h2 className="mb-10 text-3xl font-[900] ">Features:</h2>
           <div className="flex flex-wrap">
             {listItems.map((i, index) => (
               <div key={index} className="flex items-center my-3">
-                <FaCheckCircle className="lg:w-10 lg:h-10" />
-                <p className="mx-5 lg:text-2xl leading-10 text-[#888888] flex-1">
+                <FaCheckCircle className="lg:w-10 w-5 lg:h-10 h-5" />
+                <p className="mx-5 lg:text-2xl text-sm leading-8  lg:leading-10 text-[#888888] flex-1">
                   {i}
                 </p>
               </div>

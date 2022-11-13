@@ -7,19 +7,14 @@ import SectionFive from "../components/HomePage/SectionFive";
 import SectionSeven from "../components/HomePage/SectionSeven";
 import illustration from "../assets/illustration.png";
 import socialmedia from "../assets/72927-social-media.gif";
-
-const Homepage = () => {
+const Products = () => {
   useEffect(() => {
     window.scrollTo({ top: 0 });
   }, []);
 
   return (
-    <div className="app-common-bg">
+    <div className="app-common-bg pt-10">
       <div className="mx-auto lg:mb-[400px]">
-        <div className="">
-          <SectionOne />
-        </div>
-
         <div className="">
           <SectionTwo
             animeid="FINTECH"
@@ -82,4 +77,4 @@ const Homepage = () => {
   );
 };
 
-export default Homepage;
+export default Products;

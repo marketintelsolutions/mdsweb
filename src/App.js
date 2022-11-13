@@ -23,6 +23,9 @@ import ITConsulting from "./screens/ManagedTechnologyServices/ITConsulting";
 import ManagedSecurityService from "./screens/ManagedTechnologyServices/ManagedSecurityService";
 import ManagedPlatformService from "./screens/ManagedTechnologyServices/ManagedPlatformService";
 import ContactUs from "./screens/ContactUs";
+import Products from "./screens/Products";
+import Team from "./screens/Team";
+import Directors from "./screens/Directors";
 
 function App() {
   return (
@@ -46,6 +49,9 @@ function App() {
             path="/ManagedPlatformService"
             element={<ManagedPlatformService />}
           />
+          <Route path="/Products" element={<Products />} />
+          <Route path="/Directors" element={<Directors />} />
+          <Route path="/Team" element={<Team />} />
           <Route path="/ContactUs" element={<ContactUs />} />
           <Route path="/ITConsulting" element={<ITConsulting />} />
           <Route path="/CompleteCare" element={<CompleteCare />} />
