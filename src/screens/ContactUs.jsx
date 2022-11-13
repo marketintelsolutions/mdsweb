@@ -25,9 +25,9 @@ export default function ContactUs() {
   return (
     <div>
       <div className="xl:max-w-[80%] container mx-auto flex    flex-wrap  items-center xl:pt-20 xl:py-24 lg:py-10 p-3 justify-b xl:justify-around ">
-        <div className="lg:w-5/12 w-full xl:text-left  flex xl:justify-start bg-white lg:order-1 order-2 ">
+        <div className="lg:w-5/12 w-full xl:text-left  flex xl:justify-start justify-center bg-white lg:order-1 order-2 ">
           <div className="xl:max-w-[500px]">
-            <h1 className="lg:text-9xl text-3xl font-[900] text-[#1233FE] flex">
+            <h1 className="lg:text-9xl text-3xl font-[900] text-[#1233FE] flex ">
               Contact <span className="text-[#F26836] ml-2"> Us</span>
             </h1>
           </div>
@@ -36,7 +36,7 @@ export default function ContactUs() {
           <img src={illustration} alt="" className="w-full" />
         </div>
       </div>
-      <div className="xl:max-w-[50%] container mx-auto flex   text-center flex-wrap  items-center xl:pt-20 xl:py-24 lg:py-10 p-3 justify-b xl:justify-around ">
+      <div className="xl:max-w-[50%] container mx-auto flex   text-center flex-wrap  items-center xl:pt-20 xl:py-24 lg:py-10 p-3 justify-b xl:justify-around justify-center">
         <h1 className="text-3xl font-[900] text-[#F26836] flex mb-5">
           Get in Touch
         </h1>
@@ -47,7 +47,7 @@ export default function ContactUs() {
         </p>
       </div>
 
-      <div className="xl:max-w-[70%] container mx-auto flex flex-wrap  items-start xl:pt-20 xl:py-24 lg:py-10 p-3 justify-b xl:justify-around ">
+      <div className="xl:max-w-[70%] container mx-auto flex flex-wrap gap-10 items-start xl:pt-20 xl:py-24 lg:py-10 p-3 justify-b xl:justify-around ">
         <div className="lg:w-[40%] w-full bg-white shadow-lg p-5 rounded-lg">
           <h1 className="text-3xl font-[900] text-[#888888] flex mb-5">
             Send Us A Message
@@ -100,7 +100,7 @@ export default function ContactUs() {
             />
 
             <button
-              className="py-3 text-white mt-3 bg-red-600 px-10 "
+              className="bg-[#F26836] rounded-full text-white p-2 px-10 mt-4"
               type="submit"
             >
               Submit
@@ -114,7 +114,7 @@ export default function ContactUs() {
 
           <div className="flex items-center my-10">
             <FaMapMarkerAlt size={30} color="#888888" />
-            <div className="ml-5 ">
+            <div className="ml-6 ">
               <p className="text-2xl font-[400] text-[#F26836]">
                 Our Location{" "}
               </p>
@@ -124,7 +124,7 @@ export default function ContactUs() {
 
           <div className="flex items-center my-10">
             <FaPhoneAlt size={30} color="#888888" />
-            <div className="ml-5 ">
+            <div className="ml-6 ">
               <p className="text-2xl font-[400] text-[#F26836]">Call Us</p>
               <a href="tel:+23412718630" className=" ">
                 +234 (1) 271 8630
@@ -134,16 +134,14 @@ export default function ContactUs() {
 
           <div className="flex items-center my-10">
             <FaEnvelope size={30} color="#888888" />
-            <div className="ml-5 ">
+            <div className="ml-6 ">
               <p className="text-2xl font-[400] text-[#F26836]">Our Email</p>
-              <a href="mailto:info@marketintelsolutions.com">
-                info@marketintelsolutions.com
-              </a>
+              <a href="mailto:info@ziltchone.com">info@ziltchone.com</a>
             </div>
           </div>
           <div className="my-10">
             <p className="text-3xl font-[700] text-[#F26836]">Follow Us</p>
-            <li className="flex text-lg justify-start mb-4 gap-x-4 mt-5">
+            <li className="flex text-lg justify-start mb-4 gap-x-10 mt-5">
               <a
                 href="https://www.tiktok.com/@mdstech2?lang=en"
                 className="  text-white "

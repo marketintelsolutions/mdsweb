@@ -19,13 +19,13 @@ export default function SmartCreative() {
     { text: "Animation", link: "/Animation" },
   ];
   return (
-    <div className="xl:max-w-[70%] container mx-auto flex  xl:my-20 my-10 flex-wrap  items-center  lg:py-10 justify-b xl:justify-around lg:p-0 p-5">
+    <div className="xl:max-w-[73%] container mx-auto flex lg:my-0 flex-wrap  items-center lg:p-0 p-6  xl:justify-between ">
       <div className="lg:w-5/12 w-full xl:text-left  flex xl:justify-start bg-white lg:order-1 order-2">
         <div className="xl:max-w-[500px]">
-          <h1 className="lg:text-5xl text-3xl font-[900] text-[#1233FE] ">
+          <h1 className="lg:text-6xl text-3xl leading-[107%] font-[900] text-[#1233FE] ">
             Smart Creative
           </h1>
-          <p className="text-lg leading-7 mt-5 text-[#727272] my-10">
+          <p className="lg:text-xl text-sm leading-8    lg:leading-10 mt-5 text-[#727272] my-10">
             There's no limit to what you can get designed at Ziltch1 Smart
             Designs. Whether you're looking for a spectacular new logo or some
             stunning flyers or an amazing animation, our talented designers at
@@ -53,7 +53,7 @@ export default function SmartCreative() {
             >
               {services.map((i, index) => (
                 <Link key={index} to={i.link}>
-                  <li class="rounded-sm px-3 py-1 hover:bg-gray-100 text-[#888888] cursor-pointer">
+                  <li class="rounded-sm w-[250px] min-h-[70px] hover:bg-[#F26836] text-[#888888] hover:text-white py-5 px-4 text-xl leading-10 border-b">
                     {i.text}
                   </li>
                 </Link>

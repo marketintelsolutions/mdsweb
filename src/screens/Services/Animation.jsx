@@ -7,21 +7,22 @@ import ani5 from "../../assets/ani5.gif";
 import ani6 from "../../assets/ani6.gif";
 import ani7 from "../../assets/ani7.png";
 import { Link } from "react-router-dom";
+import SmartCreativeButton from "../../components/Shared/SmartCreativeButton";
 
 export default function Animation() {
   useEffect(() => {
     window.scrollTo({ top: 0 });
   }, []);
   return (
-    <div className="lg:px-0 px-5 ">
+    <div className="lg:px-0  ">
       <div className="app-common-bg-not-fixed">
-        <div className=" xl:max-w-[70%] container mx-auto flex  xl:my-20 flex-wrap  items-center   lg:py-10  justify-b xl:justify-around ">
+        <div className="xl:max-w-[73%] container mx-auto flex lg:my-0 flex-wrap  items-center lg:p-0 p-6  xl:justify-between ">
           <div className="lg:w-5/12 w-full xl:text-left  flex xl:justify-start bg-white lg:order-1 order-2 lg:mt-0 mt-5">
             <div className="xl:max-w-[500px]">
-              <h1 className="lg:text-5xl text-3xl font-[900] text-[#1233FE] ">
+              <h1 className="lg:text-6xl text-3xl leading-[107%] font-[900] text-[#1233FE] ">
                 Animations
               </h1>
-              <p className="text-lg leading-7 mt-5 text-[#727272] my-10">
+              <p className="lg:text-xl text-sm leading-8    lg:leading-10 mt-5 text-[#727272] my-10">
                 At Ziltch1 Technologies, we offer a host of custom animation
                 products that propel your brand to the forefront of industry
                 conversations — all made by our animation expert team. Our
@@ -43,15 +44,17 @@ export default function Animation() {
               </ul>
             </div>
           </div>
-          <div className="lg:w-5/12 w-full lg:order-2 order-1">
-            <img src={ani1} alt="" className="w-full" />
-          </div>
+          <img
+            src={ani1}
+            alt=""
+            className="lg:w-1/2 w-full lg:order-2 order-1 mb-5"
+          />
         </div>
       </div>
-      <div className=" xl:max-w-[70%] container mx-auto flex  xl:my-20 flex-wrap  items-center   lg:py-10  justify-b xl:justify-around ">
+      <div className="xl:max-w-[73%] container mx-auto flex lg:my-0 flex-wrap  items-center lg:p-0 p-6  xl:justify-between ">
         <div className="lg:w-5/12 w-full xl:text-left  flex xl:justify-start bg-white lg:order-1  order-2 lg:mt-0 mt-5">
           <div className="xl:max-w-[500px]">
-            <h1 className="lg:text-3xl text-3xl font-[400] text-[#FF3B00] mb-5">
+            <h1 className="lg:text-3xl text-3xl font-medium mb-5">
               Animated Logo
             </h1>
 
@@ -71,13 +74,13 @@ export default function Animation() {
         </div>
       </div>
 
-      <div className=" xl:max-w-[70%] container mx-auto flex  xl:my-20 flex-wrap  items-center   lg:py-10  justify-b xl:justify-around ">
+      <div className="xl:max-w-[73%] container mx-auto flex lg:my-0 flex-wrap  items-center lg:p-0 p-6  xl:justify-between ">
         <div className="lg:w-5/12 w-full ">
           <img src={ani3} alt="" className="w-full" />
         </div>
         <div className="lg:w-5/12 w-full xl:text-left  flex xl:justify-start bg-white lg:mt-0 mt-5">
           <div className="xl:max-w-[500px]">
-            <h1 className="lg:text-3xl text-3xl font-[400] text-[#FF3B00] mb-5">
+            <h1 className="lg:text-3xl text-3xl font-medium mb-5">
               Character Animation
             </h1>
 
@@ -90,10 +93,10 @@ export default function Animation() {
         </div>
       </div>
 
-      <div className=" xl:max-w-[70%] container mx-auto flex  xl:my-20 flex-wrap  items-center   lg:py-10  justify-b xl:justify-around ">
+      <div className="xl:max-w-[73%] container mx-auto flex lg:my-0 flex-wrap  items-center lg:p-0 p-6  xl:justify-between ">
         <div className="lg:w-5/12 w-full xl:text-left  flex xl:justify-start bg-white lg:order-1  order-2 lg:mt-0 mt-5">
           <div className="xl:max-w-[500px]">
-            <h1 className="lg:text-3xl text-3xl font-[400] text-[#FF3B00] mb-5">
+            <h1 className="lg:text-3xl text-3xl font-medium mb-5">
               Product Promotions
             </h1>
 
@@ -114,13 +117,13 @@ export default function Animation() {
         </div>
       </div>
 
-      <div className=" xl:max-w-[70%] container mx-auto flex  xl:my-20 flex-wrap  items-center   lg:py-10  justify-b xl:justify-around ">
+      <div className="xl:max-w-[73%] container mx-auto flex lg:my-0 flex-wrap  items-center lg:p-0 p-6  xl:justify-between ">
         <div className="lg:w-5/12 w-full ">
           <img src={ani5} alt="" className="w-full" />
         </div>
         <div className="lg:w-5/12 w-full xl:text-left  flex xl:justify-start bg-white lg:mt-0 mt-5">
           <div className="xl:max-w-[500px]">
-            <h1 className="lg:text-3xl text-3xl font-[400] text-[#FF3B00] mb-5">
+            <h1 className="lg:text-3xl text-3xl font-medium mb-5">
               3D Animation
             </h1>
 
@@ -134,10 +137,10 @@ export default function Animation() {
         </div>
       </div>
 
-      <div className=" xl:max-w-[70%] container mx-auto flex  xl:my-20 flex-wrap  items-center   lg:py-10  justify-b xl:justify-around ">
+      <div className="xl:max-w-[73%] container mx-auto flex lg:my-0 flex-wrap  items-center lg:p-0 p-6  xl:justify-between ">
         <div className="lg:w-5/12 w-full xl:text-left  flex xl:justify-start bg-white lg:order-1  order-2 lg:mt-0 mt-5">
           <div className="xl:max-w-[500px]">
-            <h1 className="lg:text-3xl text-3xl font-[400] text-[#FF3B00] mb-5">
+            <h1 className="lg:text-3xl text-3xl font-medium mb-5">
               Animated Web Demos
             </h1>
 
@@ -156,13 +159,13 @@ export default function Animation() {
         </div>
       </div>
 
-      <div className=" xl:max-w-[70%] container mx-auto flex  xl:my-20 flex-wrap  items-center   lg:py-10  justify-b xl:justify-around ">
+      <div className="xl:max-w-[73%] container mx-auto flex lg:my-0 flex-wrap  items-center lg:p-0 p-6  xl:justify-between ">
         <div className="lg:w-5/12 w-full ">
           <img src={ani7} alt="" className="w-full" />
         </div>
         <div className="lg:w-5/12 w-full xl:text-left  flex xl:justify-start bg-white lg:mt-0 mt-5">
           <div className="xl:max-w-[500px]">
-            <h1 className="lg:text-3xl text-3xl font-[400] text-[#FF3B00] mb-5">
+            <h1 className="lg:text-3xl text-3xl font-medium mb-5">
               Explainer Video
             </h1>
 
@@ -178,9 +181,7 @@ export default function Animation() {
 
       <div className="w-full flex justify-center my-5 mb-20 ">
         <Link to="/SmartCreative">
-          <button className=" rounded-full text-blue-700 p-4 px-10 border border-black">
-            Smart Creative
-          </button>
+          <SmartCreativeButton />
         </Link>
       </div>
     </div>

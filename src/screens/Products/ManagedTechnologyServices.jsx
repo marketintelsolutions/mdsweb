@@ -3,6 +3,7 @@ import Locations from "../../assets/Locations 1.png";
 import { Link } from "react-router-dom";
 import illustration from "../../assets/illustration.png";
 import { addRequest } from "../../firebase";
+import BlueTextPlusImageRow from "../../components/Shared/BlueTextPlusImageRow";
 
 const ManagedTechnologyServices = () => {
   const missionElements = [
@@ -76,66 +77,62 @@ const ManagedTechnologyServices = () => {
     //   </div>
     // </div>
     <div>
-      <div className="xl:max-w-[70%] container mx-auto flex  xl:my-20 lg:my-10 flex-wrap  items-center xl:pt-20 xl:py-24 lg:py-10 p-3 justify-b xl:justify-around ">
-        <div className="lg:w-5/12 w-full xl:text-left  flex xl:justify-start bg-white lg:order-1 order-2 ">
-          <div className="xl:max-w-[500px]">
-            <h1 className="lg:text-5xl text-3xl font-[900] text-[#1233FE] ">
-              Managed Technology Services
-            </h1>
-            <p className="text-lg lg:leading-7 mt-5 text-[#727272] my-10">
-              ZILTCHONE is a consolidated technology services company that
-              offers a bouquet of Managed IT Services. Our team of world-class
-              talents genuinely care about the relationships we build. They
-              understand that response and precision are key to a successful
-              partnership.
-            </p>
-            <p className="text-lg lg:leading-7 mt-5 text-[#727272] my-10">
-              Some of the FINTECH applications we deal with are payments apps,
-              peer-to-peer (P2P) lending apps, investment apps, and crypto apps,
-              among others.
-            </p>
-          </div>
-        </div>
-        <div className="lg:w-5/12 w-full lg:order-2 order-1 ">
-          <img src={illustration} alt="" className="w-full" />
-        </div>
-      </div>
+      <BlueTextPlusImageRow
+        header={`Managed \n Technology Services`}
+        text="ZILTCHONE is a consolidated technology services company that
+          offers a bouquet of Managed IT Services. Our team of world-class
+          talents genuinely care about the relationships we build. They
+          understand that response and precision are key to a successful
+          partnership."
+        image={illustration}
+      />
 
-      <div className="bg-gray-100  w-full flex items-center lg:mb-60 py-10 flex-wrap justify-center lg:gap-10 gap-5 lg:p-40 p-3">
-        {missionElements.map((i, index) => (
-          <div
-            key={index}
-            className="detailbox lg:w-[617px] w-full lg:h-[339px] bg-[#F26836] flex justify-center items-center flex-col p-6 rounded-xl"
-          >
-            {i.title && (
-              <h1 className="lg:text-4xl text-2xl mb-3 font-[900] text-white text-center">
-                {i.title}
-              </h1>
-            )}
-            <p className="">{i.description}</p>
-          </div>
-        ))}
+      <div className="bg-[#FAFAFA] lg:p-20 p-10">
+        <h3 className="lg:mb-20  mb-10 text-center lg:text-3xl text-2xl font-medium text-[#888888]">
+          Our Managed Technology Services are
+        </h3>
+        <div className="  w-full flex items-center     flex-wrap justify-center lg:gap-20 gap-10  ">
+          {missionElements.map((i, index) => (
+            <div
+              key={index}
+              className="detailbox  p98638 transition duration-150 ease-in-out origin-top lg:w-[617px] w-full lg:h-[339px]  flex justify-center items-center flex-col p-6 rounded-xl"
+            >
+              {i.title && (
+                <h1 className="lg:text-4xl text-2xl mb-3 font-[900]    text-center">
+                  {i.title}
+                </h1>
+              )}
+              <p
+                className="lg:text-xl text-sm
+        leading-8    lg:leading-10"
+              >
+                {i.description}
+              </p>
+              <Link to={i.link}>Read more...</Link>
+            </div>
+          ))}
+        </div>
       </div>
-      <div className="xl:max-w-[70%] container mx-auto flex  xl:my-20 lg:my-10 flex-wrap  items-center xl:pt-20 xl:py-24 lg:py-10 p-3 justify-b xl:justify-around ">
-        <div className="lg:w-5/12 w-full xl:text-left  flex xl:justify-start bg-white lg:order-1 order-2 ">
-          <div className="xl:max-w-[600px]">
-            <h1 className="lg:text-5xl text-3xl font-[900] text-[#FF3B00] ">
+      <div className="xl:max-w-[73%] container mx-auto flex    items-center lg:p-0 p-6  xl:justify-between xl:my-20 lg:my-10 flex-wrap    xl:pt-0 lg:mb-40 xl:py-24 lg:py-10  ">
+        <div className="lg:w-1/2 w-full xl:text-left  flex xl:justify-start bg-white lg:order-1 order-2 lg:mt-0 mt-5">
+          <div className="">
+            <h1 className="lg:text-6xl text-3xl leading-[107%] font-[900] text-[#0D229E] ">
               Procurement And Distribution
             </h1>
-            <p className="text-lg lg:leading-7 mt-5 text-[#727272] my-10">
+            <p className="lg:text-xl text-sm leading-8    lg:leading-10 mt-5 text-[#727272] my-10">
               We understand that every client has specific needs, and requires
               different hardware and software to meet their requirements. Our
               Engineers can assist with locating and securing any infrastructure
               or systems to your exact specifications.
             </p>
-            <p className="text-lg lg:leading-7 mt-5 text-[#727272] my-10">
+            <p className="lg:text-xl text-sm leading-8    lg:leading-10 mt-5 text-[#727272] my-10">
               We have extensive strategic relationships with several OEMs that
               our clients are able to leverage to receive competitive and
               discounted rates that helps them save money. In addition, clients
               also benefit from single-source billing, making the process
               relatively simple and hassle-free.
             </p>
-            <p className="text-lg lg:leading-7 mt-5 text-[#727272] my-10">
+            <p className="lg:text-xl text-sm leading-8    lg:leading-10 mt-5 text-[#727272] my-10">
               We source and procure servers, networking equipment, cabling,
               desktops, laptops, peripherals, phone systems, and all other
               assets needed to run optimally. Ziltch Technologies will manage
@@ -157,15 +154,16 @@ const ManagedTechnologyServices = () => {
             )}
           </div>
         </div>
-
-        <div className="lg:w-5/12 w-full lg:order-2 order-1 py-5">
-          <img src={Locations} alt="" className="w-full" />
-        </div>
+        <img
+          src={Locations}
+          alt=""
+          className="lg:w-1/2 w-full lg:order-2 order-1 p-5"
+        />
       </div>
 
       {showForm && (
         <form
-          className="container lg:w-[40%] p-3   mx-auto mb-20"
+          className="container lg:w-[40%] p-6   mx-auto mb-20"
           onSubmit={async (e) => {
             e.preventDefault();
             setSendingRequest(true);
@@ -216,7 +214,7 @@ const ManagedTechnologyServices = () => {
           />
           <div className="flex justify-around">
             <button
-              className="py-3 text-white mt-3 bg-red-600 px-10 w-full"
+              className="bg-[#393939] rounded-full text-white p-2 px-10 mt-4"
               onClick={() => {
                 setShowForm(false);
               }}
@@ -225,7 +223,7 @@ const ManagedTechnologyServices = () => {
               Cancel
             </button>
             <button
-              className="p-3 text-white mt-3 bg-[#031759] w-full"
+              className="bg-[#F26836] rounded-full text-white p-2 px-10 mt-4"
               onClick={() => {}}
               type="submit"
             >
