@@ -32,8 +32,8 @@ export default function ManagedSecurityService() {
           image={mss}
         />
       </div>
-      <div className="mssbg lg:h-[706.25px]  flex flex-col justify-end items-center p-6">
-        <div className="xl:w-1/2 w-full  xl:my-40 text-white lg:text-2xl text-sm text-center leading-8    lg:leading-10">
+      <div className="orangebg xl:h-[706.25px] h-[600.3px]  flex flex-col justify-end items-center p-6">
+        <div className="xl:w-1/2 w-full  xl:mt-40 xl:mb-20 text-white lg:text-2xl text-sm text-center leading-8    lg:leading-10">
           <p className="mb-5">
             Many IT teams today are incapable of keeping pace with evolving
             threats due to the specialized skills required. The Managed Security
