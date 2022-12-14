@@ -89,7 +89,7 @@ const NavBar = () => {
               <img src={Logo} alt="" className="w-auto" />
             </Link>
           </div>
-          <div className="flex items-center gap-2 font-normal">
+          <div className="flex items-center gap-10 font-normal">
             <Link to="/">Home</Link>
             <span class="ml-5">
               <Link to="about">About Us</Link>

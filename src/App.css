@@ -310,3 +310,12 @@ background-size: cover;
   color: blue;
   text-decoration: underline;
 }
+.team-button:hover{
+background: white;
+}
+.team-button:hover span{
+ color: black;
+}
+.team-button:hover .team-button-icon{
+display: block;
+}

@@ -14,6 +14,8 @@ import kem4 from "../assets/kem4.png";
 import ke5 from "../assets/ke5.png";
 import kem5 from "../assets/kem5.png";
 import { Link } from "react-router-dom";
+import { ReactComponent as YellowDot } from "../assets/team 1.svg";
+import { ReactComponent as WhiteDot } from "../assets/group 1.svg";
 
 const About = () => {
   useEffect(() => {
@@ -22,7 +24,7 @@ const About = () => {
 
   return (
     <div className="lg:p-0 p-6">
-      <div className="app-common-bg-not-fixed">
+      <div className="">
         <div className=" xl:max-w-[73%] mx-auto  ">
           <div className={`  flex  flex-wrap lg:flex-nowrap`}>
             <div className="lg:w-1/2 w-full lg:order-1 order-2      text-left grow ">
@@ -135,15 +137,18 @@ const About = () => {
 
         <p className="text-xl leading-10 text-[#3E3E3E] mt-10 text-center ">
           Our principal aim is to deliver increased productivity, greater
-          customer engagement and top-line results n frontier and emerging
+          customer engagement and top-line results frontier and emerging
           markets, beckoned on world class standard through investments in our
           chosen markets.{" "}
         </p>
         <p className="text-xl leading-10 text-[#3E3E3E] mt-10 text-center">
           MDS seeks to develop products and solutions based on emerging and
           futuristic outlook in the business and lifestyle environment, infusing
-          new ways, forms and ideas for overall improvement. Ensuring productive
-          & mutually beneficial partnerships to attain business objectives
+          new ways, forms and ideas for overall improvement.
+        </p>
+        <p className="text-xl leading-10 text-[#3E3E3E] mt-10 text-center">
+          Ensuring productive & mutually beneficial partnerships to attain
+          business objectives
         </p>
 
         <div
@@ -175,13 +180,19 @@ const About = () => {
         </h1>
         <div className="w-full flex  justify-around lg:mb-40">
           <Link to="/directors">
-            <button className="bg-[#1233FF] rounded-full text-white p-4 px-6 mt-4">
-              <span className="font-[900] text-2xl">Directors</span>
+            <button className="bg-[#1233FF] rounded-full text-white p-4 px-6 mt-4 group/first hover:bg-white shadow-lg flex items-center gap-x-2 transition duration-700 ease-in-out">
+              <YellowDot className="text-white group-hover/first:block hidden" />
+              <span className="font-[900] text-2xl group-hover/first:text-black ">
+                Directors
+              </span>
             </button>
           </Link>
           <Link to="/team">
-            <button className="bg-[#F26836] rounded-full text-white p-4 px-6 mt-4">
-              <span className="font-[900] text-2xl">Team</span>
+            <button className="bg-[#F26836] rounded-full text-white p-4 px-6 mt-4 group/second hover:bg-white shadow-lg flex items-center gap-x-2 transition duration-700 ease-in-out">
+              <WhiteDot className="text-white group-hover/second:block hidden" />
+              <span className="font-[900] text-2xl group-hover/second:text-black ">
+                Team
+              </span>
             </button>
           </Link>
         </div>

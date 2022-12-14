@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import pmds from "../../assets/104688-ui-ux-design.gif";
+import pmds from "../../assets/uiuximg.png";
 import UIUX2 from "../../assets/UIUX2.png";
 import UIUX1 from "../../assets/UIUX1.png";
 import { Link } from "react-router-dom";
