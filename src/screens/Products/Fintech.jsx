@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import imageOne from "../../assets/Group 50.png";
+import imageOne from "../../assets/Group 85.png";
 
 const Fintech = () => {
   const missionElements = [
@@ -26,7 +26,7 @@ const Fintech = () => {
   }, []);
 
   return (
-    <div className="app-common-bg">
+    <div className="">
       <div className="xl:max-w-[73%] container mx-auto flex  xl:my-20 lg:my-10 flex-wrap  items-center relative  py-28  p-6 justify-b xl:justify-between ">
         <div className="lg:w-5/12 w-full xl:text-left  flex xl:justify-start bg-white lg:order-1 order-2">
           <div className="xl:max-w-[500px]">
@@ -49,24 +49,24 @@ const Fintech = () => {
         <img
           src={imageOne}
           alt=""
-          className=" absolute right-0 xl:h-full 2xl:h-auto  2xl:block hidden"
+          className=" absolute -right-20    max-h-[931px] max-w-1/2  2xl:block hidden"
         />
         <div className="lg:w-5/12 w-full  lg:order-2 order-1">
           <img src={imageOne} alt="" className="w-full 2xl:hidden block " />
         </div>
       </div>
-      <div className="finbg  w-full flex items-center lg:mb-60 py-10 flex-wrap justify-center gap-10  lg:p-40 p-10">
+      <div className="finbg  w-full flex items-center lg:mb-60 py-10 flex-wrap justify-center lg:gap-20 gap-10  lg:p-40 p-10">
         {missionElements.map((i, index) => (
           <div
             key={index}
-            className="detailbox  p98638 transition duration-150 ease-in-out origin-top lg:w-[617px] w-full lg:h-[339px]  flex justify-center items-center flex-col p-6 rounded-xl"
+            className="detailbox  p98638 transition duration-150 ease-in-out origin-top lg:w-[617px] w-full lg:h-[339px]  flex justify-center items-center flex-col p-6 lg:px-10 rounded-xl"
           >
             {i.title && (
               <h1 className="lg:text-4xl text-2xl mb-3 font-[900]    text-center">
                 {i.title}
               </h1>
             )}
-            <p className="">{i.description}</p>
+            <p className=" text-center">{i.description}</p>
           </div>
         ))}
       </div>

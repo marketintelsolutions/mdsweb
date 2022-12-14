@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import pmds from "../../assets/pmds.png";
+import pmds from "../../assets/bag-mockup 1.png";
 import { Link } from "react-router-dom";
 import SmartCreativeButton from "../../components/Shared/SmartCreativeButton";
 
@@ -19,8 +19,11 @@ export default function ProductMerchandiseDesignServices() {
               </h1>
               <p className="lg:text-xl text-sm leading-8    lg:leading-10 mt-5 text-[#727272] my-10">
                 Need some walking advertising? A little promotional gear for the
-                team manning the tradeshow booth? Get custom apparel, mugs, or
-                caps from our professional designers.
+                team manning the tradeshow booth?
+              </p>
+              <p className="lg:text-xl text-sm leading-8    lg:leading-10 mt-5 text-[#727272] my-10">
+                Get custom apparel, mugs, or caps from our professional
+                designers.
               </p>
               <ul>
                 <li className="styledListItem">T-shirt Design</li>

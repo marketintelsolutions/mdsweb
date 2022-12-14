@@ -17,7 +17,7 @@ export default function CreativeDesign() {
 
   return (
     <div className="lg:px-0  ">
-      <div className="app-common-bg-not-fixed">
+      <div className=" ">
         <BlueTextPlusImageRow
           header={`Creative Design`}
           text=" We provide a full graphic design service to help you communicate

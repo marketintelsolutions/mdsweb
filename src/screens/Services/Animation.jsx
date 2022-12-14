@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import ani1 from "../../assets/ani1.gif";
-import ani2 from "../../assets/ani2.gif";
+import ani2 from "../../assets/Final-Comp.gif";
 import ani3 from "../../assets/ani3.gif";
 import ani4 from "../../assets/ani4.gif";
 import ani5 from "../../assets/ani5.gif";

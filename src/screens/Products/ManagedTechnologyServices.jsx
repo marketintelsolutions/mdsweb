@@ -77,15 +77,38 @@ const ManagedTechnologyServices = () => {
     //   </div>
     // </div>
     <div>
-      <BlueTextPlusImageRow
+      {/* <BlueTextPlusImageRow
         header={`Managed \n Technology Services`}
-        text="ZILTCHONE is a consolidated technology services company that
+        text={`ZILTCHONE is a consolidated technology services company that
           offers a bouquet of Managed IT Services. Our team of world-class
-          talents genuinely care about the relationships we build. They
+          talents genuinely care about the relationships we build.\n They
           understand that response and precision are key to a successful
-          partnership."
+          partnership.`}
         image={illustration}
-      />
+      /> */}
+      <div className="xl:max-w-[73%] container mx-auto flex lg:my-0 flex-wrap  items-center lg:p-0 p-6  xl:justify-between ">
+        <div className="lg:w-5/12 w-full xl:text-left  flex xl:justify-start bg-white lg:order-1 order-2 lg:mt-0 mt-5">
+          <div className="xl:max-w-[500px]">
+            <h1 className="lg:text-6xl text-3xl leading-[107%] font-[900] text-[#0D229E] ">
+              Managed Technology Services
+            </h1>
+            <p className="lg:text-xl text-sm leading-8    lg:leading-10 mt-5 text-[#727272] my-10">
+              ZILTCHONE is a consolidated technology services company that
+              offers a bouquet of Managed IT Services. Our team of world-class
+              talents genuinely care about the relationships we build.
+            </p>
+            <p className="lg:text-xl text-sm leading-8    lg:leading-10 mt-5 text-[#727272] my-10">
+              They understand that response and precision are key to a
+              successful partnership.
+            </p>
+          </div>
+        </div>
+        <img
+          src={illustration}
+          alt=""
+          className="lg:w-1/2 w-full lg:order-2 order-1 mb-5"
+        />
+      </div>
 
       <div className="bg-[#FAFAFA] lg:p-20 p-10">
         <h3 className="lg:mb-20  mb-10 text-center lg:text-3xl text-2xl font-medium text-[#888888]">

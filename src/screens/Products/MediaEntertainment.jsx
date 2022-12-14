@@ -7,7 +7,7 @@ const MediaEntertainment = () => {
   }, []);
 
   return (
-    <div className="xl:max-w-[73%] container mx-auto flex lg:my-0 flex-wrap  items-center lg:p-0 p-6  xl:justify-between ">
+    <div className="xl:max-w-[73%] container mx-auto flex lg:my-0 lg:mb-40 flex-wrap  items-center lg:p-0 pb-20 p-6  xl:justify-between">
       <div className="lg:w-5/12 w-full xl:text-left  flex xl:justify-start bg-white lg:order-1 order-2 lg:mt-0 mt-5">
         <div className="xl:max-w-[500px]">
           <h1 className="lg:text-6xl text-3xl leading-[107%] font-[900] text-[#0D229E] ">

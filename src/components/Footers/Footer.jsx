@@ -15,11 +15,11 @@ const Footer = () => {
   return (
     <div>
       <div
-        className=" lg:flex hidden flex-wrap items-start text-gray-400 mx-auto bg-[#3E3E3E] px-8 py-40 border-t-8 border-[#FF3B00] w-full justify-around"
+        className=" lg:flex hidden flex-wrap items-start text-gray-400 mx-auto bg-[#F26836] px-8 py-20   w-full justify-around"
         id="footerSection"
       >
         <section className="text-sm mb-5">
-          <h4 className="mb-20 text-bold text-2xl font-[900] text-white">
+          <h4 className="mb-10 text-bold text-2xl font-[900] text-white">
             About
           </h4>
 
@@ -34,7 +34,7 @@ const Footer = () => {
           </Link>
         </section>
         <section className="text-sm mb-5">
-          <h4 className="mb-20 text-bold text-2xl font-[900] text-white">
+          <h4 className="mb-10 text-bold text-2xl font-[900] text-white">
             Product
           </h4>
           <ul>
@@ -62,7 +62,7 @@ const Footer = () => {
           </ul>
         </section>
         <section className="text-sm mb-5">
-          <h4 className="mb-20 text-bold text-2xl font-[900] text-white">
+          <h4 className="mb-10 text-bold text-2xl font-[900] text-white">
             Follow
           </h4>
           <li className="flex text-lg justify-between mb-4 gap-10">
@@ -86,7 +86,7 @@ const Footer = () => {
           </li>
         </section>
         <section className="text-sm mb-5">
-          <h4 className="mb-20 text-bold text-2xl font-[900] text-white">
+          <h4 className="mb-10 text-bold text-2xl font-[900] text-white">
             Support
           </h4>
           <li className="font-normal text-xl mb-5 flex items-center">

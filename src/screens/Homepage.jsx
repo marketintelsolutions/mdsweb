@@ -14,7 +14,7 @@ const Homepage = () => {
   }, []);
 
   return (
-    <div className="app-common-bg">
+    <div className="">
       <div className="mx-auto lg:mb-[400px]">
         <div className="">
           <SectionOne />
