@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 import illustration from "../../assets/illustration.png";
 import { addRequest } from "../../firebase";
 import BlueTextPlusImageRow from "../../components/Shared/BlueTextPlusImageRow";
+import technologyNetwork from "../../assets/technology-network.png";
 
 const ManagedTechnologyServices = () => {
   const missionElements = [
@@ -104,7 +105,7 @@ const ManagedTechnologyServices = () => {
           </div>
         </div>
         <img
-          src={illustration}
+          src={technologyNetwork}
           alt=""
           className="lg:w-1/2 w-full lg:order-2 order-1 mb-5"
         />
@@ -170,7 +171,7 @@ const ManagedTechnologyServices = () => {
                 onClick={() => {
                   setShowForm(true);
                 }}
-                className="bg-[#F26836] rounded-full text-white p-4 px-6 mt-4"
+                className="bg-[#F26836] rounded-md text-white p-4 px-6 mt-4"
               >
                 Send Us A Request
               </button>

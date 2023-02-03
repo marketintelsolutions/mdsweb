@@ -115,12 +115,12 @@ const NavBar = () => {
         transition duration-150 ease-in-out origin-top min-w-32 shadow-sm"
               >
                 <Link to={"/paysharp"}>
-                  <li className="rounded-sm w-[250px] min-h-[70px] hover:bg-[#F26836] text-[#888888] hover:text-white py-5 px-4 text-xl leading-10 border-b">
+                  <li className="rounded-sm w-[250px] min-h-[70px] hover:bg-[#FAA724] text-[#888888] hover:text-white py-5 px-4 text-xl leading-10 border-b">
                     Paysharp
                   </li>
                 </Link>
                 <Link to={"/gaslsolutions"}>
-                  <li class="rounded-sm w-[250px] min-h-[70px] hover:bg-[#F26836] text-[#888888] hover:text-white py-5 px-4 text-xl leading-10 border-b">
+                  <li class="rounded-sm w-[250px] min-h-[70px] hover:bg-[#88BD27] text-[#888888] hover:text-white py-5 px-4 text-xl leading-10 border-b">
                     GASL solutions
                   </li>
                 </Link>

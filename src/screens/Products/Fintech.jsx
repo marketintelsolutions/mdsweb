@@ -1,5 +1,7 @@
 import React, { useEffect } from "react";
 import imageOne from "../../assets/Group 85.png";
+import iphone from "../../assets/iphone-new.svg";
+import technologyNetwork from "../../assets/technology-network.png";
 
 const Fintech = () => {
   const missionElements = [
@@ -17,7 +19,9 @@ const Fintech = () => {
     },
     {
       title: `Financial Inclusion`,
-      description: `PAYSHARP (Agent Banking Platform) - Technology powered Agent Banking outfit with penetration strategy to support the Federal Policy on Financial inclusion across Nigeria
+      description: `<a href="https://www.paysharpng.com"  className='underline'">
+                PAYSHARP
+              </a> (Agent Banking Platform) - Technology powered Agent Banking outfit with penetration strategy to support the Federal Policy on Financial inclusion across Nigeria
       `,
     },
   ];
@@ -36,23 +40,32 @@ const Fintech = () => {
             <p className="text-xl leading-10 mt-5 text-[#727272] lg:my-10">
               We Provide technology and innovation for financial service
               delivery. At Ziltch1 we integrate technology into offering
-              financial services in order to improve uses and delivery to
-              consumers.
+              financial services to improve uses and delivery to consumers. Some
+              of the FINTECH applications we deal with are payments apps,
+              peer-to-peer (P2P) lending apps, investment apps, and crypto apps,
+              among others.  
             </p>
             <p className="text-xl leading-10 mt-5 text-[#727272] my-10">
-              Some of the FINTECH applications we deal with are payments apps,
-              peer-to-peer (P2P) lending apps, investment apps, and crypto apps,
-              among others.
+              One of our leading FINTECH products in the market is{" "}
+              <a
+                href="https://www.paysharpng.com"
+                className="text-[#FAA724] underline"
+              >
+                PAYSHARP
+              </a>
+              , which allows non-banking individuals and institutions to carry
+              out financial services outside conventional bank branches, using a
+              non-banking agent(s) or a licensed deposit financial institution.
             </p>
           </div>
         </div>
         <img
-          src={imageOne}
+          src={iphone}
           alt=""
           className=" absolute -right-20    max-h-[931px] max-w-1/2  2xl:block hidden"
         />
         <div className="lg:w-5/12 w-full  lg:order-2 order-1">
-          <img src={imageOne} alt="" className="w-full 2xl:hidden block " />
+          <img src={iphone} alt="" className="w-full 2xl:hidden block " />
         </div>
       </div>
       <div className="finbg  w-full flex items-center lg:mb-60 py-10 flex-wrap justify-center lg:gap-20 gap-10  lg:p-40 p-10">
@@ -66,7 +79,11 @@ const Fintech = () => {
                 {i.title}
               </h1>
             )}
-            <p className=" text-center">{i.description}</p>
+            {/* <p className=" text-center">{i.description}</p> */}
+            <p
+              className=" text-center"
+              dangerouslySetInnerHTML={{ __html: i.description }}
+            ></p>
           </div>
         ))}
       </div>
