@@ -8,6 +8,7 @@ import SectionSeven from "../components/HomePage/SectionSeven";
 import illustration from "../assets/illustration.png";
 import socialmedia from "../assets/72927-social-media.gif";
 import paystackHomepage from "../assets/paystackHomepage.svg";
+import technologyNetwork from "../assets/technology-network.png";
 
 const Homepage = () => {
   useEffect(() => {
@@ -66,8 +67,8 @@ const Homepage = () => {
             button="Read More"
             color="#FF3B00"
             rounded="full"
-            image={illustration}
-            ourPatners={true}
+            image={technologyNetwork}
+            ourPatners={false}
           />
         </div>
         {/* SMART CREATIVE */}
@@ -102,6 +103,9 @@ const Homepage = () => {
 ."
             link="/MediaEntertainment"
             image={socialmedia}
+            button="Read More"
+            rounded="md"
+            ourPatners={true}
           />
         </div>
         <div className="">
