@@ -1,8 +1,5 @@
 import React, { useState } from "react";
-import hp from "../../assets/hp.png";
-import Sophos from "../../assets/sophos.png";
-import ETranzact from "../../assets/tranzact.png";
-import Itex from "../../assets/itex.png";
+
 import "./style.css";
 import monitor from "../../assets/monitor.png";
 
@@ -30,35 +27,6 @@ const SectionOne = () => {
             src={monitor}
             alt=""
             className="xl:order-2 order-1 xl:w-[800px] xl:h-[800px] xl:absolute  xl:-bottom-[110px]  xl:-right-[290px]"
-          />
-        </div>
-      </div>
-
-      <p className="lg:text-4xl text-xl font-light text-center lg:mb-20 mb-10 ">
-        Our Partners
-      </p>
-      <div className="w-full  bg-[#F6F6F6]    ">
-        <div className="lg:w-[73%] mx-auto min-h-[320px] lg:flex grid lg:gap-x-10 lg:grid-cols-none grid-cols-2 justify-center items-center">
-          <img
-            src={hp}
-            alt=""
-            className="m-10   col-span-1 lg:w-[116px] lg:h-[116px] w-1/2 justify-center"
-          />
-          <img
-            src={Sophos}
-            alt=""
-            className="m-10 col-span-1   lg:w-auto w-1/2 "
-          />
-
-          <img
-            src={Itex}
-            alt=""
-            className="m-10 col-span-1  lg:w-auto w-1/2  "
-          />
-          <img
-            src={ETranzact}
-            alt=""
-            className="m-10  col-span-1 lg:w-auto w-1/2"
           />
         </div>
       </div>

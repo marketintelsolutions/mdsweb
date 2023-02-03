@@ -7,6 +7,7 @@ import SectionFive from "../components/HomePage/SectionFive";
 import SectionSeven from "../components/HomePage/SectionSeven";
 import illustration from "../assets/illustration.png";
 import socialmedia from "../assets/72927-social-media.gif";
+import paystackHomepage from "../assets/paystackHomepage.svg";
 
 const Homepage = () => {
   useEffect(() => {
@@ -19,6 +20,32 @@ const Homepage = () => {
         <div className="">
           <SectionOne />
         </div>
+        {/* PAYSHARP */}
+        <div className="">
+          <SectionThree
+            animeid="paysharp"
+            id="paysharp"
+            header={`Do More With \n Paysharp`}
+            subHeader="Enjoy the ease of conducting financial transactions such as Airtime Vending, Cash Deposit and Withdrawals Bill Payment and many more services"
+            link="/paysharp"
+            button="Learn More"
+            color="#1233FF"
+            rounded="md"
+            image={paystackHomepage}
+            ourPatners={false}
+          />
+        </div>
+        {/* WE CARE WE CONNECT */}
+        <SectionFour
+          animeid="weCare"
+          id="We Care. We Connect. We Create."
+          header={`We Care. \n We Connect. \n We Create.`}
+          subHeader="We are the next generation of the Solutions. Giving you more for less!"
+          image={false}
+          button="Learn More"
+          rounded="md"
+          color="#F26836"
+        />
 
         <div className="">
           <SectionTwo
@@ -36,9 +63,14 @@ const Homepage = () => {
             header={`Managed \n Technology Services`}
             subHeader="We are managed service provider (MSP) deliverIng network, application, infrastructure and security through ongoing and regular support. Our team of experts with over 50 years combined experience are eager to help you solve that Technology challenge."
             link="/ManagedTechnologyServices"
+            button="Read More"
+            color="#FF3B00"
+            rounded="full"
             image={illustration}
+            ourPatners={true}
           />
         </div>
+        {/* SMART CREATIVE */}
         <div className="">
           <SectionFour
             animeid="SmartCreative"
@@ -46,6 +78,10 @@ const Homepage = () => {
             header="Smart Creative"
             subHeader="There's no limit to what you can get designed at Ziltch1 Smart Designs. Whether you're looking for a spectacular new logo or some stunning flyers or an amazing animation, our talented designers at Ziltch1 Technologies can make it happen. Click on the button below to see our wide range of design services. "
             link="/SmartCreative"
+            image={true}
+            button="Read More"
+            rounded="full"
+            color="#1233FF"
           />
         </div>
         <div className="">

@@ -26,6 +26,8 @@ import ContactUs from "./screens/ContactUs";
 import Products from "./screens/Products";
 import Team from "./screens/Team";
 import Directors from "./screens/Directors";
+import PaySharp from "./screens/Products/PaySharp";
+import GaslSolutions from "./screens/Products/GaslSolutions";
 
 function App() {
   return (
@@ -78,6 +80,9 @@ function App() {
           <Route path="/about" element={<About />} />
 
           <Route path="/" element={<Homepage />} />
+          {/* NEW */}
+          <Route path="/paysharp" element={<PaySharp />} />
+          <Route path="/gaslsolutions" element={<GaslSolutions />} />
         </Routes>
         <Footer />
       </Router>
