@@ -5,6 +5,9 @@ import Emeka from "../assets/EmekaP.png";
 import Eric from "../assets/EricP.png";
 import Jimmy from "../assets/JimmyP.png";
 import Sina from "../assets/SinaP.png";
+import joseph from "../assets/joseph.png";
+import ademola from "../assets/ademola.png";
+import oluwole from "../assets/oluwole.png";
 import profileuser1 from "../assets/profile-user1.png";
 import { Link } from "react-router-dom";
 
@@ -23,27 +26,27 @@ export default function Team() {
       name: "Jimmy Ogunnowo",
       link: "Jimmy Ogunnowo",
       image: Jimmy,
-      description: "Chief Revenue Officer",
+      description: "Chief Commercial Officer",
     },
     {
       name: "Joseph Dele",
-      image: profileuser1,
-      description: "Software Engineer",
+      image: joseph,
+      description: "Senior Developer",
     },
-    {
-      name: "Usman Ayobami",
-      image: profileuser1,
-      description: "Software Engineer",
-    },
+    // {
+    //   name: "Usman Ayobami",
+    //   image: profileuser1,
+    //   description: "Software Engineer",
+    // },
     {
       name: "Ademola Olusesan",
-      image: profileuser1,
-      description: "Dev",
+      image: ademola,
+      description: "Account/Operation",
     },
     {
       name: "Ayomide Oluwole",
-      image: profileuser1,
-      description: "Creative Designer",
+      image: oluwole,
+      description: "Creative Director",
     },
   ];
   return (
