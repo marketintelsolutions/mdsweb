@@ -9,6 +9,7 @@ import illustration from "../assets/illustration.png";
 import socialmedia from "../assets/72927-social-media.gif";
 import paystackHomepage from "../assets/paystackHomepage.svg";
 import technologyNetwork from "../assets/technology-network.png";
+import creative from "../assets/creative.png";
 
 const Homepage = () => {
   useEffect(() => {
@@ -34,6 +35,7 @@ const Homepage = () => {
             rounded="md"
             image={paystackHomepage}
             ourPatners={false}
+        buttonText="white"
           />
         </div>
         {/* WE CARE WE CONNECT */}
@@ -46,6 +48,7 @@ const Homepage = () => {
           button="Learn More"
           rounded="md"
           color="#F26836"
+          buttonColor="#1233FF"
         />
 
         <div className="">
@@ -69,6 +72,8 @@ const Homepage = () => {
             rounded="full"
             image={technologyNetwork}
             ourPatners={false}
+            buttonColor="#F26836"
+            buttonText="white"
           />
         </div>
         {/* SMART CREATIVE */}
@@ -79,10 +84,11 @@ const Homepage = () => {
             header="Smart Creative"
             subHeader="There's no limit to what you can get designed at Ziltch1 Smart Designs. Whether you're looking for a spectacular new logo or some stunning flyers or an amazing animation, our talented designers at Ziltch1 Technologies can make it happen. Click on the button below to see our wide range of design services. "
             link="/SmartCreative"
-            image={true}
+            image={creative}
             button="Read More"
             rounded="full"
             color="#1233FF"
+            buttonColor="#F26836"
           />
         </div>
         <div className="">
@@ -106,6 +112,7 @@ const Homepage = () => {
             button="Read More"
             rounded="md"
             ourPatners={true}
+            buttonColor="#F26836"
           />
         </div>
         <div className="">

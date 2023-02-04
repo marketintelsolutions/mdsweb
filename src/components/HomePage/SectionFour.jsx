@@ -12,6 +12,7 @@ const SectionFour = ({
   button,
   rounded,
   color,
+  buttonColor,
 }) => {
   return (
     <div
@@ -23,7 +24,7 @@ const SectionFour = ({
       {image && (
         <div className="lg:w-5/12 w-full justify-center flex mb-10">
           <img
-            src={creative}
+            src={image}
             alt=""
             className="lg:h-full lg:w-auto w-[169.91px]"
           />
@@ -40,15 +41,15 @@ const SectionFour = ({
           <p className="lg:text-xl lg:leading-10 text-lg mt-5 text-[#727272] lg:my-10">
             {subHeader}
           </p>
-          <Link to={link || "/"} className="">
-            <button
-              className={`bg-[${
-                image ? "#F26836" : "#1233FF"
-              }] rounded-${rounded} text-white p-4 px-6 mt-4`}
-            >
-              {button}
-            </button>
-          </Link>
+          {button && (
+            <Link to={link || "/"} className="">
+              <button
+                className={`bg-[${buttonColor}] rounded-${rounded} text-white p-4 px-6 mt-4`}
+              >
+                {button}
+              </button>
+            </Link>
+          )}
         </div>
       </div>
     </div>

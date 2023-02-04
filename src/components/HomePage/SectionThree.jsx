@@ -17,6 +17,7 @@ const SectionThree = ({
   button,
   color,
   rounded,
+  buttonColor,
 }) => {
   return (
     <div>
@@ -36,7 +37,7 @@ const SectionThree = ({
             </p>
             <Link to={link || "/"} className=" ">
               <button
-                className={`bg-[#F26836] rounded-${rounded} text-white p-4 px-6 mt-4`}
+                className={`bg-[${color}] rounded-${rounded} text-white p-4 px-6 mt-4`}
               >
                 {button}
               </button>
