@@ -56,11 +56,11 @@ export default function Team() {
           <span className="text-4xl font-black text-[#F26836] ">TEAM</span>
         </button>
       </div>
-      <div className=" flex flex-wrap  items-center   xl:justify-around my-20 mb-40 gap-20 ">
+      <div className=" grid grid-cols-[1fr_1fr_1fr]  items-center   xl:justify-around my-20 mb-40 gap-20 ">
         {profiles.map((i, index) => (
           <div
             key={index}
-            className="profile-card shadow-lg w-[346px] h-[438px] rounded-xl overflow-hidden relative flex flex-col items-center justify-center"
+            className="profile-card shadow-lg  h-[438px] rounded-xl overflow-hidden relative flex flex-col items-center justify-center "
           >
             {i.image ? (
               <div className="w-[215px] h-[215px] bg-[#D9D9D9] border-[10px] border-white rounded-full absolute top-[30px] overflow-hidden flex justify-center">
