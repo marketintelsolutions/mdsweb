@@ -1,11 +1,10 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import hp from "../../assets/hp.png";
 import Sophos from "../../assets/sophos.png";
 import ETranzact from "../../assets/tranzact.png";
 import Itex from "../../assets/itex.png";
 
-const SectionThree = ({
+const PaysharpHome = ({
   header,
   subHeader,
   image,
@@ -22,7 +21,7 @@ const SectionThree = ({
   return (
     <div>
       <div
-        className="xl:max-w-[70%] container mx-auto flex  xl:my-6  flex-wrap p-6  items-center xl:pt-20 xl:py-9 py-10 justify-b xl:justify-around "
+        className="xl:max-w-[70%] container mx-auto flex  xl:my-12  flex-wrap p-6  items-center  xl:pt-9 pt-10 justify-b xl:justify-around "
         id={id}
       >
         <div className="lg:w-5/12 w-full xl:text-left  flex xl:justify-start bg-white lg:order-1 order-2">
@@ -35,13 +34,13 @@ const SectionThree = ({
             <p className="lg:text-xl lg:leading-10 text-lg  mt-5 text-[#727272] lg:my-10">
               {subHeader}
             </p>
-            <Link to={link || "/"} className=" ">
+            <a href={link || "/"} className=" " target="_blank">
               <button
-                className={`bg-[${color}] rounded-${rounded} text-${buttonText} p-4 px-6 mt-4`}
+                className={`bg-[#F26836] rounded-${rounded} text-${buttonText} p-4 px-6 mt-4`}
               >
                 {button}
               </button>
-            </Link>
+            </a>
           </div>
         </div>
 
@@ -85,4 +84,4 @@ const SectionThree = ({
   );
 };
 
-export default SectionThree;
+export default PaysharpHome;

@@ -15,7 +15,7 @@ const Footer = () => {
   return (
     <div>
       <div
-        className=" lg:flex hidden flex-wrap items-start text-gray-400 mx-auto bg-[#F26836] px-8 py-20   w-full justify-around"
+        className=" lg:flex hidden flex-wrap items-start text-gray-400 mx-auto bg-[#F26836] px-8 py-20   w-full justify-around border"
         id="footerSection"
       >
         <section className="text-sm mb-5">

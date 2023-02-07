@@ -5,7 +5,7 @@ import man from "../../assets/Group 50.png";
 const SectionTwo = ({ header, subHeader, image, id, size, link, animeid }) => {
   return (
     <div
-      className="lg:max-w-[73%] mx-auto lg:px-40 xl:rounded-full  p-6 container lg:h-[668px] flex xl:my-20  flex-wrap items-center justify-around  xl:shadow-2xl  shadow-[#282c34] xl:max-w-[73%]  xl:bg-white"
+      className="lg:max-w-[73%] mx-auto lg:px-40 xl:rounded-full  p-6 container lg:h-[668px] flex xl:my-20  flex-wrap items-center justify-around  xl:shadow-2xl  shadow-[#282c34] xl:max-w-[73%]  xl:bg-white "
       id={id}
     >
       <div className="w-5/12 lg:order-1 order-2">

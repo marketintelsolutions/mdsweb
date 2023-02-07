@@ -1,8 +1,6 @@
 import React from "react";
-import creative from "../../assets/creative.png";
-import { Link } from "react-router-dom";
 
-const SectionFour = ({
+const GaslHome = ({
   header,
   subHeader,
   image,
@@ -16,7 +14,7 @@ const SectionFour = ({
 }) => {
   return (
     <div
-      className={`w-full xl:max-w-[73%] container mx-auto flex flex-wrap p-6  items-center xl:pt-20  py-10 justify-center xl:justify-${
+      className={`w-full xl:max-w-[73%] container mx-auto flex  flex-wrap p-6  items-center   justify-center xl:justify-${
         image ? "around" : "end"
       } `}
       id={id}
@@ -42,13 +40,13 @@ const SectionFour = ({
             {subHeader}
           </p>
           {button && (
-            <Link to={link || "/"} className="">
+            <a href={link || "/"} className="" target="_blank">
               <button
                 className={`bg-[${buttonColor}] rounded-${rounded} text-white p-4 px-6 mt-4`}
               >
                 {button}
               </button>
-            </Link>
+            </a>
           )}
         </div>
       </div>
@@ -56,4 +54,4 @@ const SectionFour = ({
   );
 };
 
-export default SectionFour;
+export default GaslHome;

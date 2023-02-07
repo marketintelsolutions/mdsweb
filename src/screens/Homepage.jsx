@@ -10,6 +10,8 @@ import socialmedia from "../assets/72927-social-media.gif";
 import paystackHomepage from "../assets/paystackHomepage.svg";
 import technologyNetwork from "../assets/technology-network.png";
 import creative from "../assets/creative.png";
+import PaysharpHome from "../components/Paysharp/PaysharpHome";
+import GaslHome from "../components/Gasl/GaslHome";
 
 const Homepage = () => {
   useEffect(() => {
@@ -18,18 +20,18 @@ const Homepage = () => {
 
   return (
     <div className="">
-      <div className="mx-auto lg:mb-[400px]">
+      <div className="mx-auto lg:mb-[150px]">
         <div className="">
           <SectionOne />
         </div>
         {/* PAYSHARP */}
         <div className="">
-          <SectionThree
+          <PaysharpHome
             animeid="paysharp"
             id="paysharp"
             header={`Do More With \n Paysharp`}
             subHeader="Enjoy the ease of conducting financial transactions such as Airtime Vending, Cash Deposit and Withdrawals Bill Payment and many more services"
-            link="/paysharp"
+            link="https://www.paysharpng.com"
             button="Learn More"
             color="#1233FF"
             rounded="md"
@@ -39,7 +41,7 @@ const Homepage = () => {
           />
         </div>
         {/* WE CARE WE CONNECT */}
-        <SectionFour
+        <GaslHome
           animeid="weCare"
           id="We Care. We Connect. We Create."
           header={`We Care. \n We Connect. \n We Create.`}
@@ -49,6 +51,7 @@ const Homepage = () => {
           rounded="md"
           color="#F26836"
           buttonColor="#1233FF"
+          link="https://gaslsolutions.com"
         />
 
         <div className="">

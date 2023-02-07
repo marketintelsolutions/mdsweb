@@ -13,7 +13,7 @@ const SectionSeven = ({
 }) => {
   return (
     <div
-      className="lg:max-w-[73%] mx-auto lg:px-40 rounded-full p-6 container lg:h-[668px] flex xl:my-20 my-10 flex-wrap items-center justify-around xl:shadow-2xl shadow-[#282c34] xl:max-w-[73%]  xl:bg-white"
+      className="lg:max-w-[73%] mx-auto lg:px-40 rounded-full p-6 container lg:h-[668px] flex xl:my-10 my-10 flex-wrap items-center justify-around xl:shadow-2xl shadow-[#282c34] xl:max-w-[73%]  xl:bg-white "
       id={id}
     >
       <img

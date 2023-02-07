@@ -17,7 +17,7 @@ const SectionOne = () => {
               Technology solutions to improve lives
             </p>
             <Link to="/ContactUs" className="lg:mt-auto">
-              <button className="rounded-full bg-white text-black p-4 lg:text-2xl  px-6 pb-3">
+              <button className="rounded-md bg-white text-black p-4 lg:text-2xl  px-6 pb-3">
                 Contact Us
               </button>
             </Link>

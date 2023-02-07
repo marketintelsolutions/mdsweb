@@ -5,7 +5,7 @@ import robot from "../../assets/robot.png";
 const SectionFive = ({ header, subHeader, image, id, size, link, animeid }) => {
   return (
     <div
-      className="lg:max-w-[73%] mx-auto lg:px-40 rounded-full p-6 container flex xl:my-40 my-10 flex-wrap items-center justify-around xl:shadow-2xl lg:shadow-[#282c34] xl:max-w-[73%]  xl:bg-white"
+      className="lg:max-w-[73%] mx-auto lg:px-40 rounded-full p-6 container flex xl:my-10 my-10 flex-wrap items-center justify-around xl:shadow-2xl lg:shadow-[#282c34] xl:max-w-[73%]  xl:bg-white "
       id={id}
     >
       <div className="lg:w-4/12 w-full xl:text-left flex xl:justify-end bg-white lg:order-1 order-2">

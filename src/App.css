@@ -367,6 +367,9 @@ body {
 .p98638:hover p {
   color: #888888;
 }
+.p98638:hover span {
+  color: #888888;
+}
 .p98638:hover h1 {
   color: #f26836;
 }
