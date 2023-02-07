@@ -35,7 +35,7 @@ const Homepage = () => {
             rounded="md"
             image={paystackHomepage}
             ourPatners={false}
-        buttonText="white"
+            buttonText="white"
           />
         </div>
         {/* WE CARE WE CONNECT */}
@@ -68,8 +68,8 @@ const Homepage = () => {
             subHeader="We are managed service provider (MSP) deliverIng network, application, infrastructure and security through ongoing and regular support. Our team of experts with over 50 years combined experience are eager to help you solve that Technology challenge."
             link="/ManagedTechnologyServices"
             button="Read More"
-            color="#FF3B00"
-            rounded="full"
+            color="#F26836"
+            rounded="md"
             image={technologyNetwork}
             ourPatners={false}
             buttonColor="#F26836"
@@ -107,12 +107,14 @@ const Homepage = () => {
             header="Media & Entertainment"
             subHeader="Ziltch is a key player in Media infrastructure and creative Content Development to promote Africa and Global Culture
 ."
+            color="#F26836"
             link="/MediaEntertainment"
             image={socialmedia}
             button="Read More"
             rounded="md"
             ourPatners={true}
             buttonColor="#F26836"
+            buttonText="white"
           />
         </div>
         <div className="">

@@ -1,9 +1,9 @@
 import React, { useEffect } from "react";
 import imageOne from "../../assets/Group 85.png";
-import iphone from "../../assets/iphone-new.svg";
-import technologyNetwork from "../../assets/technology-network.png";
+import iphone from "../../assets/GroupNew.png";
 
 const Fintech = () => {
+  // console.log(iphone, imageOne);
   const missionElements = [
     {
       title: "Value Added Services",
@@ -19,9 +19,7 @@ const Fintech = () => {
     },
     {
       title: `Financial Inclusion`,
-      description: `<a href="https://www.paysharpng.com"  className='underline'">
-                PAYSHARP
-              </a> (Agent Banking Platform) - Technology powered Agent Banking outfit with penetration strategy to support the Federal Policy on Financial inclusion across Nigeria
+      description: `PAYSHARP (Agent Banking Platform) - Technology powered Agent Banking outfit with penetration strategy to support the Federal Policy on Financial inclusion across Nigeria
       `,
     },
   ];
@@ -45,18 +43,23 @@ const Fintech = () => {
               peer-to-peer (P2P) lending apps, investment apps, and crypto apps,
               among others.  
             </p>
-            <p className="text-xl leading-10 mt-5 text-[#727272] my-10">
+            <span className="text-xl leading-10 mt-5 text-[#727272] my-10">
               One of our leading FINTECH products in the market is{" "}
+            </span>
+            <span className="text-[#FAA724]">
               <a
                 href="https://www.paysharpng.com"
-                className="text-[#FAA724] underline"
+                className="text-xl leading-10  underline"
+                target="_blank"
               >
                 PAYSHARP
               </a>
+            </span>
+            <span className="text-xl leading-10 text-[#727272]">
               , which allows non-banking individuals and institutions to carry
               out financial services outside conventional bank branches, using a
               non-banking agent(s) or a licensed deposit financial institution.
-            </p>
+            </span>
           </div>
         </div>
         <img
@@ -69,23 +72,41 @@ const Fintech = () => {
         </div>
       </div>
       <div className="finbg  w-full flex items-center lg:mb-60 py-10 flex-wrap justify-center lg:gap-20 gap-10  lg:p-40 p-10">
-        {missionElements.map((i, index) => (
-          <div
-            key={index}
-            className="detailbox  p98638 transition duration-150 ease-in-out origin-top lg:w-[617px] w-full lg:h-[339px]  flex justify-center items-center flex-col p-6 lg:px-10 rounded-xl"
-          >
-            {i.title && (
-              <h1 className="lg:text-4xl text-2xl mb-3 font-[900]    text-center">
-                {i.title}
-              </h1>
-            )}
-            {/* <p className=" text-center">{i.description}</p> */}
-            <p
-              className=" text-center"
-              dangerouslySetInnerHTML={{ __html: i.description }}
-            ></p>
-          </div>
-        ))}
+        {missionElements.map((i, index) => {
+          return (
+            <div
+              key={index}
+              className="detailbox  p98638 transition duration-150 ease-in-out origin-top lg:w-[617px] w-full lg:h-[339px]  flex justify-center items-center flex-col p-6 lg:px-10 rounded-xl"
+            >
+              {i.title && (
+                <h1 className="lg:text-4xl text-2xl mb-3 font-[900]    text-center">
+                  {i.title}
+                </h1>
+              )}
+              {i.title === "Financial Inclusion" ? (
+                <div className="">
+                  <span className="text-[#FAA724]  text-xl">
+                    <a
+                      href="https://www.paysharpng.com"
+                      className=" underline"
+                      target="_blank"
+                    >
+                      PAYSHARP
+                    </a>
+                  </span>
+                  <span className="text-white text-center text-xl">
+                    {" "}
+                    (Agent Banking Platform) - Technology powered Agent Banking
+                    outfit with a penetration strategy to support the Federal
+                    Policy on Financial inclusion across Nigeria.{" "}
+                  </span>
+                </div>
+              ) : (
+                <p className=" text-center">{i.description}</p>
+              )}
+            </div>
+          );
+        })}
       </div>
     </div>
   );
