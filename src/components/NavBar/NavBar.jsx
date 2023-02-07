@@ -83,20 +83,20 @@ const NavBar = () => {
             </div>
           </div>
         </div>
-        <div className="flex lg:max-w-[73%] mx-auto lg:justify-between  py-5 w-full text-[#888888]">
-          <div className="w-24 h-10">
+        <div className="flex lg:max-w-[73%] mx-auto lg:justify-between   w-full text-[#888888]  h-[100px]">
+          <div className="w-24 h-[100%] flex items-center">
             <Link to="/">
               <img src={Logo} alt="" className="w-auto" />
             </Link>
           </div>
-          <div className="flex items-center gap-10 font-normal">
+          <div className="flex items-center gap-10 font-normal  h-[100%]">
             <Link to="/">Home</Link>
             <span class="ml-5">
               <Link to="about">About Us</Link>
             </span>
 
             {/* PRODUCTS */}
-            <div class="group inline-block">
+            <div class="group inline-block  h-[100%] py-8">
               <button class="outline-none focus:outline-none px-3 py-1 bg-white rounded-sm flex items-center min-w-32">
                 <span class="pr-1 font-normal flex-1">Products</span>
                 <span>
@@ -112,7 +112,7 @@ const NavBar = () => {
               </button>
               <ul
                 class="bg-white  rounded-sm transform scale-0 group-hover:scale-100 absolute 
-        transition duration-150 ease-in-out origin-top min-w-32 shadow-sm"
+        transition duration-150 ease-in-out origin-top min-w-32 shadow-sm mt-[35px]"
               >
                 <Link to={"/paysharp"}>
                   <li className="rounded-sm w-[250px] min-h-[70px] hover:bg-[#FAA724] text-[#888888] hover:text-white py-5 px-4 text-xl leading-10 border-b">
@@ -127,9 +127,9 @@ const NavBar = () => {
               </ul>
             </div>
             {/* SERVICES */}
-            <div class="group inline-block">
+            <div class="group inline-block  h-[100%] py-8">
               <button class="outline-none focus:outline-none px-3 py-1 bg-white rounded-sm flex items-center min-w-32">
-                <span class="pr-1 font-normal flex-1">Services</span>
+                <span class="pr-1 font-normal flex-1  ">Services</span>
                 <span>
                   <svg
                     class="fill-current h-4 w-4 transform group-hover:-rotate-180
@@ -143,7 +143,7 @@ const NavBar = () => {
               </button>
               <ul
                 class="bg-white  rounded-sm transform scale-0 group-hover:scale-100 absolute 
-        transition duration-150 ease-in-out origin-top min-w-32 shadow-sm"
+        transition duration-150 ease-in-out origin-top min-w-32 shadow-sm mt-[35px]"
               >
                 <Link to={"/Fintech"}>
                   <li className="rounded-sm w-[250px] min-h-[70px] hover:bg-[#F26836] text-[#888888] hover:text-white py-5 px-4 text-xl leading-10 border-b">
