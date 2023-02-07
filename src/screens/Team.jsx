@@ -30,6 +30,7 @@ export default function Team() {
     },
     {
       name: "Joseph Dele",
+      link: "Joseph Dele",
       image: joseph,
       description: "Senior Developer",
     },
@@ -41,10 +42,12 @@ export default function Team() {
     {
       name: "Ademola Olusesan",
       image: ademola,
+      link: "Ademola Olusesan",
       description: "Account/Operation",
     },
     {
       name: "Ayomide Oluwole",
+      link: "Ayomide Oluwole",
       image: oluwole,
       description: "Creative Director",
     },
