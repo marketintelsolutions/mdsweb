@@ -142,7 +142,7 @@ const About = () => {
           chosen markets.{" "}
         </p>
         <p className="text-xl leading-10 text-[#3E3E3E] mt-10 text-center">
-          MDS seeks to develop products and solutions based on emerging and
+          Ziltch1 seeks to develop products and solutions based on emerging and
           futuristic outlook in the business and lifestyle environment, infusing
           new ways, forms and ideas for overall improvement.
         </p>
