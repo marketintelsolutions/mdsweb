@@ -42,7 +42,7 @@ const NavBar = () => {
 
   return (
     <div className="mb-16">
-      <div className="lg:block fixed hidden top-0 left-0 right-0 z-10 bg-white ">
+      <div className="lg:block fixed sm:hidden top-0 left-0 right-0 z-10 bg-white ">
         <div className=" w-full border-b py-1 bg-blue-700 text-white">
           <div className=" lg:max-w-[73%] mx-auto w-full h-full flex flex-wrap items-center justify-around lg:justify-between">
             <div className="flex items-center m-2 ">

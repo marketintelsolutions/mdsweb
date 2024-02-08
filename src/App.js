@@ -28,6 +28,7 @@ import Team from "./screens/Team";
 import Directors from "./screens/Directors";
 import PaySharp from "./screens/Products/PaySharp";
 import GaslSolutions from "./screens/Products/GaslSolutions";
+import Portfolio from "./screens/Portfolio";
 
 function App() {
   return (
@@ -83,6 +84,7 @@ function App() {
           {/* NEW */}
           <Route path="/paysharp" element={<PaySharp />} />
           <Route path="/gaslsolutions" element={<GaslSolutions />} />
+          <Route path="/portfolio" element={<Portfolio />} />
         </Routes>
         <Footer />
       </Router>
