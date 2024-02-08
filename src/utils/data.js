@@ -13,7 +13,8 @@ export const portfolioData = [
     {
         image: tergo,
         heading: 'Tergoenergy',
-        text: 'Website'
+        text: 'Website',
+        link: 'https://tergoenergy.com'
     },
     {
         image: treasureTrove,
@@ -22,12 +23,14 @@ export const portfolioData = [
     {
         image: eventCircle,
         heading: 'Eventcirco Webapp',
-        text: 'Website, UI/UX'
+        text: 'Website, UI/UX',
+        link: 'https://eventcirco.com'
     },
     {
         image: pacHoldings,
         heading: 'PAC Holdings',
-        text: 'Website, UI/UX'
+        text: 'Website, UI/UX',
+        link: 'https://panafricancapitalholdings.com'
     },
     {
         image: transport,
@@ -41,17 +44,20 @@ export const portfolioData = [
     {
         image: pacLearning,
         heading: 'Pach Learning Portal',
-        text: 'Website'
+        text: 'Website',
+        link: 'https://www.paclearningportal.com'
     },
     {
         image: pacResearch,
         heading: 'PAC Research',
-        text: 'Website'
+        text: 'Website',
+        link: 'https://pacresearch.org'
     },
     {
         image: motionGroup,
         heading: 'Motion Graphics',
-        text: 'Text, picture and video motion design '
+        text: 'Text, picture and video motion design',
+        video: true
     },
     {
         image: brandGuide,

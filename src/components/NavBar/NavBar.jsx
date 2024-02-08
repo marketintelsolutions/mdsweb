@@ -41,7 +41,7 @@ const NavBar = () => {
   };
 
   return (
-    <div className="mb-16">
+    <div className="">
       <div className="lg:block fixed sm:hidden top-0 left-0 right-0 z-10 bg-white ">
         <div className=" w-full border-b py-1 bg-blue-700 text-white">
           <div className=" lg:max-w-[73%] mx-auto w-full h-full flex flex-wrap items-center justify-around lg:justify-between">
@@ -91,9 +91,41 @@ const NavBar = () => {
           </div>
           <div className="flex items-center gap-10 font-normal  h-[100%]">
             <Link to="/">Home</Link>
-            <span class="ml-5">
+            {/* <span class="ml-5">
               <Link to="about">About Us</Link>
-            </span>
+            </span> */}
+
+            {/* ABOUT */}
+            <div class="group inline-block  h-[100%] py-8">
+              <button class="outline-none focus:outline-none px-3 py-1 bg-white rounded-sm flex items-center min-w-32">
+                <span class="pr-1 font-normal flex-1">About Us</span>
+                <span>
+                  <svg
+                    class="fill-current h-4 w-4 transform group-hover:-rotate-180
+          transition duration-150 ease-in-out"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 20 20"
+                  >
+                    <path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z" />
+                  </svg>
+                </span>
+              </button>
+              <ul
+                class="bg-white  rounded-sm transform scale-0 group-hover:scale-100 absolute 
+        transition duration-150 ease-in-out origin-top min-w-32 shadow-sm mt-[35px]"
+              >
+                <Link to={"/about"}>
+                  <li className="rounded-sm w-[250px] min-h-[70px] hover:bg-[#F26836] text-[#888888] hover:text-white py-5 px-4 text-xl leading-10 border-b">
+                    About Us
+                  </li>
+                </Link>
+                <Link to={"/portfolio"}>
+                  <li class="rounded-sm w-[250px] min-h-[70px] hover:bg-[#F26836] text-[#888888] hover:text-white py-5 px-4 text-xl leading-10 border-b">
+                    Portfolio
+                  </li>
+                </Link>
+              </ul>
+            </div>
 
             {/* PRODUCTS */}
             <div class="group inline-block  h-[100%] py-8">
@@ -126,6 +158,7 @@ const NavBar = () => {
                 </Link>
               </ul>
             </div>
+
             {/* SERVICES */}
             <div class="group inline-block  h-[100%] py-8">
               <button class="outline-none focus:outline-none px-3 py-1 bg-white rounded-sm flex items-center min-w-32">

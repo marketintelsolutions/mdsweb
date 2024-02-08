@@ -1,15 +1,17 @@
 import React, { useState } from "react";
 import PortfolioItem from "../components/Portfolio/PortfolioItem";
 import { portfolioData } from "../utils/data";
+import portfolioBg from "../assets/portfolio/portfolioBg.png";
 
 const Portfolio = () => {
   const [selected, setSelected] = useState({});
   const [isModal, setIsModal] = useState(false);
 
-  console.log(selected);
-
   return (
-    <section className="px-12 relative">
+    <section
+      className="px-12 relative pb-[100px] mt-[-48px] pt-12"
+      style={{ background: `url(${portfolioBg})` }}
+    >
       {/* modal */}
       {isModal && (
         <div
@@ -19,7 +21,7 @@ const Portfolio = () => {
               setIsModal(false);
           }}
         >
-          <div className="bg-white h-[480px] min-w-[50%] max-w-[60%] mt-[200px] mx-auto flex gap-4 p-[20px]">
+          <div className="bg-white h-[480px] min-w-[50%] max-w-[60%] mt-[200px] mx-auto flex gap-4 p-[20px] relative z-[9999]">
             <div className="flex w-full  flex-col gap-5">
               <img
                 src={selected.image}
