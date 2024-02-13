@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import PortfolioItem from "../components/Portfolio/PortfolioItem";
 import { portfolioData } from "../utils/data";
 import portfolioBg from "../assets/portfolio/portfolioBg.png";
+import { Link } from "react-router-dom";
 
 const Portfolio = () => {
   const [selected, setSelected] = useState({});
@@ -56,6 +57,16 @@ const Portfolio = () => {
             setIsModal={setIsModal}
           />
         ))}
+      </div>
+      <div className="flex items-center justify-center mt-20 gap-20">
+        <p className="text-[30px] font-semibold">
+          If you want to learn more about our products
+        </p>
+        <Link to="/ContactUs" className="text-[#f1634d]">
+          <button className="bg-[#F26836] rounded-full text-white p-4 px-6 mt-4">
+            Contact Us
+          </button>
+        </Link>
       </div>
     </section>
   );

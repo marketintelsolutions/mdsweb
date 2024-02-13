@@ -207,13 +207,14 @@ const NavBar = () => {
               </ul>
             </div>
             {/* end of a dropdown */}
-            <a
+            {/* <a
               href="mailto:info@ziltchone.com"
               className="flex items-center gap-1 underline"
             >
               <FaEnvelope />
               <span>info@ziltchone.com</span>
-            </a>
+            </a> */}
+            <Link to="/ContactUs">Contact</Link>
           </div>
         </div>
       </div>
