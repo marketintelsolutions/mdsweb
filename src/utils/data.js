@@ -44,7 +44,7 @@ export const portfolioData = [
     },
     {
         image: pacResearch,
-        heading: 'PAC Research',
+        heading: 'PAC Research Website',
         link: 'https://pacresearch.org'
     },
     {
