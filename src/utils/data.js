@@ -12,8 +12,7 @@ import brandGuide from '../assets/portfolio/brandGuide.png'
 export const portfolioData = [
     {
         image: tergo,
-        heading: 'Tergoenergy',
-        text: 'Website',
+        heading: 'Tergoenergy Website',
         link: 'https://tergoenergy.com'
     },
     {
@@ -23,13 +22,11 @@ export const portfolioData = [
     {
         image: eventCircle,
         heading: 'Eventcirco Webapp',
-        text: 'Website, UI/UX',
         link: 'https://eventcirco.com'
     },
     {
         image: pacHoldings,
-        heading: 'PAC Holdings',
-        text: 'Website, UI/UX',
+        heading: 'PAC Holdings Website',
         link: 'https://panafricancapitalholdings.com'
     },
     {
@@ -39,18 +36,15 @@ export const portfolioData = [
     {
         image: annualReport,
         heading: 'Annual Report',
-        text: 'Lorem ISpum'
     },
     {
         image: pacLearning,
         heading: 'Pach Learning Portal',
-        text: 'Website',
         link: 'https://www.paclearningportal.com'
     },
     {
         image: pacResearch,
         heading: 'PAC Research',
-        text: 'Website',
         link: 'https://pacresearch.org'
     },
     {

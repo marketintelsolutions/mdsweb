@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import PortfolioItem from "../components/Portfolio/PortfolioItem";
 import { portfolioData } from "../utils/data";
 import portfolioBg from "../assets/portfolio/portfolioBg.png";
@@ -7,6 +7,10 @@ import { Link } from "react-router-dom";
 const Portfolio = () => {
   const [selected, setSelected] = useState({});
   const [isModal, setIsModal] = useState(false);
+
+  useEffect(() => {
+    window.scroll(0, 0);
+  }, []);
 
   return (
     <section
@@ -58,7 +62,7 @@ const Portfolio = () => {
           />
         ))}
       </div>
-      <div className="flex items-center justify-center mt-20 gap-20">
+      <div className="flex items-center justify-center mt-[120px] gap-20">
         <p className="text-[30px] font-semibold">
           If you want to learn more about our products
         </p>
