@@ -8,6 +8,7 @@ import {
   FaTwitter,
 } from "react-icons/fa";
 import illustration from "../assets/contactgif.gif";
+import { sendmail } from "../utils/sendMailHelpers";
 
 export default function ContactUs() {
   const [showForm, setShowForm] = useState(false);
@@ -17,6 +18,38 @@ export default function ContactUs() {
   const [subject, setSubject] = useState("");
   const [message, setMessage] = useState("");
   const [show, setShow] = useState(false);
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+
+    let formName = "Contact Form";
+    let recipient_email = "info@ziltchone.com";
+
+    if (!email || !name || !subject || !message) {
+      alert("Fill all fields");
+      return;
+    }
+
+    const formData = { name, email, subject, message };
+
+    const fields = Object.keys(formData);
+
+    sendmail({
+      // type:'contact',
+      recipient_email,
+      name,
+      email,
+      subject,
+      message,
+      formName,
+      fields,
+    });
+
+    setEmail("");
+    setName("");
+    setSubject("");
+    setMessage("");
+  };
 
   useEffect(() => {
     window.scrollTo({ top: 0 });
@@ -62,6 +95,7 @@ export default function ContactUs() {
               setSendingRequest(false);
               setShowForm(false);
               setShow(true);
+              handleSubmit(e);
               // window.scrollTo(0, 0);
             }}
           >
