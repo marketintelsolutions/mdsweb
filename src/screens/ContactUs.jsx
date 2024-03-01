@@ -45,10 +45,10 @@ export default function ContactUs() {
       fields,
     });
 
-    setEmail("");
-    setName("");
-    setSubject("");
-    setMessage("");
+    // setEmail("");
+    // setName("");
+    // setSubject("");
+    // setMessage("");
   };
 
   useEffect(() => {
