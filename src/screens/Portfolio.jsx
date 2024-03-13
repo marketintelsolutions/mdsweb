@@ -37,7 +37,7 @@ const Portfolio = () => {
             </div>
             <div>
               <p className="text-[20px] font-light">
-                We design, build and launch websites and products that are
+                We design, build and launch platforms and products that are
                 simple, beautiful and helps businesses grow.
               </p>
             </div>

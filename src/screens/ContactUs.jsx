@@ -23,7 +23,8 @@ export default function ContactUs() {
     e.preventDefault();
 
     let formName = "Contact Form";
-    let recipient_email = "info@ziltchone.com";
+    // let recipient_email = "info@ziltchone.com";
+    let recipient_email = "ziltch1technologies@gmail.com";
 
     if (!email || !name || !subject || !message) {
       alert("Fill all fields");
@@ -45,10 +46,10 @@ export default function ContactUs() {
       fields,
     });
 
-    // setEmail("");
-    // setName("");
-    // setSubject("");
-    // setMessage("");
+    setEmail("");
+    setName("");
+    setSubject("");
+    setMessage("");
   };
 
   useEffect(() => {
@@ -102,6 +103,7 @@ export default function ContactUs() {
             <p className="text-left">Name</p>
             <input
               onChange={(e) => setName(e.target.value)}
+              value={name}
               required
               type="text"
               placeholder=""
@@ -110,6 +112,7 @@ export default function ContactUs() {
             <p className="text-left">Email</p>
             <input
               onChange={(e) => setEmail(e.target.value)}
+              value={email}
               required
               type="email"
               placeholder=""
@@ -118,6 +121,7 @@ export default function ContactUs() {
             <p className="text-left">Subject</p>
             <input
               onChange={(e) => setSubject(e.target.value)}
+              value={subject}
               required
               type="text"
               placeholder=""
@@ -127,6 +131,7 @@ export default function ContactUs() {
             <textarea
               required
               onChange={(e) => setMessage(e.target.value)}
+              value={message}
               type="text"
               placeholder=""
               className="w-full  bg-gray-100 text-lg p-3 my-3 rounded-lg"
