@@ -18,17 +18,17 @@ import sage from '../assets/portfolio/sage.jpg'
 export const portfolioData = [
     {
         image: eventCircle,
-        heading: 'Eventcirco Webapp',
+        heading: 'Eventcirco Web App',
         link: 'https://eventcirco.com'
     },
     {
         image: pacMobile,
         heading: 'PAC Mobile App (PAC-PAY)',
-        link: 'https://panafricancapitalholdings.com'
+        link: ''
     },
     {
         image: protyplus,
-        heading: 'Proptyplus',
+        heading: 'Proptyplus Web App',
         link: 'https://proptyplus.com'
     },
 
