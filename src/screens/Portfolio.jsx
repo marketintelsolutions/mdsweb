@@ -49,7 +49,7 @@ const Portfolio = () => {
         Ziltch1 designs & builds <br /> digital experiences
       </h1>
       <p className="font-light text-[25px] leading-10 text-center mt-[34px]">
-        We design, build and launch websites and products that are <br />{" "}
+        We design, build and launch platforms and products that are <br />{" "}
         simple, beautiful and helps businesses grow.
       </p>
       <div className="mt-[130px] grid grid-cols-2 mx-auto w-full max-w-[80%] gap-5 gap-y-[113px]">
