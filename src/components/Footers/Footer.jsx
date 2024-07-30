@@ -7,6 +7,7 @@ import {
   FaEnvelope,
   FaPhoneAlt,
   FaTiktok,
+  FaInstagram,
 } from "react-icons/fa";
 
 const Footer = () => {
@@ -15,7 +16,7 @@ const Footer = () => {
   return (
     <div>
       <div
-        className=" lg:flex hidden flex-wrap items-start text-gray-400 mx-auto bg-[#F26836] px-8 py-20   w-full justify-around border"
+        className=" lg:flex flex-wrap items-start text-gray-400 mx-auto bg-[#F26836] px-8 py-20   w-full justify-around border"
         id="footerSection"
       >
         <section className="text-sm mb-5">
@@ -67,12 +68,15 @@ const Footer = () => {
           </h4>
           <li className="flex text-lg justify-between mb-4 gap-10">
             <a
-              href="https://www.linkedin.com/in/mds-tech-950666242/"
+              href="https://www.linkedin.com/in/ziltchone?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
               className=" text-white  "
             >
               <FaLinkedin size={34} />
             </a>
-            <a href="https://twitter.com/MDSTech3" className=" text-white ">
+            <a
+              href="https://x.com/ZiltchoneTech?t=EGimS_d6ypiBllMWIzmBVw&s=08"
+              className=" text-white "
+            >
               <FaTwitter size={34} />
             </a>
           </li>
@@ -82,6 +86,12 @@ const Footer = () => {
               className="  text-white "
             >
               <FaTiktok size={34} />
+            </a>
+            <a
+              href="https://www.instagram.com/ziltch1?igsh=MXJjaTBkZ3oyZ3l2Zg=="
+              className="  text-white "
+            >
+              <FaInstagram size={34} />
             </a>
           </li>
         </section>

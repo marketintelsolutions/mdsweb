@@ -24,7 +24,7 @@ const SectionFive = ({ header, subHeader, image, id, size, link, animeid }) => {
         </div>
       </div>
 
-      <div className="lg:w-5/12 w-full lg:order-2 order-1">
+      <div className="xl:w-1/3 lg:w-1/4 zr:w-full lg:order-2 order-1">
         <img src={robot} alt="" className="w-full" />
       </div>
     </div>

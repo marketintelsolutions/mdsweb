@@ -42,7 +42,7 @@ const NavBar = () => {
 
   return (
     <div className="">
-      <div className="lg:block fixed sm:hidden top-0 left-0 right-0 z-10 bg-white ">
+      <div className="lg:block sm:fixed zr:hidden top-0 left-0 right-0 z-10 bg-white ">
         <div className=" w-full border-b py-1 bg-blue-700 text-white">
           <div className=" lg:max-w-[73%] mx-auto w-full h-full flex flex-wrap items-center justify-around lg:justify-between">
             <div className="flex items-center m-2 ">
@@ -83,14 +83,14 @@ const NavBar = () => {
             </div>
           </div>
         </div>
-        <div className="flex lg:max-w-[73%] mx-auto lg:justify-between   w-full text-[#888888]  h-[100px]">
+        <div className="zr:hidden lg:max-w-[73%] sm:flex mx-auto lg:justify-between   w-full text-[#888888]  h-[100px]">
           <div className="w-24 h-[100%] flex items-center">
             <Link to="/">
               <img src={Logo} alt="" className="w-auto" />
             </Link>
           </div>
           <div className="flex items-center gap-10 font-normal  h-[100%]">
-            <Link to="/">Home</Link>
+            {/* <Link to="/">Home</Link> */}
             {/* <span class="ml-5">
               <Link to="about">About Us</Link>
             </span> */}

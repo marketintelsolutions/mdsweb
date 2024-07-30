@@ -58,15 +58,15 @@ export default function ContactUs() {
 
   return (
     <div>
-      <div className="xl:max-w-[80%] container mx-auto flex    flex-wrap  items-center xl:pt-20 xl:py-24 lg:py-10 p-3 justify-b xl:justify-around ">
-        <div className="lg:w-5/12 w-full xl:text-left  flex xl:justify-start justify-center bg-white lg:order-1 order-2 ">
+      <div className="xl:max-w-[80%] container mx-auto flex    flex-wrap  items-center xl:pt-20 xl:py-24 lg:py-10 p-3 justify-between xl:justify-around ">
+        <div className="zr:w-full lg:w-auto xl:text-left  flex xl:justify-start justify-center bg-white lg:order-1 order-2 ">
           <div className="xl:max-w-[500px]">
             <h1 className="lg:text-9xl text-3xl font-[900] text-[#1233FE] flex ">
               Contact <span className="text-[#F26836] ml-2"> Us</span>
             </h1>
           </div>
         </div>
-        <div className="lg:w-5/12 w-full lg:order-2 order-1 ">
+        <div className="xl:w-1/3 lg:w-1/4 zr:w-full lg:order-2 order-1 ">
           <img src={illustration} alt="" className="w-full" />
         </div>
       </div>

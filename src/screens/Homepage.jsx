@@ -68,7 +68,7 @@ const Homepage = () => {
             animeid="Managed Technology Services"
             id="Managed Technology Services"
             header={`Managed \n Technology Services`}
-            subHeader="We are managed service provider (MSP) deliverIng network, application, infrastructure and security through ongoing and regular support. Our team of experts with over 50 years combined experience are eager to help you solve that Technology challenge."
+            subHeader="We are managed service provider (MSP) delivering network, application, infrastructure and security through ongoing and regular support. Our team of experts with over 50 years combined experience are eager to help you solve that Technology challenge."
             link="/ManagedTechnologyServices"
             button="Read More"
             color="#F26836"

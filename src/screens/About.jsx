@@ -40,7 +40,7 @@ const About = () => {
                 </p>
                 <p className="text-lg mt-10 ">
                   ZiltchOne has a bouquet of budding Local and International
-                  partnerships and licenses within its portfolio. Marketintel
+                  partnerships and licenses within its portfolio. ZiltchOne
                   offers a wide range of services to consumers, corporates and
                   public institutions.
                 </p>
