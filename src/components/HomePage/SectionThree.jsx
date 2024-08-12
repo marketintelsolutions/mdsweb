@@ -18,6 +18,7 @@ const SectionThree = ({
   rounded,
   buttonColor,
   buttonText,
+  paysharpItem,
 }) => {
   return (
     <div>
@@ -35,13 +36,23 @@ const SectionThree = ({
             <p className="lg:text-xl lg:leading-10 text-lg  mt-5 text-[#727272] lg:my-10">
               {subHeader}
             </p>
-            <Link to={link || "/"} className=" ">
-              <button
-                className={`bg-[${color}] rounded-${rounded} text-${buttonText} p-4 px-6 mt-4`}
-              >
-                {button}
-              </button>
-            </Link>
+            {paysharpItem ? (
+              <a href={link} target="_blank" className=" ">
+                <button
+                  className={`bg-[${color}] rounded-${rounded} text-${buttonText} p-4 px-6 mt-4`}
+                >
+                  {button}
+                </button>
+              </a>
+            ) : (
+              <Link to={link || "/"} className=" ">
+                <button
+                  className={`bg-[${color}] rounded-${rounded} text-${buttonText} p-4 px-6 mt-4`}
+                >
+                  {button}
+                </button>
+              </Link>
+            )}
           </div>
         </div>
 

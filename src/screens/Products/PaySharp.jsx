@@ -15,7 +15,7 @@ const PaySharp = () => {
         id="paysharp"
         header={`Do More With \n Paysharp`}
         subHeader="Enjoy the ease of conducting financial transactions such as Airtime Vending, Cash Deposit and Withdrawals Bill Payment and many more services"
-        link="/paysharp"
+        link="https://paysharpng.com"
         button="Learn More"
         color="#FAA724"
         rounded="md"
@@ -23,6 +23,7 @@ const PaySharp = () => {
         image={paystackHomepage}
         ourPatners={false}
         buttonText="black"
+        paysharpItem={true}
       />
       {/* PAYSHARP SERVICES */}
       <PaysharpSectionTwo />
@@ -43,7 +44,6 @@ const PaySharp = () => {
         id="paysharp agent"
         header={`Become a Paysharp Agent`}
         subHeader="Join the team, become a Paysharp agent today with the simpliest of requirements, you can sign up to be a Paysharp Agent"
-        link="/paysharp"
         button="Sign up"
         color="#FAA724"
         rounded="md"
@@ -51,6 +51,8 @@ const PaySharp = () => {
         image={paysharpAgent}
         ourPatners={false}
         buttonText="black"
+        link="https://paysharpng.com"
+        paysharpItem={true}
       />
       {/* ENJOY BORDERLESS BANKING */}
       <SectionFour
