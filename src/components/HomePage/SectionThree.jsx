@@ -39,7 +39,7 @@ const SectionThree = ({
             {paysharpItem ? (
               <a href={link} target="_blank" className=" ">
                 <button
-                  className={`bg-[${color}] rounded-${rounded} text-${buttonText} p-4 px-6 mt-4`}
+                  className={`bg-[#FAA724] rounded-${rounded} text-white p-4 px-6 mt-4`}
                 >
                   {button}
                 </button>
@@ -47,7 +47,7 @@ const SectionThree = ({
             ) : (
               <Link to={link || "/"} className=" ">
                 <button
-                  className={`bg-[${color}] rounded-${rounded} text-${buttonText} p-4 px-6 mt-4`}
+                  className={`bg-[#FAA724] rounded-${rounded} text-white p-4 px-6 mt-4`}
                 >
                   {button}
                 </button>
