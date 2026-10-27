@@ -58,7 +58,7 @@ const NavBar = () => {
                 href="https://goo.gl/maps/YQkx4EsJdUSinavS8"
                 className="text-xs mx-3 font-normal text-white"
               >
-                9 Elsie Femi Pearse St, Victoria Island 106104, Lagos
+                Plot 8A, Elsie Femi Pearse St, Victoria Island 106104, Lagos
               </a>
             </div>
             <div className="flex items-center m-2">

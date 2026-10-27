@@ -157,7 +157,9 @@ export default function ContactUs() {
               <p className="text-2xl font-[400] text-[#F26836]">
                 Our Location{" "}
               </p>
-              <p>9 Elsie Femi Pearse St, Victoria Island 106104, Lagos</p>
+              <p>
+                Plot 8A, Elsie Femi Pearse St, Victoria Island 106104, Lagos
+              </p>
             </div>
           </div>
 
