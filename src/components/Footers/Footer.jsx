@@ -157,6 +157,12 @@ const Footer = () => {
           </li>
         </section>
       </div>
+
+      <div className="mx-auto py-4 bg-[#F26836] px-8">
+        <p className=" text-white text-center ">
+          A subsidary of PanAfrican Capital Holding Company
+        </p>
+      </div>
     </div>
   );
 };
