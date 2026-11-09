@@ -158,7 +158,11 @@ const Footer = () => {
         </section>
       </div>
 
-      <div className="mx-auto py-4 bg-[#F26836] px-8">
+      <div className="mx-auto py-4 bg-[#F26836] px-8 flex gap-10">
+        <p className=" text-white text-center ">
+          Copyright {new Date().getFullYear()}
+        </p>
+        <span>|</span>
         <p className=" text-white text-center ">
           A subsidary of PanAfrican Capital Holding Company
         </p>
